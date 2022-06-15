@@ -1,0 +1,823 @@
+/*-------------------------------------
+ *  VX List
+ *  .vx-list{}
+ *-------------------------------------*/
+.vx-list {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    display: block;
+    position: relative;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+}
+
+.vx-list .list-container {
+    outline: none;
+}
+
+.vx-list .list-content {
+}
+
+.vx-list .vx-list__item {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    position: absolute !important;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.vx-list .vx-list__item:hover {
+    /*color:#222;*/
+}
+
+.vx-list .vx-list__item[selected] {
+    /*color:#222;*/
+    /*color: #fff !important;*/
+    /*background-color: #222;*/
+}
+
+.vx-list .vx-list__item[active] {
+    /*color:#468df7;*/
+    /*border-left: red 2px solid;*/
+}
+
+.vx-list .vx-list__item.layout--vertical {
+    left: 0;
+    right: 0;
+}
+
+.vx-list .vx-list__item.layout--horizontal {
+    height: 100%;
+}
+
+
+/*-------------------------------------
+ *  VX Tree
+ *  .vx-tree{}
+ *  .vx-tree .list-container{}
+ *  .vx-tree .list-content{}
+ *  .vx-tree__item{}
+ *  .vx-tree__item.vx-level-0{}
+ *  .vx-tree__item.vx-level-1{}
+ *  .vx-tree__item.vx-level-n{}
+ *  .vx-tree__item[selected]{}
+ *  .vx-tree__item[isopened]{}
+ *  .vx-tree__item--leaf[isopened]{}
+ *  .vx-tree__item__toggle{}
+ *  .vx-tree__item__toggle.toggle--open{}
+ *  .vx-tree__item__label{}
+ *  .vx-tree__item__label > TAG{}
+ *  .vx-tree__item__label > TAG[selected]{}
+ *  .vx-tree__item__label > TAG[active]{}
+ *  .vx-tree__item__label > TAG[isOpened]{}
+ *  .vx-tree__item__label > TAG[hasChildren]{}
+ *-------------------------------------*/
+.vx-tree {
+    box-sizing: border-box;
+    display: block;
+    position: relative;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    user-select: none;
+    outline: none;
+}
+
+.vx-tree .list-container {
+    outline: none;
+}
+
+.vx-tree__item {
+    box-sizing: border-box;
+    position: absolute !important;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.vx-tree__item.vx-level-0 {
+    padding-left: 0;
+}
+
+.vx-tree__item.vx-level-1 {
+    padding-left: 30px;
+}
+
+.vx-tree__item.vx-level-2 {
+    padding-left: 60px;
+}
+
+.vx-tree__item.vx-level-3 {
+    padding-left: 90px;
+}
+
+.vx-tree__item.vx-level-4 {
+    padding-left: 120px;
+}
+
+.vx-tree__item.vx-level-5 {
+    padding-left: 150px;
+}
+
+.vx-tree__item.vx-level-6 {
+    padding-left: 180px;
+}
+
+.vx-tree__item.vx-level-7 {
+    padding-left: 210px;
+}
+
+.vx-tree__item.vx-level-8 {
+    padding-left: 240px;
+}
+
+.vx-tree__item.vx-level-9 {
+    padding-left: 270px;
+}
+
+.vx-tree__item.vx-level-10 {
+    padding-left: 300px;
+}
+
+.vx-tree__item.vx-level-11 {
+    padding-left: 330px;
+}
+
+.vx-tree__item:hover {
+    color: #fff;
+    background-color: #468df7;
+}
+
+.vx-tree__item--leaf {
+}
+
+.vx-tree__item__toggle {
+    flex: none;
+    width: 30px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.vx-tree__item__label {
+    flex: 1;
+}
+
+.vx-tree__item[selected],
+.vx-tree__item[active] {
+    color: #468df7;
+}
+
+.vx-tree__item[selected]:hover,
+.vx-tree__item[active]:hover {
+    background-color: transparent;
+}
+
+.vx-tree__indicator {
+    box-sizing: border-box;
+    position: absolute !important;
+    background-color: rgba(0, 0, 0, 0.5);
+    pointer-events: none;
+}
+
+
+/*-------------------------------------
+ *  VX Combobox
+ *  .vx-combobox{}
+ *-------------------------------------*/
+.vx-combobox {
+    position: relative;
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+}
+
+.vx-combobox .vx-combobox__control {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.vx-combobox .vx-combobox__placeholder {
+    user-select: none;
+}
+
+.vx-combobox .vx-combobox__dropdown-trigger {
+    margin-left: auto;
+    user-select: none;
+}
+
+.vx-combobox__dropdown-list .vx-list__item:last-child {
+}
+
+.vx-combobox__dropdown-list {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 1px solid #e0e0e0;
+    user-select: none;
+}
+
+.vx-combobox__dropdown-list .vx-list__item:hover {
+    color: #468df7;
+}
+
+.vx-combobox__dropdown-list .vx-list__item[selected] {
+    color: #468df7;
+}
+
+.vx-combobox__dropdown-list .vx-list__item[active] {
+    color: #468df7;
+}
+
+.vx-combobox.display--inline {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.vx-combobox.display--inline .vx-combobox__control {
+    display: inline-flex;
+}
+
+/**
+TODO 클래스명 변경!!!
+ */
+.vx-list.combobox-dropdown-list {
+    user-select: none;
+}
+
+
+/*-------------------------------------
+ *  VX DateTable
+ *  .vx-date-table{}
+ *  .vx-date-table--year--day{}
+ *  .vx-date-table--year--month{}
+ *  .vx-date-table--year--year{}
+ *  .vx-date-table .vx-sun{}
+ *  .vx-date-table .vx-mon{}
+ *  .vx-date-table .vx-tue{}
+ *  .vx-date-table .vx-wed{}
+ *  .vx-date-table .vx-thu{}
+ *  .vx-date-table .vx-fri{}
+ *  .vx-date-table .vx-sat{}
+ *  .vx-date-table .vx-past{}
+ *  .vx-date-table .vx-future{}
+ *  .vx-date-table .vx-extra{}
+ *  .vx-date-table .vx-present{}
+ *  .vx-date-table .vx-disabled{}
+ *  .vx-date-table__header{}
+ *  .vx-date-table__header-weekday{}
+ *  .vx-date-table__body{}
+ *  .vx-date-table__item{}
+ *  .vx-date-table__item-label{}
+ *-------------------------------------*/
+
+/*-------------------------------------
+ * VX DateTable
+ *-------------------------------------*/
+.vx-date-table {
+    display: flex;
+    flex-direction: column;
+    user-select: none;
+}
+
+.vx-date-table .vx-sun {
+    color: #fc2828
+}
+
+.vx-date-table .vx-sat {
+    color: #468df7
+}
+
+.vx-date-table .vx-past {
+    color: #aeaeae;
+}
+
+.vx-date-table .vx-future {
+}
+
+.vx-date-table .vx-extra {
+    color: #aeaeae;
+}
+
+.vx-date-table .vx-present {
+    color: #1b65d4;
+    background-color: #f4f5f8;
+}
+
+.vx-date-table .vx-disabled {
+    color: rgba(0, 0, 0, .1);
+    pointer-events: none;
+}
+
+.vx-date-table__header {
+    display: flex;
+    flex-direction: row;
+}
+
+.vx-date-table__header-weekday {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 26px;
+    color: #000;
+    /*border-bottom:1px solid #e0e0e0;*/
+}
+
+.vx-date-table__header-weekday,
+.vx-date-table__item {
+    font-family: Verdana, sans-serif;
+    font-size: 12px;
+    color: #000;
+}
+
+.vx-date-table__item {
+    box-sizing: border-box;
+    position: absolute !important;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border-left: 1px solid #e0e0e0;
+    border-top: 1px solid #e0e0e0;
+    user-select: none;
+}
+
+.vx-date-table__item:hover,
+.vx-date-table__item[selected] {
+    color: #fff;
+    background-color: #468df7;
+}
+
+.vx-date-table__header-weekday + .vx-date-table__header-weekday {
+    border-left: 1px solid #e0e0e0;
+}
+
+.vx-date-table__body {
+    flex: 1;
+    overflow: hidden;
+    border: none;
+}
+
+.vx-date-table--year--day .vx-date-table__item.vx-sun {
+    border-left: 0;
+}
+
+.vx-date-table--year--month .vx-date-table__item,
+.vx-date-table--year--year .vx-date-table__item {
+    border: 0;
+    box-shadow: 0 0 1px rgba(0, 0, 0, .6);
+}
+
+/*-------------------------------------
+ *  VX Date Picker
+ *  .vx-date-picker{}
+ *  .vx-date-picker__control{}
+ *  .vx-date-picker__control-prev{}
+ *  .vx-date-picker__control-title{}
+ *  .vx-date-picker__control-next{}
+ *  .vx-date-picker__control-month-prev{}
+ *  .vx-date-picker__control-month-next{}
+ *  .vx-date-picker__body{}
+ *-------------------------------------*/
+.vx-date-picker {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.vx-date-picker__body {
+    border: 1px solid #e0e0e0;
+}
+
+.vx-date-picker__control {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #e0e0e0;
+    border-bottom: 0;
+}
+
+.vx-date-picker__control-prev,
+.vx-date-picker__control-next {
+    padding: 5px;
+    cursor: pointer;
+}
+
+.vx-date-picker__control-title {
+    flex: 1;
+    padding: 5px;
+    font-weight: 400;
+    font-size: 15px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.vx-date-picker__control-month-prev,
+.vx-date-picker__control-month-next {
+    width: 42px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.vx-date-picker__body {
+    flex: 1;
+}
+
+/*-------------------------------------
+ *  VX Date Field
+ *  .vx-date-field{}
+ *  .vx-date-field__control{}
+ *  .vx-date-field__selections{}
+ *  .vx-date-field__selection{}
+ *  .vx-date-field__dropdown-trigger{}
+ *  .vx-date-field__dropdown-content{}
+ *-------------------------------------*/
+.vx-date-field {
+    position: relative;
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+}
+
+.vx-date-field__control {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.vx-date-field__selections {
+    flex: 1
+}
+
+.vx-date-field__placeholder {
+    user-select: none;
+    color: rgba(34, 34, 34, .5);
+}
+
+.vx-date-field__dropdown-trigger {
+    margin-left: auto;
+    user-select: none;
+    cursor: pointer;
+}
+
+.vx-date-field__dropdown-content {
+    width: 249px;
+    height: 218px;
+    /*width: 300px;*/
+    /*height: 300px;*/
+}
+
+.vx-date-field__dropdown-content .vx-calendar__item {
+    align-items: center;
+    justify-content: center;
+}
+
+.vx-date-field__dropdown-content .vx-date-picker__control-title {
+}
+
+
+/*-------------------------------------
+ *  VX Window
+ *  .vx-window{}
+ *-------------------------------------*/
+.vx-window {
+    position: relative;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+}
+
+.vx-window .vx-window__header {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+
+    border-bottom: 1px solid #000000;
+}
+
+.vx-window .vx-window__header .vx-window__header-icon {
+
+}
+
+.vx-window .vx-window__header .vx-window__header-title {
+    flex: 1
+}
+
+
+.vx-window .vx-window__header .vx-window__header-close {
+
+}
+
+.vx-window .vx-window__body {
+    flex: 1;
+}
+
+
+/*-------------------------------------
+ *  Vrix Auto Complete
+ *  .vx-auto-complete{} - Input area, List area Use same class name
+ *  .vx-auto-complete .auto-complete{}
+ *  .vx-auto-complete .select-container{}
+ *  .vx-auto-complete .input-control{}
+ *  .vx-auto-complete input.control__input{}
+ *  .vx-auto-complete button.control__clear{}
+ *  .vx-auto-complete button.control__clear .btn-search{}
+ *  .vx-auto-complete button.control__clear .btn-cancel{}
+ *  .vx-auto-complete button.control__clear .btn-search .m-i-search{}
+ *  .vx-auto-complete button.control__clear .btn-search .m-i-close{}
+ *
+ *  .vx-auto-complete .suggest-list{}
+ *  .vx-auto-complete .list-container{}
+ *  .vx-auto-complete .list-content{}
+ *  .vx-auto-complete .vx-suggest__item{}
+ *  .vx-auto-complete .suggest-item{}
+ *  .vx-auto-complete .vx-suggest__item .name{}
+ *  .vx-auto-complete .vx-suggest__item .team{}
+ *  .vx-auto-complete .vx-suggest__item .part{}
+ *  .vx-auto-complete .vx-suggest__item .suggest-item__highlight{}
+ *-------------------------------------*/
+.vx-auto-complete {
+}
+
+.vx-auto-complete .auto-complete {
+    border: 0;
+}
+
+.vx-auto-complete .input-control {
+    position: relative;
+}
+
+.vx-auto-complete .control__input {
+    width: 100%;
+    height: 100%;
+    min-height: 26px;
+    padding-left: 4px;
+    border: 1px solid #e0e0e0;
+    background-color: #fff;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.vx-auto-complete .control__input:focus {
+    border-color: #0c5fe9;
+}
+
+.vx-auto-complete .control__clear {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border: 0;
+    padding: 0 6px;
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+}
+
+.vx-auto-complete .control__clear button {
+    border: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+.vx-auto-complete.selected .control__input {
+    color: #0c5fe9;
+}
+
+.vx-auto-complete .suggest-list {
+    background-color: #fff;
+    border: 1px solid #646464;
+    overflow: auto;
+}
+
+.vx-auto-complete .vx-suggest__item {
+    position: absolute !important;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    padding-left: 4px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.vx-auto-complete .vx-suggest__item[selected],
+.vx-auto-complete .vx-suggest__item[active] {
+    background-color: rgba(0, 0, 0, 0.02);
+}
+
+.vx-auto-complete .vx-suggest__item:hover,
+.vx-auto-complete .vx-suggest__item[selected]:hover,
+.vx-auto-complete .vx-suggest__item[active]:hover {
+    color: #fff;
+    background-color: #468df7;
+}
+
+.vx-auto-complete .vx-suggest__item > span {
+    display: inline-block;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.vx-auto-complete .suggest-item__highlight {
+    color: #0c5fe9;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.vx-auto-complete .vx-suggest__item:hover .suggest-item__highlight {
+    color: #fff000;
+}
+
+
+/*-------------------------------------
+ *  VX Tokenizer
+ *  .vx-tokenizer{}
+ *  .vx-tokenizer .tokenizer{}
+ *  .vx-tokenizer .select-container{}
+ *  .vx-tokenizer .token-item{}
+ *  .vx-tokenizer .vx-tokenizer__item{}
+ *  .vx-tokenizer .vx-tokenizer__item-label{}
+ *  .vx-tokenizer .vx-tokenizer__item-remover{}
+ *  .vx-tokenizer .input-control{}
+ *  .vx-tokenizer .input-control .control__input{}
+ *
+ *  .vx-tokenizer .suggest-list{}
+ *  .vx-tokenizer .list-container{}
+ *  .vx-tokenizer .list-content{}
+ *  .vx-tokenizer .suggest-item{}
+ *  .vx-tokenizer .vx-suggest__item{}
+ *  .vx-tokenizer .suggest-item__highlight{}
+ *-------------------------------------*/
+.vx-tokenizer {
+}
+
+.vx-tokenizer .tokenizer {
+    min-height: 26px;
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+}
+
+.vx-tokenizer .select-container {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: inherit;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.vx-tokenizer .input-control {
+    flex: 1;
+    max-width: 100%;
+    line-height: 1;
+}
+
+.vx-tokenizer .input-control .control__input {
+    width: 100%;
+    height: 100%;
+    min-height: 26px;
+    vertical-align: top;
+    padding-left: 4px;
+    padding-right: 4px;
+
+    outline: none;
+    border: 0;
+    box-sizing: border-box;
+}
+
+.vx-tokenizer .vx-tokenizer__item {
+    display: inline-block;
+    vertical-align: top;
+    line-height: 0;
+    overflow: hidden;
+    margin: 4px;
+    background-color: #e8e8e8;
+    border: 1px solid transparent;
+}
+
+.vx-tokenizer .vx-tokenizer__item[active] {
+    border-color: #ff6060;
+}
+
+.vx-tokenizer .vx-tokenizer__item-label,
+.vx-tokenizer .vx-tokenizer__item-remover {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1;
+}
+
+.vx-tokenizer .vx-tokenizer__item-label {
+    padding-left: 9px;
+    padding-right: 9px;
+}
+
+.vx-tokenizer .vx-tokenizer__item-remover {
+    height: 100%;
+    padding: 0 6px 0 6px;
+    cursor: pointer;
+    color: #fff;
+    background-color: #ff6060;
+}
+
+.vx-tokenizer .suggest-list {
+    background-color: #fff;
+    border: 1px solid #646464;
+    overflow: auto;
+}
+
+.vx-tokenizer .vx-suggest__item {
+    position: absolute !important;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    padding-left: 4px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.vx-tokenizer .vx-suggest__item:first-child {
+}
+
+.vx-tokenizer .vx-suggest__item[selected],
+.vx-tokenizer .vx-suggest__item[active] {
+    background-color: rgba(0, 0, 0, 0.02);
+}
+
+.vx-tokenizer .vx-suggest__item:hover,
+.vx-tokenizer .vx-suggest__item[selected]:hover,
+.vx-tokenizer .vx-suggest__item[active]:hover {
+    color: #fff;
+    background-color: #468df7;
+}
+
+.vx-tokenizer .vx-suggest__item > span {
+    display: inline-block;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.vx-tokenizer .suggest-item__highlight {
+    color: #0c5fe9;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.vx-tokenizer .vx-suggest__item:hover .suggest-item__highlight {
+    color: #fff000;
+}
+
+
+/*-------------------------------------
+ *  VX ScaleViewer
+ *  .vx-scale-viewer{}
+ *-------------------------------------*/
+.vx-scale-viewer {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    display: block;
+    position: relative;
+}
+
+
+.vx-scale-viewer .size-viewer-scroller {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+.vx-scale-viewer .size-viewer-scroller[panning] {
+    cursor: move;
+}

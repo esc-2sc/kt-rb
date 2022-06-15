@@ -1,0 +1,120 @@
+/*-------------------------------------
+ *  VX Tokenizer
+ *  .m-tokenizer{}
+ *  .m-tokenizer .tokenizer{}
+ *  .m-tokenizer .select-container{}
+ *  .m-tokenizer .token-item{}
+ *  .m-tokenizer .vx-tokenizer__item{}
+ *  .m-tokenizer .vx-tokenizer__item-label{}
+ *  .m-tokenizer .vx-tokenizer__item-remover{}
+ *  .m-tokenizer .input-control{}
+ *  .m-tokenizer .input-control .control__input{}
+ *
+ *  .vx-tokenizer .suggest-list{}
+ *  .vx-tokenizer .list-container{}
+ *  .vx-tokenizer .list-content{}
+ *  .vx-tokenizer .suggest-item{}
+ *  .vx-tokenizer .vx-suggest__item{}
+ *  .vx-tokenizer .vx-suggest__item .name{}
+ *  .vx-tokenizer .vx-suggest__item .team{}
+ *  .vx-tokenizer .vx-suggest__item .part{}
+ *  .vx-tokenizer .suggest-item__highlight{}
+ *-------------------------------------*/
+/* m-tokenizer */
+.m-tokenizer .tokenizer{
+    border-radius:3px;
+}
+.m-tokenizer .tokenizer.focus{
+    border-color: #0c5fe9;
+}
+.m-tokenizer .select-container{
+    max-height:91px;
+    padding:4px;
+    padding-top:0;
+}
+.m-tokenizer .select-container .control__input{
+    height:25px;
+    min-height:0;
+    margin-top:4px;
+    font-weight:400;
+    font-size:15px;
+    line-height:25px;
+    color:#222;
+}
+.m-tokenizer .input-control .control__input:-ms-input-placeholder{ color:rgba(34,34,34,.5);}
+.m-tokenizer .input-control .control__input::-webkit-input-placeholder{ color:rgba(34,34,34,.5);}
+.m-tokenizer .input-control .control__input::-moz-placeholder{ color:rgba(34,34,34,.5);}
+.m-tokenizer .input-control .control__input::placeholder{ color:rgba(34,34,34,.5);}
+.m-tokenizer .vx-tokenizer__item{
+    height:25px;
+    margin:4px 4px 0 0;
+    padding-left:11px;
+    padding-right:12px;
+    border-radius:3px;
+}
+.m-tokenizer .vx-tokenizer__item-label{
+    padding:0;
+    font-weight:400;
+    font-size:14px;
+    line-height:23px;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+    overflow:hidden;
+}
+.m-tokenizer .vx-tokenizer__item-remover{
+    position:relative;
+    width:31px;
+    margin-right:-12px;
+    padding-left:8px;
+    padding-right:8px;
+    background:none;
+    font-size:0;
+}
+.m-tokenizer .vx-tokenizer__item-remover:before{
+    content:"\e91c";
+    width:15px;
+    height:15px;
+    border-radius:100%;
+    background-color:#ff6060;
+    font-family:'icon' !important;
+    font-size:15px;
+    speak:none;
+    font-style:normal;
+    font-weight:normal;
+    font-variant:normal;
+    text-transform:none;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    color:#fff;
+}
+
+/* Theme */
+.theme--tokenizer-white .vx-tokenizer__item{background-color:#fff;border:1px solid #e0e0e0;}
+.theme--tokenizer-white .vx-tokenizer__item-label{color:#0c5fe9;}
+
+.m-list-tokenizer {width:100%; font-size:13px}
+.m-list-tokenizer.theme--tokenizer-team {display:inline-flex;}
+.m-list-tokenizer.theme--tokenizer-team span.name{
+    flex:1;
+    min-width:50px;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+.m-list-tokenizer.theme--tokenizer-team span.team {justify-self:flex-end;}
+
+/* TODO : 테마 적용 필요, 리스트 높이 33px 로 조정 */
+.vx-tokenizer .suggest-list{
+    border-radius:3px;
+    box-shadow:0 4px 12px rgba(0,0,0,.2);
+}
+.vx-tokenizer .vx-suggest__item{
+    padding-left:5px;
+    padding-right:12px;
+}
+.vx-tokenizer .vx-suggest__item > span{
+    margin-left:10px;
+    font-weight:300;
+    font-size:13px;
+}
+.vx-tokenizer .vx-suggest__item > .name{overflow:inherit;}

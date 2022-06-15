@@ -1,0 +1,111 @@
+/* m-dropbox-bar */
+.a-dropdown-bar{position:relative;}
+.a-dropdown-bar.inline{
+    display: inline-block;
+    vertical-align: middle;
+}
+.a-dropdown-bar[disabled]{
+    opacity:0.4;
+    cursor:default;
+    pointer-events:none;
+}
+.a-dropdown-bar__control{
+    position:relative;
+    height:32px;
+    padding-right:36px;
+    background-color:#fff;
+    border:1px solid #adadb0;
+    border-radius: 8px;
+}
+.a-dropdown-bar__control.is-open{}
+.a-dropdown-bar__trigger{
+    position:absolute;
+    right:0;
+    top:0;
+    width:36px;
+    height:100%;
+}
+.a-dropdown-bar__trigger-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+    height:100%;
+}
+.a-dropdown-bar__content{
+    z-index:100;
+    position:absolute;
+    top:100%;
+    left:0;
+    right:0;
+    margin-top:8px;
+    max-height:271px;
+
+    border:1px solid #adadb0;
+    background-color:rgba(255, 255, 255, .9);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, .1);
+    overflow-y:auto;
+    overflow-x:hidden;
+    border-radius:8px;
+}
+.a-dropdown-bar__item{
+    display:flex;
+    align-items:center;
+    width:100%;
+    min-height:40px;
+    padding-left:12px;
+    padding-right:12px;
+    font-size:13px;
+    color:#000;
+    border-top:1px solid #e8e8e8;
+    overflow:hidden;
+}
+.a-dropdown-bar__item.nowrap{
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    max-width:100%;
+}
+.a-dropdown-bar__item:first-child{
+    border-top:0;
+}
+.a-dropdown-bar__item .a-checkbox {
+    width:inherit;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+    /*overflow:hidden;*/
+}
+.a-dropdown-bar__item:hover,
+.a-dropdown-bar__item.selected{
+    background-color:#fafafa;
+}
+.a-dropdown-bar__selection{
+    display:flex;
+    align-items:center;
+    width:100%;
+    height:100%;
+    padding:0 0 0 12px;
+}
+.a-dropdown-bar__title{
+    width:100%;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+    overflow:hidden;
+}
+.a-dropdown-bar__title .label{
+    padding-right:10px;
+}
+.a-dropdown-bar__title .label:last-child{
+    padding-right:0;
+}
+.a-dropdown-bar.clear{}
+.a-dropdown-bar.clear .a-dropdown-bar__control{
+    height: auto;
+    padding-right: 0;
+    background-color: transparent;
+    border:0;
+    border-radius:0;
+}
+.a-dropdown-bar.clear .a-dropdown-bar__selection{padding:0;}
+.a-dropdown-bar.clear .a-dropdown-bar__trigger{width:100%;}
+.a-dropdown-bar.clear .a-dropdown-bar__trigger-button{display: none;}

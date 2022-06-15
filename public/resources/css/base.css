@@ -1,0 +1,81 @@
+@charset "utf-8";
+
+/* reset */
+*, *:before, *:after{box-sizing:border-box;}
+html,
+body{height:100%;}
+body {font-family:'Pretendard','Noto Sans KR','맑은 고딕','Malgun Gothic',MalgunGothic,Gulim,'굴림',Helvetica,AppleSDGothicNeo,sans-serif;line-height:1.3;color:#191f28;font-weight:400;font-size:13px;
+    /*-webkit-font-smoothing:antialiased;*/
+    /*-webkit-text-size-adjust:none;*/
+    /*-moz-osx-font-smoothing:grayscale;*/
+}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,form,fieldset,p,button,iframe,th,td{margin:0;padding:0;}
+article,aside,details,figcaption,figure,footer,header,nav,section,summary{display:block;margin:0;padding:0;}
+h1,h2,h3,h4,h5,h6,dt{font-weight:normal;}
+img,fieldset,iframe,button{border:0 none;}
+li{list-style:none;}
+button{border:0 none;outline:none;cursor:pointer;background-color:transparent;font-family:'Pretendard','Noto Sans KR','맑은 고딕','Malgun Gothic',MalgunGothic,Dotum,'돋움',Helvetica,AppleSDGothicNeo,sans-serif;font-size:14px;color:inherit;}
+table{ border-collapse:collapse;border-spacing:0; }
+th, td{border-collapse:collapse;}
+legend, caption, hr{display:none;}
+select, input, textarea {margin:0;padding:0;font-family:'Pretendard','Noto Sans KR','맑은 고딕','Malgun Gothic',MalgunGothic,Helvetica,AppleSDGothicNeo,sans-serif;color:inherit;border-radius:0;border:none;outline:none;resize:none;}
+input{vertical-align:middle;}
+input:-ms-input-placeholder         { color:#4a4a4a; }
+input::-webkit-input-placeholder    { color:#4a4a4a; }
+input::-moz-placeholder             { color:#4a4a4a; }
+em, cite {font-style:normal;} /* u, i{font-style:normal} */
+strong{font-weight:bold;}
+img{border:0; vertical-align:middle;}
+a{color:inherit;text-decoration:none;outline-offset:-1px;-webkit-tap-highlight-color: rgba(0,0,0,0);}
+address{font-style:normal;}
+body:before{position:fixed;left:0;top:0;width:100%;height:0;content:'';}/* fix webkit bug(scroll event delay) */
+select,mark{background-color:transparent;outline:none;}
+label{vertical-align:middle;}
+input::-ms-clear{display: none;}
+h1,h2,h3,h4,h5,h6{line-height:1.3;}
+[disabled], .disabled{pointer-events: none;}
+::-moz-selection {background-color:#191f28;color:#fff;}
+::selection {background-color:#191f28;color:#fff;}
+
+/* webkit scroll */
+/* https://stackoverflow.com/questions/4880381/check-whether-html-element-has-scrollbars */
+.a-scroll::-webkit-scrollbar             {/* entire scrollbar scope */}
+.a-scroll::-webkit-scrollbar-button      {/* directional buttons at the top and bottom of the scrollbar */}
+.a-scroll::-webkit-scrollbar-track       {/* space below the scrollbar */}
+.a-scroll::-webkit-scrollbar-track-piece {/* not covered area by the scrollbar-thumb */}
+.a-scroll::-webkit-scrollbar-thumb       {/* draggable scrollbar itself */}
+.a-scroll::-webkit-resizer               {/* resizser at the bottom of the scrollbar */}
+.a-scroll::-webkit-scrollbar-corner      {/* bottom of the scrollbar without resizse */}
+
+.a-textarea::-webkit-scrollbar,
+.a-scroll::-webkit-scrollbar              {
+    background-color:rgba(255,255,255,0);
+    width:8px;
+    height:8px;
+    opacity:0;
+}
+.a-textarea::-webkit-scrollbar-button,
+.a-scroll::-webkit-scrollbar-button{display:none}
+.a-textarea::-webkit-scrollbar-track,
+.a-scroll::-webkit-scrollbar-track{
+    background-color:rgba(255,255,255,0);
+}
+.a-textarea::-webkit-scrollbar-thumb,
+.a-scroll::-webkit-scrollbar-thumb{
+    background-color:rgba(255,255,255,0);
+    /*border:2px solid #fff;*/
+    border:0;
+    border-radius:0;
+}
+.a-textarea:hover::-webkit-scrollbar-thumb,
+.a-scroll:hover::-webkit-scrollbar-thumb{
+    background-color:#babac0;
+    border-color:#babac0;
+}
+.a-scroll{
+    overflow-y:auto;
+    overflow-x:hidden;
+
+    /*will-change:transform;*/
+    /*transform:translate3d(0,0,0);*/
+}

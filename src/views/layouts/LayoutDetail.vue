@@ -1,9 +1,7 @@
 <template>
-    <main class="ac-main">
+    <main>
         <navigation></navigation>
-        <div class="ac-container">
-            <router-view></router-view>
-        </div>
+        <router-view></router-view>
     </main>
 </template>
 

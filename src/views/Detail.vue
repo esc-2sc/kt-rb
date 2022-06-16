@@ -1,17 +1,21 @@
 <template>
-    <div>home content</div>
+    <div>
+        content
+    </div>
 </template>
 
 <script>
 export default {
-    name: 'home',
+    name: 'Detail',
+    components: {
+    },
 	data() {
-		return {};
+		return {
+        };
 	},
 	methods: {
 	},
 };
 </script>
-
 <style scoped>
 </style>

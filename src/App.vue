@@ -1,5 +1,5 @@
 <template>
-	<div id="app" class="ac-app">
+	<div id="app" class="app">
         <router-view></router-view>
 	</div>
 </template>
@@ -7,7 +7,7 @@
 <script>
 
 export default {
-	name: 'arches-app',
+	name: 'rb-app',
 	data: () => ({
     }),
 };

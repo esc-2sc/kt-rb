@@ -1,13 +1,8 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
 import login from '@/routes/login';
-import customer from '@/routes/customer';
-import collaboration from '@/routes/collaboration';
-import mail from '@/routes/mail';
-
 import error from '@/routes/error';
-import sample from '@/routes/sample';
-import guide from '@/routes/guide';
+import detail from '@/routes/detail';
 
 Vue.use(VueRouter);
 
@@ -16,12 +11,12 @@ const router = new VueRouter({
 	routes: [
 		{
 			path: '/',
-			redirect: '/sample'
+			redirect: '/layout'
 		},
 		{
 			path: '/home',
 			name: 'home',
-			component: () => import('@/views/home/Index.vue')
+			component: () => import('@/views/home/Index.vue'),
 		},
 		{
 			path: '/',
@@ -30,28 +25,8 @@ const router = new VueRouter({
 		},
 		{
 			path: '/',
-			component: () => import('@/views/layouts/LayoutDetailFile.vue'),
-			children: [...mail],
-		},
-		{
-			path: '/',
-			component: () => import('@/views/layouts/LayoutDetailFile.vue'),
-			children: [...customer],
-		},
-		{
-			path: '/',
-			component: () => import('@/views/layouts/LayoutDetailFile.vue'),
-			children: [...collaboration],
-		},
-		{
-			path: '/',
 			component: () => import('@/views/layouts/LayoutDetail.vue'),
-			children: [...sample],
-		},
-		{
-			path: '/',
-			component: () => import('@/views/layouts/LayoutGuide.vue'),
-			children: [...guide],
+			children: [...detail],
 		},
 		...error,
 	],

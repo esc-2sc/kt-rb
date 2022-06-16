@@ -1,6 +1,6 @@
 :root {
     --color-point-1: #1781f4;
-    --color-point-1-1: #0085ff;
+    /*--color-point-1-1: #0085ff;
     --color-point-2:#00cf7f;
     --color-point-2-1:#22e298;
     --color-point-3:#ed5f5e;
@@ -27,5 +27,5 @@
     --radius-s: 4px;
     --radius-m: 8px;
     --radius-l: 16px;
-    --radius-all: 100%;
+    --radius-all: 100%;*/
 }

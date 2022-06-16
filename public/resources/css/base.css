@@ -39,40 +39,34 @@ h1,h2,h3,h4,h5,h6{line-height:1.3;}
 
 /* webkit scroll */
 /* https://stackoverflow.com/questions/4880381/check-whether-html-element-has-scrollbars */
-.a-scroll::-webkit-scrollbar             {/* entire scrollbar scope */}
-.a-scroll::-webkit-scrollbar-button      {/* directional buttons at the top and bottom of the scrollbar */}
-.a-scroll::-webkit-scrollbar-track       {/* space below the scrollbar */}
-.a-scroll::-webkit-scrollbar-track-piece {/* not covered area by the scrollbar-thumb */}
-.a-scroll::-webkit-scrollbar-thumb       {/* draggable scrollbar itself */}
-.a-scroll::-webkit-resizer               {/* resizser at the bottom of the scrollbar */}
-.a-scroll::-webkit-scrollbar-corner      {/* bottom of the scrollbar without resizse */}
+.scroll::-webkit-scrollbar             {/* entire scrollbar scope */}
+.scroll::-webkit-scrollbar-button      {/* directional buttons at the top and bottom of the scrollbar */}
+.scroll::-webkit-scrollbar-track       {/* space below the scrollbar */}
+.scroll::-webkit-scrollbar-track-piece {/* not covered area by the scrollbar-thumb */}
+.scroll::-webkit-scrollbar-thumb       {/* draggable scrollbar itself */}
+.scroll::-webkit-resizer               {/* resizser at the bottom of the scrollbar */}
+.scroll::-webkit-scrollbar-corner      {/* bottom of the scrollbar without resizse */}
 
-.a-textarea::-webkit-scrollbar,
-.a-scroll::-webkit-scrollbar              {
+.scroll::-webkit-scrollbar              {
     background-color:rgba(255,255,255,0);
     width:8px;
     height:8px;
     opacity:0;
 }
-.a-textarea::-webkit-scrollbar-button,
-.a-scroll::-webkit-scrollbar-button{display:none}
-.a-textarea::-webkit-scrollbar-track,
-.a-scroll::-webkit-scrollbar-track{
+.scroll::-webkit-scrollbar-button{display:none}
+.scroll::-webkit-scrollbar-track{
     background-color:rgba(255,255,255,0);
 }
-.a-textarea::-webkit-scrollbar-thumb,
-.a-scroll::-webkit-scrollbar-thumb{
+.scroll::-webkit-scrollbar-thumb{
     background-color:rgba(255,255,255,0);
-    /*border:2px solid #fff;*/
     border:0;
     border-radius:0;
 }
-.a-textarea:hover::-webkit-scrollbar-thumb,
-.a-scroll:hover::-webkit-scrollbar-thumb{
+.scroll:hover::-webkit-scrollbar-thumb{
     background-color:#babac0;
     border-color:#babac0;
 }
-.a-scroll{
+.scroll{
     overflow-y:auto;
     overflow-x:hidden;
 

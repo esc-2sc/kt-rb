@@ -13,6 +13,11 @@ import('../public/resources/css/style.css');
 // Plugins : vrix, tachyon, chartjs
 import '@/plugins';
 
+// VueRangedatePicker
+import VueRangedatePicker from 'vue-rangedate-picker';
+Vue.use(VueRangedatePicker);
+
+
 Vue.config.productionTip = false;
 new Vue({
 	render: h => h(App),

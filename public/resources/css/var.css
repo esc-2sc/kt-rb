@@ -1,5 +1,17 @@
 :root {
-    --color-point-1: #1781f4;
+    --color-primary: #191f28;
+    --color-white: #fff;
+    --color-black: #000;
+    --color-btn-icon: var(--color-white);
+
+    --color-bg-main: #cdcdcd;
+    --color-bg-panel: rgba(255, 255, 255, 0.9);
+    --color-bg-tab-btn: var(--color-white);
+    --color-tab-bg: #e8e8e8;
+    --color-tab-btn-bg: var(--color-white);
+    --color-tab-btn-border: rgba(0, 0, 0, 0.02);
+    --color-tab-btn-text: --color-primary;
+    /*--color-point-1: #1781f4;*/
     /*--color-point-1-1: #0085ff;
     --color-point-2:#00cf7f;
     --color-point-2-1:#22e298;

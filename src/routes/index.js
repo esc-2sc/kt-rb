@@ -11,7 +11,7 @@ const router = new VueRouter({
 	routes: [
 		{
 			path: '/',
-			redirect: '/layout'
+			redirect: '/viewer'
 		},
 		{
 			path: '/home',

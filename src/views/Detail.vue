@@ -1,6 +1,6 @@
 <template>
     <div>
-        content
+        sub content
     </div>
 </template>
 

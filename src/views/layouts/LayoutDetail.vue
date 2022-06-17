@@ -1,8 +1,11 @@
 <template>
     <main class="wrap">
-        <input type="text" id="litepicker">
-        <header>
-            <navigation></navigation>
+        <header class="header">
+            <h1 class="logo"><a href="#"><img src="/resources/images/svg/logo-black.svg" alt="R-Brain"></a></h1>
+            <navigation/>
+            <div class="aside">
+                <span class="user">robot_seoul45</span>
+            </div>
         </header>
         <div class="contents">
             <router-view></router-view>
@@ -11,7 +14,6 @@
 </template>
 
 <script>
-import Litepicker from 'litepicker';
 import Navigation from "@/views/layouts/Navigation";
 
 export default {
@@ -23,10 +25,5 @@ export default {
         return {
         };
     },
-    mounted() {
-      const picker = new Litepicker({
-        element: document.getElementById('litepicker')
-      });
-    }
 };
 </script>

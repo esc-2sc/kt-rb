@@ -1,43 +1,34 @@
 :root {
-    --color-primary: #191f28;
     --color-white: #fff;
     --color-black: #000;
+    --color-primary: #191f28;
+    --color-bg-1: #e8e8e8;
     --color-btn-icon: var(--color-white);
 
     --color-bg-main: #cdcdcd;
     --color-bg-panel: rgba(255, 255, 255, 0.9);
     --color-bg-tab-btn: var(--color-white);
-    --color-tab-bg: #e8e8e8;
+
+    --color-tab-bg: var(--color-bg-1);
     --color-tab-btn-bg: var(--color-white);
     --color-tab-btn-border: rgba(0, 0, 0, 0.02);
     --color-tab-btn-text: --color-primary;
-    /*--color-point-1: #1781f4;*/
-    /*--color-point-1-1: #0085ff;
-    --color-point-2:#00cf7f;
-    --color-point-2-1:#22e298;
-    --color-point-3:#ed5f5e;
-    --color-point-3-1:#ff5352;
-    --color-point-4:#ffd951;
-    --color-point-4-1:#ffd027;
-    --color-point-5:#dd1818;
-    --color-point-5-1:#dc5d5d;
-    --color-point-5-2:#ffe3e3;
 
-    --color-point-6:#191f28;
-    --color-point-6-1:#646669;
-    --color-point-6-2:#989898;
-    --color-point-6-3:#c7c7c8;
-    --color-point-6-4:#a9a9a9;
-    --color-point-6-5:#cacccf;
-    --color-point-6-6:#e8e8e8;
-    --color-point-6-7:#f2f2f2;
-    --color-point-6-8:#fafafa;
+    --height-header: 150px;
+    --height-contetol-timeline: 192px;
 
-    --color-black:#000;
-    --color-white:#fff;
+    /* com */
+    --com-btns-icon-bg: var(--color-white);
+    --com-btns-icon-radius: 8px;
 
-    --radius-s: 4px;
-    --radius-m: 8px;
-    --radius-l: 16px;
-    --radius-all: 100%;*/
+    --com-tab-1-bg: var(--color-bg-1);
+    --com-tab-1-text: var(--color-primary);
+    --com-tab-1-radius: 32px;
+    --com-tab-1-selected-bg: var(--color-white);
+    --com-tab-1-selected-border: 1px solid rgba(0, 0, 0, 0.02);
+    --com-tab-1-selected-radius: 16px;
+
+    --com-select-calendar-bg: var(--color-white);
+    --com-select-calendar-text: var(--color-primary);
+    --com-select-calendar-radius: 32px;
 }

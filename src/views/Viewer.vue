@@ -6,11 +6,16 @@
             </div>
         </div><!-- // content-map -->
         <aside class="control-robot">
-            <div>SR01_00.00.00.96.E7.C5 / 로봇변경</div>
-            <div>
-                <span>수라채그릴</span>
-                <span>641</span>
-            </div>
+            <div class="control-robot__info">
+                <div class="info-robot">
+                    <span class="robot-model">SR01_00.00.00.96.E7.C5</span>
+                    <a href="#" class="robot-change">로봇변경</a>
+                </div>
+                <div class="info-map">
+                    <span class="map-location">수라채그릴</span>
+                    <span class="map-num">641</span>
+                </div>
+            </div><!-- //control-robot__info -->
             <div class="control-robot__panel">
                 <figure class="panel-img"><img src="/resources/images/temp/temp_robot_model_1.png" alt=""></figure>
                 <div class="com-tab-1 panel-tab">
@@ -19,45 +24,110 @@
                 </div>
                 <!-- map -->
                 <div class="panel-content map">
-                    <div>
-                        <span class="label">주행상태 분석</span>
-                        <span class="com-switch-1"><input type="checkbox"></span>
+                    <div class="control-item">
+                        <div class="control-item__header">
+                            <span class="label">주행상태 분석</span>
+                            <label class="com-switch-1">
+                                <input type="checkbox" class="com-switch__input">
+                                <span class="com-switch__label"></span>
+                            </label><!-- //com-switch-1 -->
+                        </div><!-- //control-item__header -->
+                        <div class="control-item__content">
+                            <select>
+                                <option>장애물 감지</option>
+                            </select>
+                        </div><!-- //control-item__content -->
                     </div>
-                    <div>
-                        <span class="label">금지구역 진입 분석</span>
-                        <span class="com-switch-1"><input type="checkbox"></span>
+                    <div class="control-item">
+                        <div class="control-item__header">
+                            <span class="label">금지구역 진입 분석</span>
+                            <label class="com-switch-1">
+                                <input type="checkbox" class="com-switch__input">
+                                <span class="com-switch__label"></span>
+                            </label><!-- //com-switch-1 -->
+                        </div><!-- //control-item__header -->
                     </div>
-                    <div>
-                        <span class="label">지도 완성도 분석</span>
-                        <span class="com-switch-1"><input type="checkbox"></span>
+                    <div class="control-item disabled">
+                        <div class="control-item__header">
+                            <span class="label">지도 완성도 분석</span>
+                            <label class="com-switch-1">
+                                <input type="checkbox" class="com-switch__input">
+                                <span class="com-switch__label"></span>
+                            </label><!-- //com-switch-1 -->
+                        </div>
+                        <div class="control-item__content">
+                            <div class="com-eyes">
+                                <div class="com-eyes__item">
+                                    <span class="label">경계선 분석</span>
+                                    <label class="com-eye-toggle">
+                                        <input type="checkbox" class="com-eye-toggle__input" checked>
+                                        <span class="com-eye-toggle__label"></span>
+                                    </label><!-- //com-eye-toggle -->
+                                </div>
+                                <div class="com-eyes__item">
+                                    <span class="label">주행영역 노이즈</span>
+                                    <label class="com-eye-toggle">
+                                        <input type="checkbox" class="com-eye-toggle__input" checked>
+                                        <span class="com-eye-toggle__label"></span>
+                                    </label><!-- //com-eye-toggle -->
+                                </div>
+                                <div class="com-eyes__item">
+                                    <span class="label">라벨 지정 적정성</span>
+                                    <label class="com-eye-toggle">
+                                        <input type="checkbox" class="com-eye-toggle__input">
+                                        <span class="com-eye-toggle__label"></span>
+                                    </label><!-- //com-eye-toggle -->
+                                </div>
+                            </div><!-- //com-eyes -->
+                        </div><!-- //control-item__content -->
                     </div>
                 </div><!-- //map -->
                 <!-- zone -->
                 <div class="panel-content zone">
-                    <div>
-                        <span class="label">A</span>
-                        <button>view/hide</button>
-                    </div>
-                    <div>
-                        <span class="label">b</span>
-                        <button>view/hide</button>
-                    </div>
-                    <div>
-                        <span class="label">C</span>
-                        <button>view/hide</button>
-                    </div>
-                    <div>
-                        <span class="label">D</span>
-                        <button>view/hide</button>
-                    </div>
-                    <div>
-                        <span class="label">E</span>
-                        <button>view/hide</button>
-                    </div>
-                    <div>
-                        <span class="label">F</span>
-                        <button>view/hide</button>
-                    </div>
+                    <div class="com-eyes">
+                        <div class="com-eyes__item">
+                            <span class="label">A</span>
+                            <label class="com-eye-toggle">
+                                <input type="checkbox" class="com-eye-toggle__input" checked>
+                                <span class="com-eye-toggle__label"></span>
+                            </label><!-- //com-eye-toggle -->
+                        </div>
+                        <div class="com-eyes__item">
+                            <span class="label">B</span>
+                            <label class="com-eye-toggle">
+                                <input type="checkbox" class="com-eye-toggle__input" checked>
+                                <span class="com-eye-toggle__label"></span>
+                            </label><!-- //com-eye-toggle -->
+                        </div>
+                        <div class="com-eyes__item">
+                            <span class="label">C</span>
+                            <label class="com-eye-toggle">
+                                <input type="checkbox" class="com-eye-toggle__input">
+                                <span class="com-eye-toggle__label"></span>
+                            </label><!-- //com-eye-toggle -->
+                        </div>
+                        <div class="com-eyes__item">
+                            <span class="label">D</span>
+                            <label class="com-eye-toggle">
+                                <input type="checkbox" class="com-eye-toggle__input">
+                                <span class="com-eye-toggle__label"></span>
+                            </label><!-- //com-eye-toggle -->
+                        </div>
+                        <div class="com-eyes__item">
+                            <span class="label">E</span>
+                            <label class="com-eye-toggle">
+                                <input type="checkbox" class="com-eye-toggle__input">
+                                <span class="com-eye-toggle__label"></span>
+                            </label><!-- //com-eye-toggle -->
+                        </div>
+                        <div class="com-eyes__item">
+                            <span class="label">F</span>
+                            <label class="com-eye-toggle">
+                                <input type="checkbox" class="com-eye-toggle__input">
+                                <span class="com-eye-toggle__label"></span>
+                            </label><!-- //com-eye-toggle -->
+                        </div>
+                    </div><!-- //com-eyes -->
                 </div><!-- //zone -->
             </div>
         </aside><!-- //control-robot -->

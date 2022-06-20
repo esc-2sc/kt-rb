@@ -2,6 +2,9 @@
     --color-white: #fff;
     --color-black: #000;
     --color-primary: #191f28;
+
+    --color-point-1: #1781F4;
+    --color-point-1-1: #0085FF;
     --color-bg-1: #e8e8e8;
     --color-btn-icon: var(--color-white);
 
@@ -27,6 +30,10 @@
     --com-tab-1-selected-bg: var(--color-white);
     --com-tab-1-selected-border: 1px solid rgba(0, 0, 0, 0.02);
     --com-tab-1-selected-radius: 16px;
+
+    --com-switch-1-bg: #a9a9a9;
+    --com-switch-1-bar: var(--color-white);
+    --com-switch-1-selected-bg: var(--color-point-1);
 
     --com-select-calendar-bg: var(--color-white);
     --com-select-calendar-text: var(--color-primary);

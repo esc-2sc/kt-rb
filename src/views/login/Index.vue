@@ -20,7 +20,7 @@ export default {
         end: '',
       },
       captions:{
-        title: 'test',
+        title: '',
         ok_button: '확인'
       },
       shortDays:['일','월','화','수','목','금','토'],

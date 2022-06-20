@@ -1,7 +1,91 @@
 /* point color */
-.color-point-1{color:var(--color-point-1); }
 
+/* btn */
+.com-btns-icon{
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.com-btns-icon button{
+  padding:10px;
+  background-color:var(--com-btns-icon-bg);
+  border-radius:var(--com-btns-icon-radius);
+}
+.com-btns-icon.column{
+  flex-direction: column;
+}
+.com-zoom-in-out{
+  margin-top:16px;
+  background-color: #fff;
+  border-radius: 8px;
+}
+.com-zoom-in-out .graph{
+  position: relative;
+  width:6px;
+  height:77px;
+  margin:0 auto;
+  background-color: #646669;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.com-zoom-in-out .graph span{
+  position: absolute;
+  left:0;
+  right:0;
+  bottom:0;
+  background-color:#1781F4;
+}
+.com-zoom-in-out button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width:100%;
+  height:40px;
+}
+.com-zoom-in-out .btn-in{}
+.com-zoom-in-out .btn-out{}
 
+/* tab */
+.com-tab-1{
+  display:inline-flex;
+  align-items: center;
+  height:48px;
+  gap: 8px;
+  padding:8px;
+  color: var(--com-tab-1-text);
+  background-color: var(--com-tab-1-bg);
+  border-radius: var(--com-tab-1-radius);
+}
+.com-tab-1 button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height:100%;
+  padding:0 18px;
+  font-weight:600;
+}
+.com-tab-1 button[selected]{
+  background-color:var(--com-tab-1-selected-bg);
+  border:var(--com-tab-1-selected-border);
+  border-radius: var(--com-tab-1-selected-radius);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* com-select-calendar */
+.com-select-calendar{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height:48px;
+  padding:0 24px;
+  font-weight: 600;
+  text-align: center;
+  background-color: var(--com-select-calendar-bg);
+  border-radius: var(--com-select-calendar-radius);
+  cursor: pointer;
+}
+
+/* calendar */
 .calendar{height:auto !important; display:flex !important; flex-direction: column; padding: 20px 0}
 .calendar .calendar-head .close{position:absolute;right:0;bottom:20px;font-size:0 !important; line-height:0 !important;}
 .calendar .calendar-head .close:before{content: '취소'; display:block; padding:5px 10px; background:#eee; font-size:14px !important; line-height:14px !important;}

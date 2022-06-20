@@ -21,15 +21,15 @@
                 <div class="panel-content map">
                     <div>
                         <span class="label">주행상태 분석</span>
-                        <span class="switch"><input type="checkbox"></span>
+                        <span class="com-switch-1"><input type="checkbox"></span>
                     </div>
                     <div>
                         <span class="label">금지구역 진입 분석</span>
-                        <span class="switch"><input type="checkbox"></span>
+                        <span class="com-switch-1"><input type="checkbox"></span>
                     </div>
                     <div>
                         <span class="label">지도 완성도 분석</span>
-                        <span class="switch"><input type="checkbox"></span>
+                        <span class="com-switch-1"><input type="checkbox"></span>
                     </div>
                 </div><!-- //map -->
                 <!-- zone -->

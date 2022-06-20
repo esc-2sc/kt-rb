@@ -71,6 +71,9 @@
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
+/* checkbox, radio, switch */
+.com-switch-1{}
+
 /* com-select-calendar */
 .com-select-calendar{
   display: inline-flex;

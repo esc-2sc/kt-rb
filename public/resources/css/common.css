@@ -42,14 +42,37 @@
 .com-select-calendar{display: inline-flex;align-items: center;justify-content: center;height:48px;padding:0 24px;font-weight: 600;text-align: center;background-color: var(--com-select-calendar-bg);border-radius: var(--com-select-calendar-radius);cursor: pointer;}
 
 /* calendar */
-.com-calendar .calendar{height:auto !important; display:flex !important; flex-direction: column; padding: 20px 0}
-.com-calendar .calendar .calendar-head .close{position:absolute;right:0;bottom:20px;font-size:0 !important; line-height:0 !important;}
-.com-calendar .calendar .calendar-head .close:before{content: '취소'; display:block; padding:5px 10px; background:#eee; font-size:14px !important; line-height:14px !important;}
+.com-calendar .calendar{width:656px !important; height:auto !important; color:#646669; padding: 20px 24px 24px; font-family: 'Pretendard','Noto Sans KR','맑은 고딕','Malgun Gothic',MalgunGothic,Gulim,'굴림',Helvetica,AppleSDGothicNeo,sans-serif !important;}
+.com-calendar .calendar .calendar-head h2{font-size:0; line-height: 0; text-indent: -9999px; padding:0}
+.com-calendar .calendar .calendar-btn-apply{position:absolute; right:24px;bottom:20px;background: #1781F4;}
+.com-calendar .calendar .calendar-btn-apply,
+.com-calendar .calendar .calendar-head .close:before{width:55px;height:32px;border-radius: 8px;font-size:13px;font-style:normal; display:flex;align-items: center;justify-content: center}
+.com-calendar .calendar .calendar-head .close{position:absolute; right:79px;bottom:20px;font-size:0; line-height:0;}
+.com-calendar .calendar .calendar-head .close:before{content: '취소';}
 .com-calendar .calendar .calendar-wrap,
-.com-calendar .calendar .calendar-range{width:100% !important; float: none !important; }
-.com-calendar .calendar .calendar-wrap{display:flex !important;}
-.com-calendar .calendar .calendar-wrap > div{float: none !important; flex:1}
-.com-calendar .calendar .calendar_preset{display:flex;}
-.com-calendar .calendar .calendar-btn-apply{width:auto !important; position:absolute;right:50px;bottom:20px;}
-.com-calendar .calendar .calendar_preset li.calendar_preset-ranges{padding: 0 10px !important;}
+.com-calendar .calendar .calendar-range{width:auto; display:inline-block; float: none; border:0;padding:0}
+.com-calendar .calendar .calendar-wrap{display:flex;padding:0;justify-content: space-between}
+.com-calendar .calendar .calendar-wrap > div{float: none; flex:none;padding:0;margin:0;width:280px !important; overflow: hidden}
+.com-calendar .calendar .calendar-wrap .months-text{font-size:15px; font-weight: 500}
+.com-calendar .calendar .calendar_weeks,
+.com-calendar .calendar .calendar_days{display:flex;margin:0;padding:0}
+.com-calendar .calendar .calendar_weeks{margin-top:15px}
+.com-calendar .calendar .calendar_weeks li,
+.com-calendar .calendar .calendar_days li{line-height: 16px; padding:0; width:40px; height:40px; margin:2px 0; display:flex; align-items: center; justify-content: center; position:relative}
+.com-calendar .calendar .calendar_weeks li{color:#989898;}
+.com-calendar .calendar .calendar_days li{color:#646669;}
+.com-calendar .calendar .calendar_preset{display:flex; align-items: center; background:#F2F2F2;border-radius: 8px; height:32px;padding:4px}
+.com-calendar .calendar .calendar_preset li.calendar_preset-ranges{padding:0 8px; height:24px;display:flex;align-items: center;justify-content: center;font-size:12px;line-height:12px;border-radius: 6px; margin:0;}
+.com-calendar .calendar .calendar_preset li.calendar_preset-ranges.active-preset{background:var(--color-white);box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);border:0;color:#191F28}
+.com-calendar .calendar .calendar_preset li:nth-child(4){display:none}
+.com-calendar .calendar .months-text{position:relative;min-height:40px; display:flex; align-items: center; justify-content: center}
+.com-calendar .calendar .months-text .right,
+.com-calendar .calendar .months-text .left{width:40px; height:40px; position:absolute; top:0;background-repeat: no-repeat; background-position: 50%;border: 1px solid #E8E8E8; border-radius: 8px;}
+.com-calendar .calendar .months-text .right{right:0;background-image: url('../images/svg/icon-arrow-right.svg')}
+.com-calendar .calendar .months-text .left{left:0;background-image: url('../images/svg/icon-arrow-left.svg')}
+.com-calendar .calendar li.calendar_days_selected{background-color:#191F28; color:#fff; font-weight: 600; border-radius: 100%;}
+.com-calendar .calendar li.calendar_days_selected:hover{background-color:#191F28; color:#fff;}
+.com-calendar .calendar li.calendar_days_in-range{background-color:#E7E7E7; color:#191F28; font-weight: 600;}
+.com-calendar .calendar li.calendar_days_in-rang:hover{background-color:#E7E7E7;}
+.com-calendar .calendar li.calendar_days_in-range:before{content:'';z-index:-1; display:block; position:absolute;margin-left:-20px;width:80px;height:100%;background-color:#E7E7E7;}
 

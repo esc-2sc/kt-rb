@@ -3,7 +3,7 @@
         <ul class="depth1">
             <li class="selected"><a href="#">주행</a>
                 <ul class="depth2">
-                    <li><a href="#">기본분석</a></li>
+                    <li class="selected"><a href="#">기본분석</a></li>
                     <li><a href="#">종합주행분석</a></li>
                     <li><a href="#">상황재현</a></li>
                 </ul>

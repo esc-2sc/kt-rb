@@ -33,6 +33,7 @@
                             </label><!-- //com-switch-1 -->
                         </div><!-- //control-item__header -->
                         <div class="control-item__content">
+                            <!-- vrix combobox 변경 예정  -->
                             <select class="com-select">
                                 <option>장애물 감지</option>
                             </select>

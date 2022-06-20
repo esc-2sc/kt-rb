@@ -131,10 +131,10 @@
                 </div><!-- //zone -->
             </div>
         </aside><!-- //control-robot -->
-        <div class="control-map">
+        <div class="control-map" :class="{'active': isActive}">
             <div class="control-map__top">
                 <div class="com-btns-icon column">
-                    <button><img src="/resources/images/svg/format-list.svg" alt=""></button>
+                    <button @click="onChangeOpenMenu"><img src="/resources/images/svg/format-list.svg" alt=""></button>
                     <button><img src="/resources/images/svg/map.svg" alt=""></button>
                 </div>
             </div>
@@ -168,41 +168,68 @@
                 <div class="timeline-nav"><img src="/resources/images/temp/temp_chart_timeline.png" alt=""></div>
             </div>
         </div><!-- //control-timeline -->
-        <div class="map-info-window">
-            <div>
-                <span>2022-12-28</span>
-                <span>17:05:23</span>
-                <button>reload</button>
-            </div>
-            <div>
+        <div class="map-info-window" :class="{'open': isActive}">
+            <div class="map-info__header">
+                <span class="info-date">2022-12-28</span>
+                <span class="info-time">17:05:23</span>
+                <span class="com-btns-icon"><button><img src="/resources/images/svg/icon-restart.svg" alt="reload"></button></span>
+            </div><!-- // map-info__header --->
+            <div class="map-info__body">
+              <div class="info-item map">
                 <h2>MAP</h2>
-                <div>
-                    <div><span>라벨</span><em>23</em></div>
-                    <div><span>충전</span><em>D1</em></div>
-                    <div><span>대기</span><em>W1</em></div>
+                <div class="info-box">
+                  <div class="label"><span>라벨</span><em class="bg-blue">23</em></div>
+                  <div class="label"><span>충전</span><em class="bg-green">D1</em></div>
+                  <div class="label"><span>대기</span><em class="bg-yellow">W1</em></div>
                 </div>
-                <p>현재지도 생성일자 : 2022.08.09</p>
-            </div>
-            <div>
+                <p class="info-txt">현재지도 생성일자 : 2022.08.09</p>
+              </div>
+              <div class="info-item zone">
                 <h2>ZONE</h2>
-                <div>
-                    <div><span>ZONE</span><em>14</em></div>
-                    <p>평균 넓이: 약 50 cm²</p>
+                <div class="info-box">
+                  <div class="label"><span>ZONE</span><em class="bg-blue">14</em></div>
+                  <p class="info-txt">평균 넓이: 약 50 cm²</p>
                 </div>
-            </div>
-            <div>
+              </div>
+              <div class="info-item alerts">
                 <h2>RECENT ALERTS</h2>
-                <div>
-                    <div>
-                        <strong>금지구역 진입</strong>
-                        <span>2022-11-02/01:03:38</span>
-                        <span>icon</span>
-                    </div>
+                <div class="alerts-list">
+                  <div class="list-item">
+                    <strong class="tit">금지구역 진입</strong>
+                    <span class="date">2022-11-02/01:03:38</span>
+                    <span class="icon"><img src="/resources/images/svg/icon-alerts-warning.svg" alt=""></span>
+                  </div><!--// list-item -->
+                  <div class="list-item">
+                    <strong class="tit">장애물 감지</strong>
+                    <span class="date">2022-11-02/01:03:38</span>
+                    <span class="icon"><img src="/resources/images/svg/icon-alerts-emergency.svg" alt=""></span>
+                  </div><!--// list-item -->
+                  <div class="list-item">
+                    <strong class="tit">주행취소</strong>
+                    <span class="date">2022-11-02/01:03:38</span>
+                    <span class="icon"><img src="/resources/images/svg/icon-alerts-noun-robot.svg" alt=""></span>
+                  </div><!--// list-item -->
+                  <div class="list-item">
+                    <strong class="tit">비상버튼 정지</strong>
+                    <span class="date">2022-11-02/01:03:38</span>
+                    <span class="icon"><img src="/resources/images/svg/icon-alerts-compress.svg" alt=""></span>
+                  </div><!--// list-item -->
+                  <div class="list-item">
+                    <strong class="tit">플랫폼 요청 정지</strong>
+                    <span class="date">2022-11-02/01:03:38</span>
+                    <span class="icon"><img src="/resources/images/svg/icon-alerts-pan.svg" alt=""></span>
+                  </div><!--// list-item -->
+                  <div class="list-item">
+                    <strong class="tit">SM 요청 정지</strong>
+                    <span class="date">2022-11-02/01:03:38</span>
+                    <span class="icon"><img src="/resources/images/svg/icon-alerts-wifi.svg" alt=""></span>
+                  </div><!--// list-item -->
+                </div><!--//alerts-list-->
+                <div class="com-btns-line">
+                  <button>더보기</button>
                 </div>
-                <div>
-                    <button>더보기</button>
-                </div>
-            </div>
+              </div>
+            </div><!-- //map-info__body -->
         </div><!-- //map-info-window -->
     </div>
 </template>
@@ -214,9 +241,13 @@ export default {
     },
 	data() {
 		return {
+      isActive:0
         };
 	},
 	methods: {
+     onChangeOpenMenu(){
+       this.isActive = !this.isActive;
+    },
 	},
 };
 </script>

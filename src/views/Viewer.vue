@@ -33,7 +33,7 @@
                             </label><!-- //com-switch-1 -->
                         </div><!-- //control-item__header -->
                         <div class="control-item__content">
-                            <select>
+                            <select class="com-select">
                                 <option>장애물 감지</option>
                             </select>
                         </div><!-- //control-item__content -->

@@ -14,8 +14,8 @@
 
 /* tab */
 .com-tab-1{display:inline-flex;align-items: center;height:48px;gap: 8px;padding:8px;color: var(--com-tab-1-text);background-color: var(--com-tab-1-bg);border-radius: var(--com-tab-1-radius);}
-.com-tab-1 button{display: flex;align-items: center;justify-content: center;height:100%;padding:0 18px;font-weight:600;}
-.com-tab-1 button[selected]{background-color:var(--com-tab-1-selected-bg);border:var(--com-tab-1-selected-border);border-radius: var(--com-tab-1-selected-radius);box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);}
+.com-tab-1 button{display: flex;align-items: center;justify-content: center;height:100%;padding:0 18px;font-weight:600;font-size: 13px;color:var(--color-secondary);}
+.com-tab-1 button[selected]{color:var(--color-primary);background-color:var(--com-tab-1-selected-bg);border:var(--com-tab-1-selected-border);border-radius: var(--com-tab-1-selected-radius);box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);}
 
 /* checkbox, radio, switch */
 .com-switch-1{display:inline-block;vertical-align: middle;}

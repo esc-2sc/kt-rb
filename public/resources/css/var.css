@@ -2,9 +2,16 @@
     --color-white: #fff;
     --color-black: #000;
     --color-primary: #191f28;
+    --color-secondary: #646669;
 
     --color-point-1: #1781F4;
     --color-point-1-1: #0085FF;
+    --color-point-2: #ac2323;
+    --color-point-2-1: rgba(251, 85, 95, 0.9);
+    --color-point-3: #46e8e8;
+    --color-point-3-1: #5197B6;
+    --color-gray-1: #bbb;
+
     --color-bg-1: #e8e8e8;
     --color-btn-icon: var(--color-white);
 

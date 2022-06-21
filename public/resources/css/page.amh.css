@@ -36,3 +36,40 @@
 
 .control-map{transform:translateX(0); transition:transform .2s ease-in-out }
 .control-map.active{transform: translateX(-280px)}
+
+.label-list{/*position:absolute;*/}
+.label-list .label-box{min-width:124px;display:inline-block;padding:28px 25px; background:rgba(255, 255, 255, 0.9); box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); border-radius: 16px;}
+.label-list .label-box li{display:flex; align-items: center}
+.label-list .label-box li > *{flex:none}
+.label-list .label-box li + li{margin-top:7px}
+.label-list .label-box li .label-icon{margin-right:8px}
+.label-list .label-box li .label-name{color:var(--color-primary);font-size: 12px}
+
+.com-layer{width:300px;height:552px;display:flex;flex-direction:column;background: rgba(255, 255, 255, 0.9);box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); border-radius: 24px;}
+.com-layer-header{flex:none;height:64px; display:flex; align-items: center; justify-content: center; position:relative}
+.com-layer-header h2{font-size:15px;font-weight: 600}
+.com-layer-header .btn-close{position:absolute;width:40px;height:40px;left:20px;top:calc(50% - 20px);display:flex;align-items: center;justify-content: center;}
+.com-layer-body{flex:1; overflow-y: auto}
+.graph-view{height:100%; display:flex; flex-direction: column}
+.graph-view .cell{flex:none;width:110px;height:32px; display:flex;align-items: center;justify-content: center;color:var(--color-secondary)}
+.graph-view .cell.time{flex:none; width:80px;border-left:1px solid rgba(0,0,0,.1);border-right:1px solid rgba(0,0,0,.1)}
+.graph-view .view-header{flex:none;border-top:1px solid rgba(0,0,0,.1);border-bottom:1px solid rgba(0,0,0,.1);}
+.graph-view .view-header .cell{height:40px; color:var(--color-primary);}
+.graph-view .view-body{flex:1;  overflow-y: auto; width:calc(100% - 7px)}
+.graph-view .view-item{display:flex;width:100%}
+.graph-view .view-item .cell .bar{height:6px;}
+.graph-view .view-item .cell .number{padding:0 8px;}
+.graph-view .view-body .view-item > .cell:first-child{justify-content: flex-end}
+.graph-view .view-body .view-item > .cell:first-child .bar{background:#274878;order:1;border-radius: 4px 0 0 4px; }
+.graph-view .view-body .view-item > .cell:first-child .number{color:#274878; order:0}
+.graph-view .view-body .view-item > .cell:last-child{justify-content: flex-start;width:97px}
+.graph-view .view-body .view-item > .cell:last-child .bar{background:#FF4343;border-radius: 0 4px 4px 0;}
+.graph-view .view-body .view-item > .cell:last-child .number{color:#FF4343}
+.graph-view .view-body::-webkit-scrollbar {width: 6px;}
+.graph-view .view-body::-webkit-scrollbar-track {background-color: transparent;}
+.graph-view .view-body::-webkit-scrollbar-thumb {
+    /*box-shadow: inset 0 0 6px rgba(100, 102, 105,.2);*/
+    background:rgba(100, 102, 105,.2);
+    border-radius: 8px;
+}
+

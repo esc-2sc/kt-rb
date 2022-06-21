@@ -3,7 +3,10 @@
         login content
         <input type="text" id="litepicker">
         <!--<vue-rangedate-picker></vue-rangedate-picker>-->
-        <vue-rangedate-picker class="com-calendar" :months="this.months" :shortDays="this.shortDays" :captions=this.captions i18n="EN" format="YYYY-MM-DD"></vue-rangedate-picker>
+      <br><br>
+      <vue-rangedate-picker :months="this.months" :shortDays="this.shortDays" :captions=this.captions i18n="EN" format="YYYY-MM-DD"></vue-rangedate-picker>
+      <br><br>
+      <vue-rangedate-picker class="com-calendar" :months="this.months" :shortDays="this.shortDays" :captions=this.captions i18n="EN" format="YYYY-MM-DD"></vue-rangedate-picker>
     </div>
 </template>
 

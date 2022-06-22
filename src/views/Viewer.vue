@@ -341,6 +341,270 @@
                 </div>
             </div>
         </div><!-- //control-timeline -->
+        <div class="graph-layer">
+          <div class="graph-layer-header">
+            <button class="btn-close"><img src="/resources/images/svg/icon-close.svg" alt=""></button>
+            <h2>2022.05.19</h2>
+          </div><!-- //com-layer-header -->
+          <div class="graph-layer-body">
+            <div class="graph-view">
+              <div class="view-header">
+                <div class="view-item">
+                  <div class="cell">장애물감지</div>
+                  <div class="cell time">시간별</div>
+                  <div class="cell">금지구역진입</div>
+                </div>
+              </div>
+              <div class="view-body scroll">
+                <div class="view-item">
+                  <div class="cell">
+                    <span class="bar" style="width:63px"></span><span class="number">8</span>
+                  </div>
+                  <div class="cell time">01:00</div>
+                  <div class="cell">
+                    <span class="bar" style="width:13px"></span><span class="number">1</span>
+                  </div>
+                </div><!-- //view-item -->
+                <div class="view-item">
+                  <div class="cell">
+                    <span class="bar" style="width:13px"></span><span class="number">1</span>
+                  </div>
+                  <div class="cell time">02:00</div>
+                  <div class="cell">
+                    <span class="bar" style="width:48px"></span><span class="number">5</span>
+                  </div>
+                </div><!-- //view-item -->
+                <div class="view-item">
+                  <div class="cell">
+                    <span class="bar"></span><span class="number"></span>
+                  </div>
+                  <div class="cell time">03:00</div>
+                  <div class="cell">
+                    <span class="bar" style="width:48px"></span><span class="number">5</span>
+                  </div>
+                </div><!-- //view-item -->
+                <div class="view-item">
+                  <div class="cell">
+                    <span class="bar" style="width:63px"></span><span class="number">8</span>
+                  </div>
+                  <div class="cell time">04:00</div>
+                  <div class="cell">
+                    <span class="bar" style="width:48px"></span><span class="number">5</span>
+                  </div>
+                </div><!-- //view-item -->
+                <div class="view-item">
+                  <div class="cell">
+                    <span class="bar" style="width:13px"></span><span class="number">1</span>
+                  </div>
+                  <div class="cell time">05:00</div>
+                  <div class="cell">
+                    <span class="bar" style="width:48px"></span><span class="number">5</span>
+                  </div>
+                </div><!-- //view-item -->
+                <div class="view-item">
+                  <div class="cell">
+                    <span class="bar" style="width:13px"></span><span class="number">1</span>
+                  </div>
+                  <div class="cell time">06:00</div>
+                  <div class="cell">
+                    <span class="bar" style="width:48px"></span><span class="number">5</span>
+                  </div>
+                </div><!-- //view-item -->
+                <div class="view-item">
+                  <div class="cell">
+                    <span class="bar" style="width:13px"></span><span class="number">1</span>
+                  </div>
+                  <div class="cell time">07:00</div>
+                  <div class="cell">
+                    <span class="bar" style="width:48px"></span><span class="number">5</span>
+                  </div>
+                </div><!-- //view-item -->
+                <div class="view-item">
+                  <div class="cell">
+                    <span class="bar" style="width:13px"></span><span class="number">1</span>
+                  </div>
+                  <div class="cell time">08:00</div>
+                  <div class="cell">
+                    <span class="bar" style="width:48px"></span><span class="number">5</span>
+                  </div>
+                </div><!-- //view-item -->
+                <div class="view-item">
+                  <div class="cell">
+                    <span class="bar" style="width:13px"></span><span class="number">1</span>
+                  </div>
+                  <div class="cell time">09:00</div>
+                  <div class="cell">
+                    <span class="bar" style="width:48px"></span><span class="number">5</span>
+                  </div>
+                </div><!-- //view-item -->
+                <div class="view-item">
+                  <div class="cell">
+                    <span class="bar" style="width:13px"></span><span class="number">1</span>
+                  </div>
+                  <div class="cell time">10:00</div>
+                  <div class="cell">
+                    <span class="bar" style="width:48px"></span><span class="number">5</span>
+                  </div>
+                </div><!-- //view-item -->
+                <div class="view-item">
+                  <div class="cell">
+                    <span class="bar" style="width:13px"></span><span class="number">1</span>
+                  </div>
+                  <div class="cell time">11:00</div>
+                  <div class="cell">
+                    <span class="bar" style="width:48px"></span><span class="number">5</span>
+                  </div>
+                </div><!-- //view-item -->
+                <div class="view-item">
+                  <div class="cell">
+                    <span class="bar" style="width:13px"></span><span class="number">1</span>
+                  </div>
+                  <div class="cell time">12:00</div>
+                  <div class="cell">
+                    <span class="bar" style="width:48px"></span><span class="number">5</span>
+                  </div>
+                </div><!-- //view-item -->
+                <div class="view-item">
+                  <div class="cell">
+                    <span class="bar" style="width:13px"></span><span class="number">1</span>
+                  </div>
+                  <div class="cell time">13:00</div>
+                  <div class="cell">
+                    <span class="bar" style="width:48px"></span><span class="number">5</span>
+                  </div>
+                </div><!-- //view-item -->
+                <div class="view-item">
+                  <div class="cell">
+                    <span class="bar" style="width:13px"></span><span class="number">1</span>
+                  </div>
+                  <div class="cell time">14:00</div>
+                  <div class="cell">
+                    <span class="bar" style="width:48px"></span><span class="number">5</span>
+                  </div>
+                </div><!-- //view-item -->
+                <div class="view-item">
+                  <div class="cell">
+                    <span class="bar" style="width:13px"></span><span class="number">1</span>
+                  </div>
+                  <div class="cell time">15:00</div>
+                  <div class="cell">
+                    <span class="bar" style="width:48px"></span><span class="number">5</span>
+                  </div>
+                </div><!-- //view-item -->
+                <div class="view-item">
+                  <div class="cell">
+                    <span class="bar" style="width:13px"></span><span class="number">1</span>
+                  </div>
+                  <div class="cell time">16:00</div>
+                  <div class="cell">
+                    <span class="bar" style="width:48px"></span><span class="number">5</span>
+                  </div>
+                </div><!-- //view-item -->
+                <div class="view-item">
+                  <div class="cell">
+                    <span class="bar" style="width:13px"></span><span class="number">1</span>
+                  </div>
+                  <div class="cell time">17:00</div>
+                  <div class="cell">
+                    <span class="bar" style="width:48px"></span><span class="number">5</span>
+                  </div>
+                </div><!-- //view-item -->
+              </div><!-- //view-body -->
+            </div><!--//graph-view-->
+          </div><!-- //com-layer-body -->
+        </div><!--//com-layer-->
+        <div class="label-list">
+          <ul class="label-box">
+            <li>
+              <span class="label-icon"><img src="/resources/images/svg/icon-label-01.svg" alt=""></span>
+              <span class="label-name">B-106</span>
+            </li>
+            <li>
+              <span class="label-icon"><img src="/resources/images/svg/icon-label-02.svg" alt=""></span>
+              <span class="label-name">B-104</span>
+            </li>
+            <li>
+              <span class="label-icon"><img src="/resources/images/svg/icon-label-03.svg" alt=""></span>
+              <span class="label-name">T-T503</span>
+            </li>
+            <li>
+              <span class="label-icon"><img src="/resources/images/svg/icon-label-04.svg" alt=""></span>
+              <span class="label-name">B-104</span>
+            </li>
+            <li>
+              <span class="label-icon"><img src="/resources/images/svg/icon-label-05.svg" alt=""></span>
+              <span class="label-name">B-106</span>
+            </li>
+            <li>
+              <span class="label-icon"><img src="/resources/images/svg/icon-label-06.svg" alt=""></span>
+              <span class="label-name">B-104</span>
+            </li>
+            <li>
+              <span class="label-icon"><img src="/resources/images/svg/icon-label-07.svg" alt=""></span>
+              <span class="label-name">B-106</span>
+            </li>
+            <li>
+              <span class="label-icon"><img src="/resources/images/svg/icon-label-08.svg" alt=""></span>
+              <span class="label-name">B-104</span>
+            </li>
+            <li>
+              <span class="label-icon"><img src="/resources/images/svg/icon-label-09.svg" alt=""></span>
+              <span class="label-name">B-106</span>
+            </li>
+            <li>
+              <span class="label-icon"><img src="/resources/images/svg/icon-label-10.svg" alt=""></span>
+              <span class="label-name">B-104</span>
+            </li>
+            <li>
+              <span class="label-icon"><img src="/resources/images/svg/icon-label-11.svg" alt=""></span>
+              <span class="label-name">B-106</span>
+            </li>
+            <li>
+              <span class="label-icon"><img src="/resources/images/svg/icon-label-12.svg" alt=""></span>
+              <span class="label-name">B-104</span>
+            </li>
+            <li>
+              <span class="label-icon"><img src="/resources/images/svg/icon-label-13.svg" alt=""></span>
+              <span class="label-name">T-T503</span>
+            </li>
+            <li>
+              <span class="label-icon"><img src="/resources/images/svg/icon-label-14.svg" alt=""></span>
+              <span class="label-name">B-104</span>
+            </li>
+            <li>
+              <span class="label-icon"><img src="/resources/images/svg/icon-label-15.svg" alt=""></span>
+              <span class="label-name">B-106</span>
+            </li>
+            <li>
+              <span class="label-icon"><img src="/resources/images/svg/icon-label-16.svg" alt=""></span>
+              <span class="label-name">B-104</span>
+            </li>
+            <li>
+              <span class="label-icon"><img src="/resources/images/svg/icon-label-17.svg" alt=""></span>
+              <span class="label-name">B-106</span>
+            </li>
+            <li>
+              <span class="label-icon"><img src="/resources/images/svg/icon-label-18.svg" alt=""></span>
+              <span class="label-name">B-104</span>
+            </li>
+            <li>
+              <span class="label-icon"><img src="/resources/images/svg/icon-label-19.svg" alt=""></span>
+              <span class="label-name">B-106</span>
+            </li>
+            <li>
+              <span class="label-icon"><img src="/resources/images/svg/icon-label-20.svg" alt=""></span>
+              <span class="label-name">B-104</span>
+            </li>
+            <li>
+              <span class="label-icon"><img src="/resources/images/svg/icon-label-21.svg" alt=""></span>
+              <span class="label-name">B-104</span>
+            </li>
+            <li>
+              <span class="label-icon"><img src="/resources/images/svg/icon-label-22.svg" alt=""></span>
+              <span class="label-name">B-104</span>
+            </li>
+          </ul>
+        </div><!--//label-list-->
         <div class="map-info-window" :class="{'open': isActive}">
             <div class="map-info__header">
                 <span class="info-date">2022-12-28</span>

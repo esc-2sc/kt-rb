@@ -3,6 +3,7 @@ import VueRouter from 'vue-router';
 import login from '@/routes/login';
 import error from '@/routes/error';
 import detail from '@/routes/detail';
+import guide from '@/routes/guide';
 
 Vue.use(VueRouter);
 
@@ -27,6 +28,11 @@ const router = new VueRouter({
 			path: '/',
 			component: () => import('@/views/layouts/LayoutDetail.vue'),
 			children: [...detail],
+		},
+		{
+			path: '/',
+			component: () => import('@/views/layouts/LayoutGuide.vue'),
+			children: [...guide],
 		},
 		...error,
 	],

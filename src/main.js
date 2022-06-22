@@ -13,6 +13,12 @@ import('../public/resources/css/style.css');
 // Plugins : vrix, tachyon, chartjs
 import '@/plugins';
 
+// Design Guide
+import '@/views/guide'
+// Design UI
+import '@/components/ui'
+
+
 // VueRangedatePicker
 import VueRangedatePicker from 'vue-rangedate-picker';
 Vue.use(VueRangedatePicker);

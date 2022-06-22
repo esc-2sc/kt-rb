@@ -32,7 +32,7 @@
 .map-info-window .alerts-list strong{display:block}
 .map-info-window .alerts-list .tit{font-weight: 600; line-height: 17px}
 .map-info-window .alerts-list .date{font-size:11px;margin-top:3px}
-.map-info-window .com-btns-line{margin-top:38px; display:flex; justify-content: center}
+.map-info-window .r-btns-line{margin-top:38px; display:flex; justify-content: center}
 
 .control-map{transform:translateX(0); transition:transform .2s ease-in-out }
 .control-map.active{transform: translateX(-280px)}

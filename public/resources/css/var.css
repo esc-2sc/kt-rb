@@ -4,13 +4,39 @@
     --color-primary: #191f28;
     --color-secondary: #646669;
 
-    --color-point-1: #1781F4;
-    --color-point-1-1: #0085FF;
-    --color-point-2: #ac2323;
-    --color-point-2-1: rgba(251, 85, 95, 0.9);
-    --color-point-3: #46e8e8;
-    --color-point-3-1: #5197B6;
-    --color-gray-1: #bbb;
+    --color-point-1: #1781f4;
+    --color-point-1-1: #0085ff;
+    --color-point-2:#00cf7f;
+    --color-point-2-1:#22e298;
+    --color-point-3:#ed5f5e;
+    --color-point-3-1:#ff5352;
+    --color-point-4:#ffd951;
+    --color-point-4-1:#ffd027;
+    --color-point-5:#dd1818;
+    --color-point-5-1:#dc5d5d;
+    --color-point-5-2:#ffe3e3;
+    --color-point-6:#191f28;
+    --color-point-6-1:#646669;
+    --color-point-6-2:#989898;
+    --color-point-6-3:#c7c7c8;
+    --color-point-6-4:#a9a9a9;
+    --color-point-6-5:#cacccf;
+    --color-point-6-6:#e8e8e8;
+    --color-point-6-7:#f2f2f2;
+    --color-point-6-8:#fafafa;
+
+    --color-r-point-1: #1781F4;
+    --color-r-point-1-1: #0085FF;
+    --color-r-point-2: #ac2323;
+    --color-r-point-2-1: rgba(251, 85, 95, 0.9);
+    --color-r-point-3: #46e8e8;
+    --color-r-point-3-1: #5197B6;
+    --color-r-gray-1: #bbb;
+
+    --radius-s: 4px;
+    --radius-m: 8px;
+    --radius-l: 16px;
+    --radius-all: 100%;
 
     --color-bg-1: #e8e8e8;
     --color-btn-icon: var(--color-white);
@@ -27,22 +53,22 @@
     --height-header: 150px;
     --height-contetol-timeline: 192px;
 
-    /* com */
-    --com-btns-icon-bg: var(--color-white);
-    --com-btns-icon-radius: 8px;
+    /* common - r */
+    --r-btns-icon-bg: var(--color-white);
+    --r-btns-icon-radius: 8px;
 
-    --com-tab-1-bg: var(--color-bg-1);
-    --com-tab-1-text: var(--color-primary);
-    --com-tab-1-radius: 32px;
-    --com-tab-1-selected-bg: var(--color-white);
-    --com-tab-1-selected-border: 1px solid rgba(0, 0, 0, 0.02);
-    --com-tab-1-selected-radius: 16px;
+    --r-tab-1-bg: var(--color-bg-1);
+    --r-tab-1-text: var(--color-primary);
+    --r-tab-1-radius: 32px;
+    --r-tab-1-selected-bg: var(--color-white);
+    --r-tab-1-selected-border: 1px solid rgba(0, 0, 0, 0.02);
+    --r-tab-1-selected-radius: 16px;
 
-    --com-switch-1-bg: #a9a9a9;
-    --com-switch-1-bar: var(--color-white);
-    --com-switch-1-selected-bg: var(--color-point-1);
+    --r-switch-1-bg: #a9a9a9;
+    --r-switch-1-bar: var(--color-white);
+    --r-switch-1-selected-bg: var(--color-point-1);
 
-    --com-select-calendar-bg: var(--color-white);
-    --com-select-calendar-text: var(--color-primary);
-    --com-select-calendar-radius: 32px;
+    --r-select-calendar-bg: var(--color-white);
+    --r-select-calendar-text: var(--color-primary);
+    --r-select-calendar-radius: 32px;
 }

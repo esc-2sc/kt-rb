@@ -48,6 +48,8 @@ export default {
               {name:'icon-alerts-wifi.svg'},
               {name:'icon-arrow-left.svg'},
               {name:'icon-arrow-right.svg'},
+              {name:'icon-arrow-first.svg'},
+              {name:'icon-arrow-last.svg'},
               {name:'icon-calendar-month.svg'},
               {name:'icon-time.svg'},
               {name:'icon-close.svg'},

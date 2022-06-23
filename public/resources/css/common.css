@@ -321,21 +321,20 @@ img.size--12{width:12px;height:12px;}
   display:inline-block;
   width:30px;
   height:16px;
-  background-color:#f2f2f2;
-  border:1px solid #cacccf;
+  background-color:#a9a9a9;
+  /*border:1px solid #cacccf;*/
   border-radius:8px;
   overflow:hidden;
 }
 .a-switch .icon:after{
   content:'';
   position:absolute;
-  left:1px;
-  top:1px;
+  left:2px;
+  top:2px;
   width:12px;
   height:12px;
-  border-radius:7px;
+  border-radius:6px;
   background-color:#fff;
-  border:1px solid #cacccf;
   /*box-shadow:0 4px 10px rgba(0, 0, 0, .1);*/
   will-change:transform;
   transform:translateX(0);
@@ -2384,7 +2383,7 @@ div.a-paging__combobox-dropdown .vx-list__item{justify-content:center;}
   gap: 8px;
   padding:4px;
   color: var(--r-tab-1-text);
-  background-color: #f2f2f2;
+  background-color: #e8e8e8;
   border-radius: 8px;
 }
 .a-tab-5 > *{

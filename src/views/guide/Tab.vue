@@ -1,51 +1,5 @@
 <template>
     <guide-box title="Tab" desc="a-tab-nav, " :to="$options.name">
-        <guide-box-item title="a-tab-4 : button, a, router-link (selected)">
-            <guide-table>
-                <guide-table-item label="a-tab-4">
-                    <div>
-                        <div class="a-tab-4">
-                            <button selected>Menu Item 1</button>
-                            <button>Menu Item 2</button>
-                            <button>Menu Item 3</button>
-                        </div><!-- //a-tab-2 -->
-                    </div>
-                    <div>
-                        <div class="a-tab-4">
-                            <a href="#" class="selected">Menu Item 1</a>
-                            <a href="#">Menu Item 2</a>
-                            <a href="#">Menu Item 3</a>
-                        </div><!-- //a-tab-2 -->
-                    </div>
-                    <div>
-                        <div class="a-tab-4">
-                            <router-link to="#" class="selected">Menu Item 1</router-link>
-                            <router-link to="#">Menu Item 2</router-link>
-                            <router-link to="#">Menu Item 3</router-link>
-                        </div><!-- //a-tab-2 -->
-                    </div>
-                </guide-table-item>
-                <guide-table-item label="size--full">
-                    <div>
-                        <div class="a-tab-4 size--full">
-                            <button selected>Menu Item 1</button>
-                            <button>Menu Item 2</button>
-                            <button>Menu Item 3</button>
-                        </div><!-- //a-tab-2 -->
-                    </div>
-                </guide-table-item>
-                <guide-table-item label="nowrap">
-                    <div>
-                        <div class="a-tab-4 size--full nowrap">
-                            <button selected>Menu Item 1</button>
-                            <button>Menu Item 2</button>
-                            <button>Menu Item 3</button>
-                        </div><!-- //a-tab-2 -->
-                    </div>
-                </guide-table-item>
-            </guide-table>
-        </guide-box-item>
-
         <guide-box-item title="a-tab-nav : button, a, router-link (selected)">
             <guide-table>
                 <guide-table-item label="a-tab-nav">
@@ -269,6 +223,165 @@
                     </div>
                     <div>
                         <div class="a-tab-3 size--full nowrap">
+                            <router-link to="#" class="selected">Menu Item 1</router-link>
+                            <router-link to="#">Menu Item 2</router-link>
+                            <router-link to="#">Menu Item 3</router-link>
+                        </div><!-- //a-tab-2 -->
+                    </div>
+                </guide-table-item>
+            </guide-table>
+        </guide-box-item>
+        <guide-box-item title="a-tab-4 : button, a, router-link (selected)">
+            <guide-table>
+                <guide-table-item label="a-tab-4">
+                    <div>
+                        <div class="a-tab-4">
+                            <button selected>Menu Item 1</button>
+                            <button>Menu Item 2</button>
+                            <button>Menu Item 3</button>
+                        </div><!-- //a-tab-2 -->
+                    </div>
+                    <div>
+                        <div class="a-tab-4">
+                            <a href="#" class="selected">Menu Item 1</a>
+                            <a href="#">Menu Item 2</a>
+                            <a href="#">Menu Item 3</a>
+                        </div><!-- //a-tab-2 -->
+                    </div>
+                    <div>
+                        <div class="a-tab-4">
+                            <router-link to="#" class="selected">Menu Item 1</router-link>
+                            <router-link to="#">Menu Item 2</router-link>
+                            <router-link to="#">Menu Item 3</router-link>
+                        </div><!-- //a-tab-2 -->
+                    </div>
+                </guide-table-item>
+                <guide-table-item label="size--full">
+                    <div>
+                        <div class="a-tab-4 size--full">
+                            <button selected>Menu Item 1</button>
+                            <button>Menu Item 2</button>
+                            <button>Menu Item 3</button>
+                        </div><!-- //a-tab-2 -->
+                    </div>
+                </guide-table-item>
+                <guide-table-item label="nowrap">
+                    <div>
+                        <div class="a-tab-4 size--full nowrap">
+                            <button selected>Menu Item 1</button>
+                            <button>Menu Item 2</button>
+                            <button>Menu Item 3</button>
+                        </div><!-- //a-tab-2 -->
+                    </div>
+                </guide-table-item>
+            </guide-table>
+        </guide-box-item>
+        <guide-box-item title="a-tab-5 : button, a, router-link (selected)">
+            <guide-table>
+                <guide-table-item label="a-tab-5">
+                    <div>
+                        <div class="a-tab-5">
+                            <button selected>Menu Item 1</button>
+                            <button>Menu Item 2</button>
+                            <button>Menu Item 3</button>
+                        </div><!-- //a-tab-2 -->
+                    </div>
+                    <div>
+                        <div class="a-tab-5">
+                            <a href="#" class="selected">Menu Item 1</a>
+                            <a href="#">Menu Item 2</a>
+                            <a href="#">Menu Item 3</a>
+                        </div><!-- //a-tab-2 -->
+                    </div>
+                    <div>
+                        <div class="a-tab-5">
+                            <router-link to="#" class="selected">Menu Item 1</router-link>
+                            <router-link to="#">Menu Item 2</router-link>
+                            <router-link to="#">Menu Item 3</router-link>
+                        </div><!-- //a-tab-2 -->
+                    </div>
+                </guide-table-item>
+                <guide-table-item label="size--full">
+                    <div>
+                        <div class="a-tab-5 size--full">
+                            <button selected>Menu Item 1</button>
+                            <button>Menu Item 2</button>
+                            <button>Menu Item 3</button>
+                        </div><!-- //a-tab-2 -->
+                    </div>
+                </guide-table-item>
+                <guide-table-item label="nowrap">
+                    <div>
+                        <div class="a-tab-5 size--full nowrap">
+                            <button selected>Menu Item 1</button>
+                            <button>Menu Item 2</button>
+                            <button>Menu Item 3</button>
+                        </div><!-- //a-tab-2 -->
+                    </div>
+                </guide-table-item>
+                <guide-table-item label="size--small">
+                    <div>
+                        <div class="a-tab-5 size--small">
+                            <button selected>Menu Item 1</button>
+                            <button>Menu Item 2</button>
+                            <button>Menu Item 3</button>
+                        </div><!-- //a-tab-2 -->
+                    </div>
+                    <div>
+                        <div class="a-tab-5 size--small">
+                            <a href="#" class="selected">Menu Item 1</a>
+                            <a href="#">Menu Item 2</a>
+                            <a href="#">Menu Item 3</a>
+                        </div><!-- //a-tab-2 -->
+                    </div>
+                    <div>
+                        <div class="a-tab-5 size--small">
+                            <router-link to="#" class="selected">Menu Item 1</router-link>
+                            <router-link to="#">Menu Item 2</router-link>
+                            <router-link to="#">Menu Item 3</router-link>
+                        </div><!-- //a-tab-2 -->
+                    </div>
+                </guide-table-item>
+                <guide-table-item label="round">
+                    <div>
+                        <div class="a-tab-5 round">
+                            <button selected>Menu Item 1</button>
+                            <button>Menu Item 2</button>
+                            <button>Menu Item 3</button>
+                        </div><!-- //a-tab-2 -->
+                    </div>
+                    <div>
+                        <div class="a-tab-5 round">
+                            <a href="#" class="selected">Menu Item 1</a>
+                            <a href="#">Menu Item 2</a>
+                            <a href="#">Menu Item 3</a>
+                        </div><!-- //a-tab-2 -->
+                    </div>
+                    <div>
+                        <div class="a-tab-5 round">
+                            <router-link to="#" class="selected">Menu Item 1</router-link>
+                            <router-link to="#">Menu Item 2</router-link>
+                            <router-link to="#">Menu Item 3</router-link>
+                        </div><!-- //a-tab-2 -->
+                    </div>
+                </guide-table-item>
+                <guide-table-item label="round + size--small">
+                    <div>
+                        <div class="a-tab-5 round size--small">
+                            <button selected>Menu Item 1</button>
+                            <button>Menu Item 2</button>
+                            <button>Menu Item 3</button>
+                        </div><!-- //a-tab-2 -->
+                    </div>
+                    <div>
+                        <div class="a-tab-5 round size--small">
+                            <a href="#" class="selected">Menu Item 1</a>
+                            <a href="#">Menu Item 2</a>
+                            <a href="#">Menu Item 3</a>
+                        </div><!-- //a-tab-2 -->
+                    </div>
+                    <div>
+                        <div class="a-tab-5 round size--small">
                             <router-link to="#" class="selected">Menu Item 1</router-link>
                             <router-link to="#">Menu Item 2</router-link>
                             <router-link to="#">Menu Item 3</router-link>

@@ -2,3 +2,8 @@
  * VX List
  *-------------------------------------*/
 .vx-list{border:0;}
+.vx-list::-webkit-scrollbar{background-color:rgba(255,255,255,0);width:6px;height:8px;opacity:0;}
+.vx-list::-webkit-scrollbar-button{display:none}
+.vx-list::-webkit-scrollbar-track{background-color:rgba(255,255,255,0);}
+.vx-list::-webkit-scrollbar-thumb{background:rgba(100, 102, 105,.2);border:0;border-radius: 8px;}
+.vx-list:hover::-webkit-scrollbar-thumb{background-color:#babac0;border-color:#babac0;}

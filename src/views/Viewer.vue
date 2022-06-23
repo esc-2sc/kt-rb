@@ -18,43 +18,49 @@
             </div><!-- //control-robot__info -->
             <div class="control-robot__panel">
                 <figure class="panel-img"><img src="/resources/images/temp/temp_robot_model_1.png" alt=""></figure>
-                <div class="r-tab-1 panel-tab">
+                <div class="a-tab-5 round panel-tab">
                     <button selected>Map</button>
                     <button>Zone</button>
                 </div>
                 <!-- map -->
-                <div class="panel-content scroll map">
+                <div class="panel-content map">
                     <div class="control-item">
                         <div class="control-item__header">
                             <span class="label">주행상태 분석</span>
-                            <label class="r-switch-1">
-                                <input type="checkbox" class="r-switch__input">
-                                <span class="r-switch__label"></span>
-                            </label><!-- //r-switch-1 -->
+                            <label class="a-switch">
+                                <input type="checkbox" checked>
+                                <span class="icon"></span>
+                            </label><!-- //a-switch -->
                         </div><!-- //control-item__header -->
                         <div class="control-item__content">
-                            <!-- vrix combobox 변경 예정  -->
-                            <select class="r-select">
-                                <option>장애물 감지</option>
-                            </select>
+                            <vx-combobox
+                              placeholder="선택"
+                              v-model="comboboxData1SelectedValue"
+                              :items="comboboxData1"
+                              :row-count="getMaxRowCount(comboboxData1)"
+                              label-field="label"
+                              value-field="value"></vx-combobox>
+<!--                            <select class="r-select">-->
+<!--                                <option>장애물 감지</option>-->
+<!--                            </select>-->
                         </div><!-- //control-item__content -->
                     </div>
                     <div class="control-item">
                         <div class="control-item__header">
                             <span class="label">금지구역 진입 분석</span>
-                            <label class="r-switch-1">
-                                <input type="checkbox" class="r-switch__input">
-                                <span class="r-switch__label"></span>
-                            </label><!-- //r-switch-1 -->
+                            <label class="a-switch">
+                                <input type="checkbox">
+                                <span class="icon"></span>
+                            </label><!-- //a-switch -->
                         </div><!-- //control-item__header -->
                     </div>
                     <div class="control-item disabled">
                         <div class="control-item__header">
                             <span class="label">지도 완성도 분석</span>
-                            <label class="r-switch-1">
-                                <input type="checkbox" class="r-switch__input">
-                                <span class="r-switch__label"></span>
-                            </label><!-- //r-switch-1 -->
+                            <label class="a-switch">
+                                <input type="checkbox">
+                                <span class="icon"></span>
+                            </label><!-- //a-switch -->
                         </div>
                         <div class="control-item__content">
                             <div class="r-eyes">
@@ -84,7 +90,7 @@
                     </div>
                 </div><!-- //map -->
                 <!-- zone -->
-                <div class="panel-content scroll zone" style="display: none;">
+                <div class="panel-content zone" style="display: none;">
                     <div class="r-eyes">
                         <div class="r-eyes__item">
                             <span class="label">A</span>
@@ -153,12 +159,12 @@
         </div><!-- //control-map -->
         <div class="control-timeline">
             <div class="timeline-filter">
-                <div class="r-tab-1 date-mode">
+                <div class="a-tab-5 round date-mode">
                     <button>TODAY</button>
                     <button selected>History</button>
                 </div>
                 <div class="r-select-calendar date-current">4월 20일 ~ 5월 19일</div>
-                <div class="r-tab-1 date-type">
+                <div class="a-tab-5 round date-type">
                     <button selected>일별</button>
                     <button>시간별</button>
                     <button>요일별</button>
@@ -510,13 +516,29 @@ export default {
     },
 	data() {
 		return {
-      isActive:0
+            isActive:0,
+              comboboxData1SelectedValue: null,
+              comboboxData1: [
+                {label: '장애물감지', value: '' },
+                {label: '주행취소', value: '' },
+                {label: '주행실패', value: '' },
+                {label: '플랫폼요청정지', value: '' },
+                {label: 'SM요청정지', value: '' },
+                {label: '비상버튼정지', value: '' },
+                {label: '금지구역진입', value: '' },
+              ],
         };
 	},
-	methods: {
-     onChangeOpenMenu(){
-       this.isActive = !this.isActive;
+    mounted() {
+      this.comboboxData1SelectedValue = this.comboboxData1[0];
     },
+    methods: {
+        onChangeOpenMenu(){
+            this.isActive = !this.isActive;
+        },
+      getMaxRowCount(items = [],maxCount=5) {
+        return Math.min(items.length, maxCount);
+      }
 	},
 };
 </script>

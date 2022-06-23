@@ -56,13 +56,13 @@
 .control-robot__panel .panel-img img{vertical-align: top}
 .control-robot__panel .panel-tab{flex:none;width:100%;margin-top:32px;}
 .control-robot__panel .panel-tab button{flex:1;}
-.control-robot__panel .panel-content{flex:1;margin-top:16px;overflow-y: auto;}
+.control-robot__panel .panel-content{flex:1;margin-top:16px;}
 .control-robot__panel .control-item{padding:16px 0;}
 .control-robot__panel .control-item__header{display: flex;align-items: center}
 .control-robot__panel .control-item__header .label{flex:1;}
 .control-robot__panel .control-item__header label{flex:none;}
 .control-robot__panel .control-item__content{}
-.control-robot__panel .control-item__content .r-select{width:100%;margin-top:16px;}
+.control-robot__panel .control-item__content .vx-combobox{width:100%;margin-top:16px;}
 .control-robot__panel .control-item__content .r-eyes{margin-top:16px;}
 .control-robot__panel .control-item + .control-item{border-top:1px solid #e8e8e8;}
 .control-robot__panel .control-item.disabled{pointer-events: none;}
@@ -76,6 +76,8 @@
 .timeline-filter{position: absolute;left:0;right:0;top:0;}
 .timeline-filter > div{position: absolute;top:0;z-index:1;}
 .timeline-filter .date-mode{left:40px;}
+.timeline-filter .date-mode button,
+.timeline-filter .date-type button{padding-left:18px;padding-right:18px;}
 .timeline-filter .date-current{left:50%;transform: translateX(-50%);}
 .timeline-filter .date-type{right:40px;}
 .timeline-chart{position:absolute;left:0;right:0;bottom:0;}

@@ -219,5 +219,10 @@ export default [
 		name: 'guide-r-date-picker',
 		component: () => import('@/views/guide/RdatePicker.vue'),
 	},
+	{
+		path: '/guide-r-chart-nav',
+		name: 'guide-r-chart-nav',
+		component: () => import('@/views/guide/Rchart.vue'),
+	},
 
 ];

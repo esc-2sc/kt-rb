@@ -3495,3 +3495,27 @@ div.a-paging__combobox-dropdown .vx-list__item{justify-content:center;}
 .r-calendar .calendar li.calendar_days_in-range + .calendar_days_selected:before{left:-20px; width:40px}
 .r-calendar .calendar li.calendar_days_selected + .calendar_days_in-range:before{left:-20px; width:20px}
 
+/* chart nav */
+.r-chart-nav{display:flex;}
+.r-chart-nav__group{flex:1;}
+.r-chart-nav__group ul{display:flex;align-items: center;}
+.r-chart-nav__group li{flex:1;height:inherit;}
+.r-chart-nav__group a{position:relative;display:flex;flex-direction: column;min-height:78px;}
+.r-chart-nav__group .bar-area{flex:1;position:relative;}
+.r-chart-nav__group .bar-area > span{position:absolute;bottom:0;}
+.r-chart-nav__group .bar-back{left:0;right:0;background-color: var(--color-r-point-3);border-top:2px solid var(--color-r-point-3-1);}
+.r-chart-nav__group .bar-front{left:50%;width:30%;transform: translateX(-50%);background-color: var(--color-r-point-2-1);border: 1px solid var(--color-r-point-2);}
+.r-chart-nav__group .bar-label{position:relative;flex:none;padding-top:9px;text-align:center;font-weight:500;font-size:13px;color:#191f28;line-height:17px;}
+.r-chart-nav__group .bar-label:before,
+.r-chart-nav__group:last-child li:last-child .bar-label:after{content:'';position: absolute;top:0;bottom:0;width:1px;background-color:var(--color-r-gray-1);}
+.r-chart-nav__group .bar-label:before{left:0;}
+.r-chart-nav__group a:before{content:'';position: absolute;left:0;right:0;top:52px;bottom:-4px;background-color: var(--color-r-point-1);box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);border-radius:0 0 8px 8px;opacity: 0;}
+.r-chart-nav__group a:hover:before,
+.r-chart-nav__group a.selected:before{opacity:1;}
+.r-chart-nav__group a:hover .bar-label{color:var(--color-white);}
+.r-chart-nav__group a.selected:before{top:-4px;border-radius: 8px;}
+.r-chart-nav__group a.selected .bar-label{color:var(--color-white);}
+.r-chart-nav__group-label{position:relative;min-height:40px;display: flex;align-items: center;justify-content:center}
+.r-chart-nav__group-label:after{content:'';position: absolute;left:0;top:-26px;bottom:0;width:1px;background-color:var(--color-point-6-2);}
+.r-chart-nav__group:first-child .r-chart-nav__group-label:after{display:none;}
+.r-chart-nav__group:last-child li:last-child .bar-label:after{right:0;}

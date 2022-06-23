@@ -56,7 +56,7 @@
 .control-robot__panel .panel-img img{vertical-align: top}
 .control-robot__panel .panel-tab{flex:none;width:100%;margin-top:32px;}
 .control-robot__panel .panel-tab button{flex:1;}
-.control-robot__panel .panel-content{flex:1;margin-top:16px;overflow-y: auto;}
+.control-robot__panel .panel-content{flex:1;margin-top:16px;}
 .control-robot__panel .control-item{padding:16px 0;}
 .control-robot__panel .control-item__header{display: flex;align-items: center}
 .control-robot__panel .control-item__header .label{flex:1;}

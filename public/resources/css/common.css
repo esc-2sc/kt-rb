@@ -3568,7 +3568,7 @@ div.a-paging__combobox-dropdown .vx-list__item{justify-content:center;}
 .r-chart-nav__group a{position:relative;display:flex;flex-direction: column;min-height:78px;}
 .r-chart-nav__group .bar-area{flex:1;position:relative;}
 .r-chart-nav__group .bar-area > span{position:absolute;bottom:0;}
-.r-chart-nav__group .bar-back{left:0;right:0;background-color: var(--color-r-point-3);border-top:2px solid var(--color-r-point-3-1);}
+.r-chart-nav__group .bar-back{left:0;right:0;background: linear-gradient(180deg, rgba(49, 232, 181, 0.9) 0%, rgba(180, 221, 210, 0.9) 100%);border-top:2px solid var(--color-r-point-3-1);}
 .r-chart-nav__group .bar-front{left:50%;width:30%;transform: translateX(-50%);background-color: var(--color-r-point-2-1);border: 1px solid var(--color-r-point-2);}
 .r-chart-nav__group .bar-label{position:relative;flex:none;padding-top:9px;text-align:center;font-weight:500;font-size:13px;color:#191f28;line-height:17px;}
 .r-chart-nav__group .bar-label:before,

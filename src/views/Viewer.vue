@@ -23,7 +23,7 @@
                     <button>Zone</button>
                 </div>
                 <!-- map -->
-                <div class="panel-content scroll map">
+                <div class="panel-content map">
                     <div class="control-item">
                         <div class="control-item__header">
                             <span class="label">주행상태 분석</span>
@@ -90,7 +90,7 @@
                     </div>
                 </div><!-- //map -->
                 <!-- zone -->
-                <div class="panel-content scroll zone" style="display: none;">
+                <div class="panel-content zone" style="display: none;">
                     <div class="r-eyes">
                         <div class="r-eyes__item">
                             <span class="label">A</span>

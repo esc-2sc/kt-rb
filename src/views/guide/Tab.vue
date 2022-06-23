@@ -1,5 +1,51 @@
 <template>
     <guide-box title="Tab" desc="a-tab-nav, " :to="$options.name">
+        <guide-box-item title="a-tab-4 : button, a, router-link (selected)">
+            <guide-table>
+                <guide-table-item label="a-tab-4">
+                    <div>
+                        <div class="a-tab-4">
+                            <button selected>Menu Item 1</button>
+                            <button>Menu Item 2</button>
+                            <button>Menu Item 3</button>
+                        </div><!-- //a-tab-2 -->
+                    </div>
+                    <div>
+                        <div class="a-tab-4">
+                            <a href="#" class="selected">Menu Item 1</a>
+                            <a href="#">Menu Item 2</a>
+                            <a href="#">Menu Item 3</a>
+                        </div><!-- //a-tab-2 -->
+                    </div>
+                    <div>
+                        <div class="a-tab-4">
+                            <router-link to="#" class="selected">Menu Item 1</router-link>
+                            <router-link to="#">Menu Item 2</router-link>
+                            <router-link to="#">Menu Item 3</router-link>
+                        </div><!-- //a-tab-2 -->
+                    </div>
+                </guide-table-item>
+                <guide-table-item label="size--full">
+                    <div>
+                        <div class="a-tab-4 size--full">
+                            <button selected>Menu Item 1</button>
+                            <button>Menu Item 2</button>
+                            <button>Menu Item 3</button>
+                        </div><!-- //a-tab-2 -->
+                    </div>
+                </guide-table-item>
+                <guide-table-item label="nowrap">
+                    <div>
+                        <div class="a-tab-4 size--full nowrap">
+                            <button selected>Menu Item 1</button>
+                            <button>Menu Item 2</button>
+                            <button>Menu Item 3</button>
+                        </div><!-- //a-tab-2 -->
+                    </div>
+                </guide-table-item>
+            </guide-table>
+        </guide-box-item>
+
         <guide-box-item title="a-tab-nav : button, a, router-link (selected)">
             <guide-table>
                 <guide-table-item label="a-tab-nav">

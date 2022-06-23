@@ -3471,7 +3471,11 @@ div.a-paging__combobox-dropdown .vx-list__item{justify-content:center;}
   margin-top:32px;
 }
 
+/* paging */
+.a-paging__nums > span{border-radius: 100%}
 
+/* vx-combobox */
+.vx-combobox:hover{box-shadow: 0 0 0 2px #1781F4; border-color:transparent}
 
 
 /*-------------------------------------

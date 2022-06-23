@@ -7,7 +7,8 @@
 
                         <div class="a-paging">
                             <div class="a-paging__func prev">
-                                <button class="btn-prev"><img src="/resources/images/svg/chevron-left-24.svg" class="size--16" alt="Prev"></button>
+                                <button class="btn-first"><img src="/resources/images/svg/icon-arrow-first.svg" class="size--16" alt="First"></button>
+                                <button class="btn-prev"><img src="/resources/images/svg/icon-arrow-left.svg" class="size--16" alt="Prev"></button>
                             </div>
                             <div class="a-paging__nums">
                                 <span>1</span>
@@ -17,7 +18,8 @@
                                 <span>5</span>
                             </div>
                             <div class="a-paging__func next">
-                                <button class="btn-next"><img src="/resources/images/svg/chevron-right-24.svg" class="size--16" alt="Next"></button>
+                                <button class="btn-next"><img src="/resources/images/svg/icon-arrow-right.svg" class="size--16" alt="Next"></button>
+                                <button class="btn-last"><img src="/resources/images/svg/icon-arrow-last.svg" class="size--16" alt="Last"></button>
                             </div>
                         </div><!-- //a-paging -->
 
@@ -62,7 +64,8 @@
 
                         <div class="a-paging">
                             <div class="a-paging__func prev">
-                                <button class="btn-prev"><img src="/resources/images/svg/chevron-left-24.svg" class="size--16" alt="Prev"></button>
+                                <button class="btn-first"><img src="/resources/images/svg/icon-arrow-first.svg" class="size--16" alt="First"></button>
+                                <button class="btn-prev"><img src="/resources/images/svg/icon-arrow-left.svg" class="size--16" alt="Prev"></button>
                             </div>
                             <div class="a-paging__nums">
                                 <span>1</span>
@@ -72,7 +75,8 @@
                                 <span>5</span>
                             </div>
                             <div class="a-paging__func next">
-                                <button class="btn-next"><img src="/resources/images/svg/chevron-right-24.svg" class="size--16" alt="Next"></button>
+                                <button class="btn-next"><img src="/resources/images/svg/icon-arrow-right.svg" class="size--16" alt="Next"></button>
+                                <button class="btn-last"><img src="/resources/images/svg/icon-arrow-last.svg" class="size--16" alt="Last"></button>
                             </div>
                         </div><!-- //a-paging -->
 
@@ -117,7 +121,8 @@
 
                         <div class="a-paging">
                             <div class="a-paging__func prev">
-                                <button class="btn-prev" disabled><img src="/resources/images/svg/chevron-left-24.svg" class="size--16" alt="Prev"></button>
+                                <button class="btn-first"><img src="/resources/images/svg/icon-arrow-first.svg" class="size--16" alt="First"></button>
+                                <button class="btn-prev"><img src="/resources/images/svg/icon-arrow-left.svg" class="size--16" alt="Prev"></button>
                             </div>
                             <div class="a-paging__nums">
                                 <span>1</span>
@@ -127,7 +132,8 @@
                                 <span>5</span>
                             </div>
                             <div class="a-paging__func next">
-                                <button class="btn-next" disabled><img src="/resources/images/svg/chevron-right-24.svg" class="size--16" alt="Next"></button>
+                                <button class="btn-next"><img src="/resources/images/svg/icon-arrow-right.svg" class="size--16" alt="Next"></button>
+                                <button class="btn-last"><img src="/resources/images/svg/icon-arrow-last.svg" class="size--16" alt="Last"></button>
                             </div>
                         </div><!-- //a-paging -->
 

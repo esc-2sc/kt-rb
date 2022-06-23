@@ -47,6 +47,7 @@ export default {
             {level:1, label:'GUIDE-R', },
             {level:2, label:'date-picker', url:'guide-r-date-picker' },
             {level:2, label:'r-chart-nav', url:'guide-r-chart-nav' },
+            {level:2, label:'r-popup', url:'guide-r-popup' },
 
             {level:1, label:'VRIX', },
             {level:2, label:'List', url:'guide-vrix-list' },

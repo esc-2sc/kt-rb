@@ -224,5 +224,9 @@ export default [
 		name: 'guide-r-chart-nav',
 		component: () => import('@/views/guide/Rchart.vue'),
 	},
-
+	{
+		path: '/guide-r-popup',
+		name: 'guide-r-popup',
+		component: () => import('@/views/guide/Rpopup.vue'),
+	},
 ];

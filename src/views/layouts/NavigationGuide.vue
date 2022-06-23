@@ -15,10 +15,10 @@ export default {
           navData: [
             {level:1, label:'GUIDE-A', },
             // {level:2, label:'All', url:'guide' },
-            {level:2, label:'Typo', url:'guide-typo' },
+            // {level:2, label:'Typo', url:'guide-typo' },
             {level:2, label:'Text', url:'guide-text' },
             {level:2, label:'Color', url:'guide-color' },
-            {level:2, label:'Title', url:'guide-title' },
+            // {level:2, label:'Title', url:'guide-title' },
             {level:2, label:'Icon', url:'guide-icon' },
             {level:2, label:'Button', url:'guide-button' },
             {level:2, label:'Input', url:'guide-input' },

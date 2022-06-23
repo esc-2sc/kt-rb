@@ -425,6 +425,40 @@
 
         <guide-box-item title="Scaling Buttons (button, a) / size--large, size--small">
             <guide-table>
+                <guide-table-item label="X Large">
+                    <div>
+                        <button class="a-btn-type-1 size--x-large"><span class="label">Label</span></button>
+                        <br><br>
+                        <a href="#" class="a-btn-type-1"><span class="label">Label</span></a>
+                    </div>
+                    <div>
+                        <button class="a-btn-type-1 size--x-large">
+                            <img src="/resources/images/svg/circle-check-fill-white-24.svg" class="icon" alt="">
+                            <span class="label">Icon Left</span>
+                        </button>
+                        <br><br>
+                        <a href="#" class="a-btn-type-1 size--x-large">
+                            <img src="/resources/images/svg/circle-check-fill-white-24.svg" class="icon" alt="">
+                            <span class="label">Icon Left</span>
+                        </a>
+                    </div>
+                    <div>
+                        <button class="a-btn-type-1 size--x-large">
+                            <span class="label">Icon Right</span>
+                            <img src="/resources/images/svg/circle-check-fill-white-24.svg" class="icon" alt="">
+                        </button>
+                        <br><br>
+                        <a href="#" class="a-btn-type-1 size--x-large">
+                            <span class="label">Icon Right</span>
+                            <img src="/resources/images/svg/circle-check-fill-white-24.svg" class="icon" alt="">
+                        </a>
+                    </div>
+                    <div>
+                        <button class="a-btn-type-1 icon size--x-large"><img src="/resources/images/svg/circle-check-fill-white-24.svg" class="icon" alt=""></button>
+                        <br><br>
+                        <a href="#" class="a-btn-type-1 icon size--x-large"><img src="/resources/images/svg/circle-check-fill-white-24.svg" class="icon" alt=""></a>
+                    </div>
+                </guide-table-item>
                 <guide-table-item label="Large">
                     <div>
                         <button class="a-btn-type-1 size--large"><span class="label">Label</span></button>

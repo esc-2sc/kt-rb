@@ -1,5 +1,19 @@
 <template>
     <guide-box title="Color" desc="Point, Label, Background Color" :to="$options.name">
+        <guide-box-item title="Point R Color">
+            <p class="a-color-point-1">class="a-color-point-1" (#1781F4)</p>
+            <p class="a-color-bg-1 a-color-point-1-1">class="a-color-point-1-1" (#0085FF)</p>
+            <p class="a-color-point-2">class="a-color-point-2" (#00CF7F)</p>
+            <p class="a-color-bg-1 a-color-point-2-1">class="a-color-point-2-1" (#22E298)</p>
+            <p class="a-color-point-3">class="a-color-point-3" (#ED5F5E)</p>
+            <p class="a-color-bg-1 a-color-point-3-1">class="a-color-point-3-1" (#FF5352)</p>
+            <p class="a-color-point-4">class="a-color-point-4" (#FFD951)</p>
+            <p class="a-color-bg-1 a-color-point-4-1">class="a-color-point-4-1" (#FFD027)</p>
+            <p class="a-color-point-5">class="a-color-point-5" (#DD1818)</p>
+            <p class="a-color-point-5-1">class="a-color-point-5-1" (#DC5D5D)</p>
+            <p class="a-color-point-5-2">class="a-color-point-5-2" (#FFE3E3)</p>
+        </guide-box-item>
+
         <guide-box-item title="Point Color">
             <p class="a-color-point-1">class="a-color-point-1" (#1781F4)</p>
             <p class="a-color-bg-1 a-color-point-1-1">class="a-color-point-1-1" (#0085FF)</p>

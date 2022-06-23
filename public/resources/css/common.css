@@ -2377,6 +2377,62 @@ div.a-paging__combobox-dropdown .vx-list__item{justify-content:center;}
   background-color:#F2F2F2;
 }
 
+.a-tab-5{
+  display:inline-flex;
+  align-items: center;
+  height:40px;
+  gap: 8px;
+  padding:4px;
+  color: var(--r-tab-1-text);
+  background-color: #f2f2f2;
+  border-radius: 8px;
+}
+.a-tab-5 > *{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height:100%;
+  padding:0 12px;
+  font-weight:600;
+  font-size: 13px;
+  color:#4d4d4d;
+}
+.a-tab-5 > *.selected,
+.a-tab-5 > *[selected]{
+  color:var(--color-primary);
+  background-color:#fff;
+  border:rgba(0, 0, 0, 0.02);
+  border-radius: inherit;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+.a-tab-5.size--small{
+  height:32px;
+}
+.a-tab-5.size--small > *{
+  padding-left:8px;
+  padding-right:8px;
+}
+.a-tab-5.round{
+  height:48px;
+  padding:8px;
+  border-radius:32px;
+}
+.a-tab-5.round > *{
+  padding-left:9px;
+  padding-right:9px;
+  border-radius: 16px;
+}
+.a-tab-5.round.size--small{
+  height:32px;
+  padding:4px;
+  border-radius:32px;
+}
+.a-tab-5.round.size--small > *{
+  padding-left:11spx;
+  padding-right:11px;
+  border-radius: 16px;
+}
+
 /* badge */
 .a-badge-1{
   display:inline-block;

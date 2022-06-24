@@ -2432,7 +2432,7 @@ div.a-paging__combobox-dropdown .vx-list__item{justify-content:center;}
   border-radius:32px;
 }
 .a-tab-5.round.size--small > *{
-  padding-left:11spx;
+  padding-left:11px;
   padding-right:11px;
   border-radius: 16px;
 }
@@ -3534,7 +3534,8 @@ div.a-paging__combobox-dropdown .vx-list__item{justify-content:center;}
 .r-select-calendar{display: inline-flex;align-items: center;justify-content: center;height:48px;padding:0 24px;font-weight: 600;text-align: center;background-color: var(--r-select-calendar-bg);border-radius: var(--r-select-calendar-radius);cursor: pointer;}
 
 /* calendar */
-.r-calendar .calendar{width:656px !important; height:auto !important; color:#646669; padding: 20px 24px 24px; font-family: 'Pretendard','Noto Sans KR','맑은 고딕','Malgun Gothic',MalgunGothic,Gulim,'굴림',Helvetica,AppleSDGothicNeo,sans-serif !important;}
+.r-calendar{}
+.r-calendar .calendar{width:656px !important; height:auto !important; color:#646669; padding: 20px 24px 24px; font-family: 'Pretendard','Noto Sans KR','맑은 고딕','Malgun Gothic',MalgunGothic,Gulim,'굴림',Helvetica,AppleSDGothicNeo,sans-serif !important; border-radius: 24px}
 .r-calendar .calendar .calendar-head h2{font-size:0; line-height: 0; text-indent: -9999px; padding:0}
 .r-calendar .calendar .calendar-btn-apply{position:absolute; right:24px;bottom:20px;background: #1781F4;}
 .r-calendar .calendar .calendar-btn-apply,

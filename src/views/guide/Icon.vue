@@ -36,6 +36,8 @@ export default {
 	data() {
 		return {
             iconsR: [
+              {name:'icon_delete.svg'},
+              {name:'icon_manage_accounts.svg'},
               {name:'logo-black.svg'},
               {name:'robot.svg'},
               {name:'home.svg'},

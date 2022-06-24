@@ -268,6 +268,14 @@
                                     <span class="label a-color-label-3">텍스트</span>
                                     <p class="desc">내용 텍스트</p>
                                 </div>
+                                <div class="a-list__item-label">
+                                    <span class="label a-color-label-3">텍스트</span>
+                                    <p class="desc">내용 텍스트</p>
+                                </div>
+                                <div class="a-list__item-label">
+                                    <span class="label a-color-label-3">텍스트</span>
+                                    <p class="desc">내용 텍스트</p>
+                                </div>
                             </div>
                             <div class="a-list__item-row">
                                 <div class="a-list__item-label">

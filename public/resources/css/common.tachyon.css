@@ -407,13 +407,23 @@
 }
 .m-tachyon-table-line .tachyon-group-header{
     min-height:inherit;
-    border-bottom-color:#dddede;
+    border-bottom-color:transparent;
+    overflow: visible;
 }
-.m-tachyon-table-line .tachyon-group-header{background-color:#f8f8f8;}
+.m-tachyon-table-line .tachyon-group-header:after{
+    content:'';
+    position: absolute;
+    left:0;
+    right:0;
+    bottom:-2px;
+    height:1px;
+    background-color: #dddede;
+    z-index:1;
+}
 .m-tachyon-table-line .header-cell{
-    font-weight:400;
-    font-size:16px;
-    color:#222;
+    font-weight:600;
+    font-size:13px;
+    color:#242424;
     background-color:#fff;
 }
 .m-tachyon-table-line .tachyon-group-overlay{background-color:rgba(255,255,255,.5);}
@@ -432,10 +442,10 @@
 .m-tachyon-table-line .grid-cell{
     display:inline-flex;
     align-items:center;
-    font-weight:300;
-    font-size:14px;
-    line-height:1.45;
-    color:#777;
+    font-weight:500;
+    font-size:13px;
+    line-height:17px;
+    color:#4D4D4D;
     padding:0 12px 1px 12px;
     background-color:#fff;
 }

@@ -29,7 +29,7 @@
 .contents{height:inherit;}
 
 /* viewer */
-.viewer{position:fixed;left:0;right:0;top:0;bottom:0;overflow: hidden;}
+.viewer{position:absolute;left:0;right:0;top:0;bottom:0;overflow: hidden;}
 .content-map{height:inherit;display:flex;align-items: center;justify-content: center;overflow: hidden;user-select: none;}
 .content-map .map-inner img{width:100%;height:100%;object-fit: cover;}
 
@@ -87,7 +87,8 @@
 
 /* detail content */
 .detail-content{
-  min-height:inherit;
+  position: relative;;
+  min-height:100%;
   padding:180px 48px 48px 48px;
 }
 /*.detail-content.auto{height:auto;}*/

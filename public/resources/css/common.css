@@ -135,6 +135,9 @@ img.size--12{width:12px;height:12px;}
 .a-btn-type-1.size--small.icon{width:24px;}
 .a-btn-type-1.size--small > .icon{width:11px;height:11px;}
 
+.a-btn-type-1.color--white{color:#242424;background:#fff;border-color: #DDDEDE}
+.a-btn-type-1.color--blue{background:#1781F4;border:0}
+
 .a-btn-type-2{
   position:relative;
   display:inline-block;
@@ -3479,6 +3482,12 @@ div.a-paging__combobox-dropdown .vx-list__item{justify-content:center;}
 /* vx-combobox */
 .vx-combobox:hover{box-shadow: 0 0 0 2px #1781F4; border-color:transparent}
 
+/* tab */
+.a-tab-3{flex-wrap: wrap}
+.a-tab-3 > *{min-height:20px;padding:3px 6px; margin-left:0; margin-right:8px; text-align: center}
+.a-tab-3 > *.checked:after{display:none}
+.a-tab-3 > *.selected, .a-tab-3 > *[selected], .a-tab-3 > *.checked{background:#1781F4; color:#fff}
+
 
 /*-------------------------------------
  *  common - R
@@ -3561,6 +3570,16 @@ div.a-paging__combobox-dropdown .vx-list__item{justify-content:center;}
 .r-calendar .calendar li.calendar_days_in-range:before{content:'';z-index:-1; display:block; position:absolute;left:-40px;width:80px;height:100%;background-color:#E7E7E7;}
 .r-calendar .calendar li.calendar_days_in-range + .calendar_days_selected:before{left:-20px; width:40px}
 .r-calendar .calendar li.calendar_days_selected + .calendar_days_in-range:before{left:-20px; width:20px}
+.r-calendar .input-date{display:inline-flex !important;align-items:center;background: #FFFFFF; min-width:200px; width:auto !important; font-size:13px; color:#242424; border: 1px solid #DDDEDE;border-radius: 8px; min-height:32px; padding:7px 10px}
+.r-calendar .input-date:before{content: '';display:block; width:16px;height:16px;margin-right:8px; background:url('../images/svg/icon-calendar-month.svg') 50% 50% no-repeat}
+.r-calendar .input-date:after{display:none}
+.r-calendar .calendar_preset .calendar_preset-ranges{font-size:0;text-indent: -999px}
+.r-calendar .calendar_preset .calendar_preset-ranges:before{content:'';font-size:12px;text-indent: 0}
+.r-calendar .calendar_preset .calendar_preset-ranges:nth-child(1):before{content: '오늘'}
+.r-calendar .calendar_preset .calendar_preset-ranges:nth-child(2):before{content: '이번달'}
+.r-calendar .calendar_preset .calendar_preset-ranges:nth-child(3):before{content: '지난달'}
+.r-calendar .calendar_preset .calendar_preset-ranges:nth-child(5):before{content: '최근한달'}
+
 
 /* chart nav */
 .r-chart-nav{display:flex;}
@@ -3598,8 +3617,6 @@ div.a-paging__combobox-dropdown .vx-list__item{justify-content:center;}
 .r-popup .btn-wrap.right{justify-content: flex-end}
 .r-popup .btn-wrap.center{justify-content:center}
 .r-popup .btn-wrap > * + *{margin-left:16px}
-.r-popup .a-btn-type-1.color--white{color:#242424;background:#fff;border-color: #DDDEDE}
-.r-popup .a-btn-type-1.color--blue{background:#1781F4;border:0}
 
 /* r-tachyon */
 .r-tachyon{}

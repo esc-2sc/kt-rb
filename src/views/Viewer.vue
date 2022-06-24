@@ -43,6 +43,14 @@
 <!--                            <select class="r-select">-->
 <!--                                <option>장애물 감지</option>-->
 <!--                            </select>-->
+                            <div class="r-bar-legend">
+                                <div class="r-bar-legend__bar"></div>
+                                <div class="r-bar-legend__label">
+                                    <span>양호</span>
+                                    <span>주의</span>
+                                    <span>위험</span>
+                                </div>
+                            </div><!-- //r-bar-legend -->
                         </div><!-- //control-item__content -->
                     </div>
                     <div class="control-item">

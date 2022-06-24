@@ -58,7 +58,8 @@ export default {
             {level:2, label:'Tokenizer', url:'guide-vrix-tokenizer' },
             {level:2, label:'Popup', url:'guide-vrix-popup' },
 
-            // {level:1, label:'TACHYON', },
+            {level:1, label:'TACHYON', },
+            {level:2, label:'Data Table', url:'guide-tachyon' },
 
             {level:1, label:'COMPONENT', },
             {level:2, label:'com-dropdown-bar', url:'guide-com-dropdown-bar' },

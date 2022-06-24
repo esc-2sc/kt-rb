@@ -212,6 +212,13 @@ export default [
 		component: () => import('@/views/guide/ComponentComPaging.vue'),
 	},
 
+	// TACHYON
+	{
+		path: '/guide-tachyon',
+		name: 'guide-tachyon',
+		component: () => import('@/views/guide/Tachyon.vue'),
+	},
+
 
 	// GUIDE R
 	{

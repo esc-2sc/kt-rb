@@ -131,7 +131,7 @@ tachyon({
             dashed: []
         },
 
-        // cellBackgroundColor: 'RGBA(72,84,101, 0.7)'
+        cellBackgroundColor: 'RGBA(72,84,101, 0.7)'
     }
 });
 
@@ -190,25 +190,37 @@ tachyon.theme.add('themeSa', {
 tachyon.theme.add('themeBoardLine', {
     css: 'm-tachyon-table-line',
     canvasStyle: {
-        font: '300 14px/1.45 "Noto Sans KR",sans-serif',
-        color: '#777777',
+        font: '500 13px/1.45 "Pretendard",sans-serif',
+        color: '#191f28',
+
+         // 셀 선택 배경색
+        cellSelectionColor: 'rgba(244,245,248,1)',
+        // 셀 오버 배경색
+        cellOverColor: 'rgba(244,245,248,1)',
+        // 셀 선택 텍스트 색
+        textSelectionColor: 'rgba(34,34,34,1)',
+        // 셀 오버 텍스트 색
+        textOverColor: 'rgba(34,34,34,1)',
+        // 행 배경 색
+        rowColors: ['rgba(255,255,255,1)'],
+
         rowLine: {
-            color: 'rgba(224,224,224,1)',
+            color: '#f2f2f2',
         },
         columnLine: {
             color: 'rgba(224,224,224,0)',
         },
         headerRowLine: {
             width: 1,
-            color: 'rgba(224,224,224,1)',
+            color: '#dddede',
         },
         headerColumnLine: {
             width: 0,
-            color: 'rgba(224,224,224,0)',
+            color: 'rgba(255,255,255,1)',
         },
         caretLine: {
             width: 1,
-            color: 'rgba(88, 88, 88,1)',
+            color: 'rgba(255, 255, 255,1)',
         },
     }
 });

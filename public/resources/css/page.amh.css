@@ -45,26 +45,32 @@
 .label-list .label-box li .label-icon{margin-right:8px}
 .label-list .label-box li .label-name{color:var(--color-primary);font-size: 12px}
 
-.graph-layer{position:absolute;top:180px;right:120px;width:300px;display:flex;flex-direction:column;background: rgba(255, 255, 255, 0.9);box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); border-radius: 24px;}
+.graph-layer{position:absolute;top:180px;right:120px;width:316px;display:flex;flex-direction:column;background: rgba(255, 255, 255, 0.9);box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); border-radius: 24px;}
 .graph-layer-header{flex:none;height:64px; display:flex; align-items: center; justify-content: center; position:relative}
 .graph-layer-header h2{font-size:15px;font-weight: 600}
 .graph-layer-header .btn-close{position:absolute;width:40px;height:40px;left:20px;top:calc(50% - 20px);display:flex;align-items: center;justify-content: center;}
 .graph-layer-body{flex:1;}
-.graph-view{height:100%; display:flex; flex-direction: column}
-.graph-view .cell{flex:none;width:110px;height:32px; display:flex;align-items: center;justify-content: center;color:var(--color-secondary)}
-.graph-view .cell.time{flex:none; width:80px;border-left:1px solid rgba(0,0,0,.1);border-right:1px solid rgba(0,0,0,.1)}
-.graph-view .view-header{flex:none;border-top:1px solid rgba(0,0,0,.1);border-bottom:1px solid rgba(0,0,0,.1);}
+.graph-view{height:100%; display:flex; flex-direction: column; padding-bottom:7px}
+.graph-view .cell{flex:none;width:118px;height:32px; display:flex;align-items: center;justify-content:center;color:var(--color-secondary)}
+.graph-view .cell.time{flex:none; width:64px; color:#4D4D4D}
+.graph-view .view-header{flex:none;border-top:1px solid rgba(0,0,0,.05);border-bottom:1px solid rgba(0,0,0,.05);}
 .graph-view .view-header .cell{height:40px; color:var(--color-primary);}
-.graph-view .view-body{flex:1;  overflow-y: auto; width:calc(100% - 7px); max-height:448px}
+.graph-view .view-header .cell:first-child{margin-left:5px}
+.graph-view .view-body{flex:1;  overflow-y: auto; width:calc(100% - 5px); max-height:448px}
 .graph-view .view-item{display:flex;width:100%}
-.graph-view .view-item .cell .bar{height:6px;}
-.graph-view .view-item .cell .number{padding:0 8px;}
-.graph-view .view-body .view-item > .cell:first-child{justify-content: flex-end}
-.graph-view .view-body .view-item > .cell:first-child .bar{background:#274878;order:1;border-radius: 4px 0 0 4px; }
-.graph-view .view-body .view-item > .cell:first-child .number{color:#274878; order:0}
-.graph-view .view-body .view-item > .cell:last-child{justify-content: flex-start;width:97px}
-.graph-view .view-body .view-item > .cell:last-child .bar{background:#FF4343;border-radius: 0 4px 4px 0;}
-.graph-view .view-body .view-item > .cell:last-child .number{color:#FF4343}
+.graph-view .view-item .cell .bar{width:80px; background:#F2F2F2; display:flex; border-radius: 6px}
+.graph-view .view-item .cell .bar,
+.graph-view .view-item .cell .bar span{height:6px; border-radius: 6px}
+.graph-view .view-item .cell .number{color:#989898}
+.graph-view .view-body .cell.time{font-size:11px}
+.graph-view .view-body .view-item > .cell:first-child{justify-content: flex-end; margin-left:5px}
+.graph-view .view-body .view-item > .cell:first-child .bar{order:1;justify-content: flex-end}
+.graph-view .view-body .view-item > .cell:first-child .bar span{background:#01D59A;}
+.graph-view .view-body .view-item > .cell:first-child .number{color:#274878; order:0;margin-right:8px;text-align: right}
+.graph-view .view-body .view-item > .cell:last-child,
+.graph-view .view-body .view-item > .cell:last-child .bar{justify-content: flex-start;}
+.graph-view .view-body .view-item > .cell:last-child .bar span{background:#FF5A7D;}
+.graph-view .view-body .view-item > .cell:last-child .number{color:#FF4343;margin-left:8px}
 /*.graph-view .view-body::-webkit-scrollbar {width: 6px;}*/
 /*.graph-view .view-body::-webkit-scrollbar-track {background-color: transparent;}*/
 /*.graph-view .view-body::-webkit-scrollbar-thumb {*/

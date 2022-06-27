@@ -3650,10 +3650,11 @@ div.a-paging__combobox-dropdown .vx-list__item{justify-content:center;}
 .r-bar-legend__label span:last-child{text-align: right}
 
 /* r-box */
-.r-box{display: flex;background-color:#fff;box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);backdrop-filter: blur(40px);border-radius: 24px;}
+.r-box{display: flex;}
 .r-box.full{position: absolute;left:48px;right:48px;top:180px;bottom:48px;}
-.r-box__nav{flex:none;background-color:#fafafa;border-top-left-radius: inherit;border-bottom-left-radius: inherit;}
-.r-box__nav + .r-box__content{border-left:1px solid #dddede;}
+.r-box__nav{flex:none;display:flex;flex-direction: column;width:308px;padding:28px 32px 50px; background-color:#fff;border-radius:24px;}
+.r-box__nav-header{flex:none;padding-bottom:44px}
+.r-box__nav + .r-box__content{margin-left:40px;background-color: #fff;border-radius: 24px;}
 .r-box__content{flex:1;}
 .r-box + .r-box{margin-top:80px;}
 

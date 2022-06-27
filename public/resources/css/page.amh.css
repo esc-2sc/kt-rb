@@ -79,7 +79,7 @@
 /*    border-radius: 8px;*/
 /*}*/
 
-.r-box__nav{width:308px;background:#FAFAFA; padding:28px 32px 50px; display:flex; flex-direction: column}
+.r-box__nav{}
 .r-box__nav-header{flex:none;padding-bottom:44px}
 .r-box__nav-header .a-input-search{display: block}
 .r-box__nav-body{flex:1; margin-right:-25px}

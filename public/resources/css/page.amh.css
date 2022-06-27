@@ -52,7 +52,7 @@
 .graph-layer-body{flex:1;}
 .graph-view{height:100%; display:flex; flex-direction: column; padding-bottom:7px}
 .graph-view .cell{flex:none;width:118px;height:32px; display:flex;align-items: center;justify-content:center;color:var(--color-secondary)}
-.graph-view .cell.time{flex:none; width:64px; font-size:11px; color:#4D4D4D}
+.graph-view .cell.time{flex:none; width:64px; color:#4D4D4D}
 .graph-view .view-header{flex:none;border-top:1px solid rgba(0,0,0,.05);border-bottom:1px solid rgba(0,0,0,.05);}
 .graph-view .view-header .cell{height:40px; color:var(--color-primary);}
 .graph-view .view-header .cell:first-child{margin-left:5px}
@@ -62,6 +62,7 @@
 .graph-view .view-item .cell .bar,
 .graph-view .view-item .cell .bar span{height:6px; border-radius: 6px}
 .graph-view .view-item .cell .number{color:#989898}
+.graph-view .view-body .cell.time{font-size:11px}
 .graph-view .view-body .view-item > .cell:first-child{justify-content: flex-end; margin-left:5px}
 .graph-view .view-body .view-item > .cell:first-child .bar{order:1;justify-content: flex-end}
 .graph-view .view-body .view-item > .cell:first-child .bar span{background:#01D59A;}

@@ -415,20 +415,21 @@ img.size--12{width:12px;height:12px;}
 .a-input-search > input{
   width:100%;
   height:40px;
-  padding-left:30px;
+  padding-left:38px;
   padding-right:30px;
   font-size:13px;
   line-height:32px;
-  text-align:center;
-  background:#f2f2f2 url('../images/svg/search-gray-24.svg') calc(50% - 35px) 50%/16px no-repeat;
+  text-align:left;
+  /*background:#f2f2f2 url('../images/svg/search-gray-24.svg') calc(50% - 35px) 50%/16px no-repeat;*/
+  background:#f2f2f2 url('../images/svg/search-gray-24.svg')16px 50%/16px no-repeat;
   border-radius:8px;
   box-shadow:0 0 0 2px transparent;
   transition:box-shadow .25s cubic-bezier(0.0, 0.0, 0.2, 1),
   border-color .25s cubic-bezier(0.0, 0.0, 0.2, 1);
 }
-.a-input-search > input:focus,
-.a-input-search.state--focus > input,
-.a-input-search > input:not(:placeholder-shown){text-align:left;background-position-x:8px;}
+/*.a-input-search > input:focus,*/
+/*.a-input-search.state--focus > input,*/
+/*.a-input-search > input:not(:placeholder-shown){text-align:left;background-position-x:8px;}*/
 .a-input-search > input:focus,
 .a-input-search.state--focus > input{box-shadow:0 0 0 2px #0e8bff;}
 .a-input-search .btn-clear{position:absolute;right:0;top:0;bottom:0;display:flex;align-items:center;justify-content:center;padding-left:8px;padding-right:8px;}
@@ -443,6 +444,9 @@ img.size--12{width:12px;height:12px;}
 .a-input-search.line > input:focus:not([readonly]),
 .a-input-search.line.state--focus > input{border-color:transparent;}
 .a-input-search.line.state--error > input{background-color:#ffe3e3;border-color:#e0c2c2;}
+.a-input-search > input:-ms-input-placeholder         {color:#989898;}
+.a-input-search > input::-webkit-input-placeholder    {color:#989898;}
+.a-input-search > input::-moz-placeholder             {color:#989898;}
 /* input - one */
 .a-input.one{width:40px;height:56px;padding:0;font-size:20px;line-height:56px;color:#000;text-align:center;}
 .a-input.one.state--error{color:#dc5d5d;}
@@ -3660,5 +3664,5 @@ div.a-paging__combobox-dropdown .vx-list__item{justify-content:center;}
 
 /* r-filter-list */
 .r-filter-list{}
-.r-filter-list .r-box__nav{width:280px;}
+.r-filter-list .r-box__nav{width:308px;}
 .r-filter-list .r-box__content{padding-left:40px;padding-right:40px;}

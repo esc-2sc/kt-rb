@@ -84,14 +84,14 @@
 .r-box__nav-header .a-input-search{display: block}
 .r-box__nav-body{flex:1; margin-right:-25px}
 .r-box__nav-body .title{font-size:13px; color:#242424}
-.r-box__nav-body .r-filter{width:216px}
+.r-box__nav-body .r-filter{width:244px}
 .r-filter-header{display: flex; justify-content: space-between; align-items: center;padding-top:43px;}
 .r-filter-header .title{display:flex;align-items: center}
 .r-filter-header .title:before{content: '';flex:none;display:block; width:16px;height:16px;background:url('../images/svg/icon-filter.svg') 50% no-repeat; margin-right:8px}
 .r-filter-options .title{padding-bottom:12px}
-.r-filter-options .r-calendar{margin-top:12px;}
-.r-filter-options .r-calendar .input-date{width:100% !important;}
-.r-filter-options .option-box{padding:8px 8px 16px}
+.r-filter-options .r-calendar{margin-top:8px; width:193px}
+.r-filter-options .r-calendar .input-date{width:100% !important; border-color:#DDDEDE;}
+.r-filter-options .option-box{padding:8px 0 16px}
 .r-filter-options .option-box{border-top:1px solid #E8E8E8; padding-top:8px}
 .r-filter-options + .r-filter-options{margin-top:27px}
 .r-filter-options .a-tab-3 > *{margin-top:8px}

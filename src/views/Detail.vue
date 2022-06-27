@@ -45,7 +45,7 @@
             <div class="r-box__nav">
           <div class="r-box__nav-header">
             <div class="a-input-search">
-              <input type="text" placeholder="장애물" value="Value">
+              <input type="text" placeholder="사업장 , 고객사 또는 MAC 주소" value="">
               <button class="btn-clear"><img src="/resources/images/svg/circle-x-fill-gray-24.svg" class="size--16" alt="Clear"></button>
             </div><!-- //a-input-search -->
             <div class="r-filter-header">

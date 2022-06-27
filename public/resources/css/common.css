@@ -1977,8 +1977,9 @@ img.size--12{width:12px;height:12px;}
   padding-left:18px;
   background-color:#fff;
   border:1px solid #cacccf;
-  box-shadow:0 4px 20px rgba(0, 0, 0, .1);
-  border-radius:10px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(80px);
+  border-radius:16px;
 }
 .a-toast-message__icon{
   flex:none;
@@ -1987,21 +1988,23 @@ img.size--12{width:12px;height:12px;}
 }
 .a-toast-message__label{
   flex:1;
-  padding-top:15px;
+  padding-top:16px;
   padding-bottom:15px;
   /*align-self:center;*/
 }
 .a-toast-message__title{
   display:block;
+  font-weight:600;
   font-size:15px;
-  line-height:15px;
+  line-height:20px;
   color:#000;
 }
 .a-toast-message__desc{
   display:block;
-  margin-top:9px;
+  margin-top:4px;
+  font-weight:500;
   font-size:13px;
-  line-height:13px;
+  line-height:17px;
   color:#4a4a4a;
 }
 .a-toast-message__func{
@@ -2032,7 +2035,7 @@ img.size--12{width:12px;height:12px;}
   justify-content:center;
   padding:10px;
 }
-.a-toast-message.theme--dark{background-color:#000;border:0;box-shadow:none;}
+.a-toast-message.theme--dark{background-color:rgba(7, 12, 20, 0.8);border:0;box-shadow:none;}
 .a-toast-message.theme--dark .a-toast-message__label{padding-top:16px;padding-bottom:16px;}
 .a-toast-message.theme--dark .a-toast-message__title,
 .a-toast-message.theme--dark .a-toast-message__desc{color:#fff;}

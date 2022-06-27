@@ -108,7 +108,7 @@
                                 <strong class="a-toast-message__title">새로운 소식</strong>
                                 <span class="a-toast-message__desc">오늘의 새로운 활동 추가 되었습니다.</span>
                             </div>
-                            <button class="a-toast-message__close"><img src="/resources/images/svg/circle-minus.svg" class="size--16" alt="Close"></button>
+                            <button class="a-toast-message__close"><img src="/resources/images/svg/circle-minus-gray.svg" class="size--16" alt="Close"></button>
                         </div><!-- //a-toast-message -->
                     </div>
                 </guide-table-item>
@@ -130,7 +130,7 @@
                                 <strong class="a-toast-message__title">경고</strong>
                                 <span class="a-toast-message__desc">파일이 정확히지 않습니다.</span>
                             </div>
-                            <button class="a-toast-message__close"><img src="/resources/images/svg/circle-minus.svg" class="size--16" alt="Close"></button>
+                            <button class="a-toast-message__close"><img src="/resources/images/svg/circle-minus-gray.svg" class="size--16" alt="Close"></button>
                         </div><!-- //a-toast-message -->
                     </div>
                 </guide-table-item>
@@ -152,7 +152,7 @@
                                 <strong class="a-toast-message__title">완료</strong>
                                 <span class="a-toast-message__desc">보고서가 안전하게 저장되었습니다.</span>
                             </div>
-                            <button class="a-toast-message__close"><img src="/resources/images/svg/circle-minus.svg" class="size--16" alt="Close"></button>
+                            <button class="a-toast-message__close"><img src="/resources/images/svg/circle-minus-gray.svg" class="size--16" alt="Close"></button>
                         </div><!-- //a-toast-message -->
                     </div>
                 </guide-table-item>

@@ -202,155 +202,189 @@
               <div class="view-body scroll">
                 <div class="view-item">
                   <div class="cell">
-                    <span class="bar" style="width:63px"></span><span class="number">8</span>
+                    <div class="bar"><span style="width:63px"></span></div>
+                    <div class="number">8</div>
                   </div>
                   <div class="cell time">01:00</div>
                   <div class="cell">
-                    <span class="bar" style="width:13px"></span><span class="number">1</span>
+                    <div class="bar"><span style="width:13px"></span></div>
+                    <div class="number">1</div>
                   </div>
                 </div><!-- //view-item -->
                 <div class="view-item">
                   <div class="cell">
-                    <span class="bar" style="width:13px"></span><span class="number">1</span>
+                    <div class="bar"><span style="width:13px"></span></div>
+                    <div class="number">12</div>
                   </div>
                   <div class="cell time">02:00</div>
                   <div class="cell">
-                    <span class="bar" style="width:48px"></span><span class="number">5</span>
+                    <div class="bar"><span style="width:48px"></span></div>
+                    <div class="number">15</div>
                   </div>
                 </div><!-- //view-item -->
                 <div class="view-item">
                   <div class="cell">
-                    <span class="bar"></span><span class="number"></span>
+                    <div class="bar"><span style="width:0"></span></div>
+                    <div class="number">0</div>
                   </div>
                   <div class="cell time">03:00</div>
                   <div class="cell">
-                    <span class="bar" style="width:48px"></span><span class="number">5</span>
+                    <div class="bar"><span style="width:48px"></span></div>
+                    <div class="number">5</div>
                   </div>
                 </div><!-- //view-item -->
                 <div class="view-item">
                   <div class="cell">
-                    <span class="bar" style="width:63px"></span><span class="number">8</span>
+                    <div class="bar"><span style="width:63px"></span></div>
+                    <div class="number">8</div>
                   </div>
                   <div class="cell time">04:00</div>
                   <div class="cell">
-                    <span class="bar" style="width:48px"></span><span class="number">5</span>
+                    <div class="bar"><span style="width:63px"></span></div>
+                    <div class="number">5</div>
                   </div>
                 </div><!-- //view-item -->
                 <div class="view-item">
                   <div class="cell">
-                    <span class="bar" style="width:13px"></span><span class="number">1</span>
+                    <div class="bar"><span style="width:13px"></span></div>
+                    <div class="number">1</div>
                   </div>
                   <div class="cell time">05:00</div>
                   <div class="cell">
-                    <span class="bar" style="width:48px"></span><span class="number">5</span>
+                    <div class="bar"><span style="width:63px"></span></div>
+                    <div class="number">5</div>
                   </div>
                 </div><!-- //view-item -->
                 <div class="view-item">
                   <div class="cell">
-                    <span class="bar" style="width:13px"></span><span class="number">1</span>
+                    <div class="bar"><span style="width:13px"></span></div>
+                    <div class="number">1</div>
                   </div>
                   <div class="cell time">06:00</div>
                   <div class="cell">
-                    <span class="bar" style="width:48px"></span><span class="number">5</span>
+                    <div class="bar"><span style="width:48px"></span></div>
+                    <div class="number">5</div>
                   </div>
                 </div><!-- //view-item -->
                 <div class="view-item">
                   <div class="cell">
-                    <span class="bar" style="width:13px"></span><span class="number">1</span>
+                    <div class="bar"><span style="width:13px"></span></div>
+                    <div class="number">1</div>
                   </div>
                   <div class="cell time">07:00</div>
                   <div class="cell">
-                    <span class="bar" style="width:48px"></span><span class="number">5</span>
+                    <div class="bar"><span style="width:48px"></span></div>
+                    <div class="number">5</div>
                   </div>
                 </div><!-- //view-item -->
                 <div class="view-item">
                   <div class="cell">
-                    <span class="bar" style="width:13px"></span><span class="number">1</span>
+                    <div class="bar"><span style="width:13px"></span></div>
+                    <div class="number">1</div>
                   </div>
                   <div class="cell time">08:00</div>
                   <div class="cell">
-                    <span class="bar" style="width:48px"></span><span class="number">5</span>
+                    <div class="bar"><span style="width:48px"></span></div>
+                    <div class="number">5</div>
                   </div>
                 </div><!-- //view-item -->
                 <div class="view-item">
                   <div class="cell">
-                    <span class="bar" style="width:13px"></span><span class="number">1</span>
+                    <div class="bar"><span style="width:13px"></span></div>
+                    <div class="number">1</div>
                   </div>
                   <div class="cell time">09:00</div>
                   <div class="cell">
-                    <span class="bar" style="width:48px"></span><span class="number">5</span>
+                    <div class="bar"><span style="width:13px"></span></div>
+                    <div class="number">5</div>
                   </div>
                 </div><!-- //view-item -->
                 <div class="view-item">
                   <div class="cell">
-                    <span class="bar" style="width:13px"></span><span class="number">1</span>
+                    <div class="bar"><span style="width:13px"></span></div>
+                    <div class="number">1</div>
                   </div>
                   <div class="cell time">10:00</div>
                   <div class="cell">
-                    <span class="bar" style="width:48px"></span><span class="number">5</span>
+                    <div class="bar"><span style="width:13px"></span></div>
+                    <div class="number">5</div>
                   </div>
                 </div><!-- //view-item -->
                 <div class="view-item">
                   <div class="cell">
-                    <span class="bar" style="width:13px"></span><span class="number">1</span>
+                    <div class="bar"><span style="width:13px"></span></div>
+                    <div class="number">1</div>
                   </div>
                   <div class="cell time">11:00</div>
                   <div class="cell">
-                    <span class="bar" style="width:48px"></span><span class="number">5</span>
+                    <div class="bar"><span style="width:13px"></span></div>
+                    <div class="number">5</div>
                   </div>
                 </div><!-- //view-item -->
                 <div class="view-item">
                   <div class="cell">
-                    <span class="bar" style="width:13px"></span><span class="number">1</span>
+                    <div class="bar"><span style="width:13px"></span></div>
+                    <span class="number">1</span>
                   </div>
                   <div class="cell time">12:00</div>
                   <div class="cell">
-                    <span class="bar" style="width:48px"></span><span class="number">5</span>
+                    <div class="bar"><span style="width:13px"></span></div>
+                    <span class="number">5</span>
                   </div>
                 </div><!-- //view-item -->
                 <div class="view-item">
                   <div class="cell">
-                    <span class="bar" style="width:13px"></span><span class="number">1</span>
+                    <div class="bar"><span style="width:13px"></span></div>
+                    <div class="number">1</div>
                   </div>
                   <div class="cell time">13:00</div>
                   <div class="cell">
-                    <span class="bar" style="width:48px"></span><span class="number">5</span>
+                    <div class="bar"><span style="width:13px"></span></div>
+                    <div class="number">5</div>
                   </div>
                 </div><!-- //view-item -->
                 <div class="view-item">
                   <div class="cell">
-                    <span class="bar" style="width:13px"></span><span class="number">1</span>
+                    <div class="bar"><span style="width:13px"></span></div>
+                    <div class="number">1</div>
                   </div>
                   <div class="cell time">14:00</div>
                   <div class="cell">
-                    <span class="bar" style="width:48px"></span><span class="number">5</span>
+                    <div class="bar"><span style="width:13px"></span></div>
+                    <div class="number">5</div>
                   </div>
                 </div><!-- //view-item -->
                 <div class="view-item">
                   <div class="cell">
-                    <span class="bar" style="width:13px"></span><span class="number">1</span>
+                    <div class="bar"><span style="width:13px"></span></div>
+                    <div class="number">1</div>
                   </div>
                   <div class="cell time">15:00</div>
                   <div class="cell">
-                    <span class="bar" style="width:48px"></span><span class="number">5</span>
+                    <div class="bar"><span style="width:13px"></span></div>
+                    <div class="number">5</div>
                   </div>
                 </div><!-- //view-item -->
                 <div class="view-item">
                   <div class="cell">
-                    <span class="bar" style="width:13px"></span><span class="number">1</span>
+                    <div class="bar"><span style="width:13px"></span></div>
+                    <div class="number">1</div>
                   </div>
                   <div class="cell time">16:00</div>
                   <div class="cell">
-                    <span class="bar" style="width:48px"></span><span class="number">5</span>
+                    <div class="bar"><span style="width:13px"></span></div>
+                    <div class="number">5</div>
                   </div>
                 </div><!-- //view-item -->
                 <div class="view-item">
                   <div class="cell">
-                    <span class="bar" style="width:13px"></span><span class="number">1</span>
+                    <div class="bar"><span style="width:13px"></span></div>
+                    <div class="number">1</div>
                   </div>
                   <div class="cell time">17:00</div>
                   <div class="cell">
-                    <span class="bar" style="width:48px"></span><span class="number">5</span>
+                    <div class="bar"><span style="width:13px"></span></div>
+                    <div class="number">5</div>
                   </div>
                 </div><!-- //view-item -->
               </div><!-- //view-body -->

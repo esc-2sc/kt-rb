@@ -93,5 +93,8 @@
 }
 /*.detail-content.auto{height:auto;}*/
 
-/* page: setting alarm */
+/* page: setting - alarm */
 .p-setting-alarm-send-list{}
+.p-setting-alarm-detail-popup{min-width:960px;}
+
+/* page: setting - account */

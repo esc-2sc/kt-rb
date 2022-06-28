@@ -102,7 +102,7 @@
                 <div class="r-tachyon full">
                     <div class="r-tachyon__header">
                         <div class="r-tachyon__header-l">
-                            <h2 class="r-tachyon__title">검색결과 <em>22건</em></h2>
+                            <h2 class="r-tachyon__title">'케이티' <span>의 결과보기</span> <em>22건</em></h2>
                         </div>
                         <div class="r-tachyon__header-r">
                             <div class="r-tachyon__buttons">

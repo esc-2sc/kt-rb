@@ -21,16 +21,11 @@ export default [
 		name: 'setting-alarm-send-search',
 		component: () => import('@/views/setting/SettingAlarmSendSearch.vue'),
 	},
-	// {
-	// 	path: '/setting-alarm-send-search',
-	// 	name: 'setting-alarm-send-search',
-	// 	component: () => import('@/views/setting/SettingAlarmSendSearch.vue'),
-	// },
-	// {
-	// 	path: '/setting-alarm-send-detail',
-	// 	name: 'setting-alarm-send-detail',
-	// 	component: () => import('@/views/setting/SettingAlarmSendDetail.vue'),
-	// },
+	{
+		path: '/setting-alarm-send-detail',
+		name: 'setting-alarm-send-detail',
+		component: () => import('@/views/setting/SettingAlarmSendDetail.vue'),
+	},
 	// {
 	// 	path: '/setting-alarm-template-list',
 	// 	name: 'setting-alarm-template-list',
@@ -68,11 +63,11 @@ export default [
 	// 	name: 'setting-account-change-popup',
 	// 	component: () => import('@/views/setting/SettingAccountChangePopup.vue'),
 	// },
-	// {
-	// 	path: '/setting-account-detail',
-	// 	name: 'setting-account-detail',
-	// 	component: () => import('@/views/setting/SettingAccountDetail.vue'),
-	// },
+	{
+		path: '/setting-account-detail',
+		name: 'setting-account-detail',
+		component: () => import('@/views/setting/SettingAccountDetail.vue'),
+	},
 	// {
 	// 	path: '/setting-account-detail-modify',
 	// 	name: 'setting-account-detail-modify',

@@ -40,37 +40,37 @@
               <div class="a-list__body">
                 <div class="a-list__item-row">
                   <div class="a-list__item-label">
-                    <span class="label a-color-label-3">로봇모델</span>
+                    <span class="label">로봇모델</span>
                     <p class="desc">KT_서빙로봇_임대형</p>
                   </div>
                   <div class="a-list__item-label">
-                    <span class="label a-color-label-3">제조사</span>
+                    <span class="label">제조사</span>
                     <p class="desc">베어로보틱스</p>
                   </div>
                   <div class="a-list__item-label">
-                    <span class="label a-color-label-3">서비스계약</span>
+                    <span class="label">서비스계약</span>
                     <p class="desc">S003693850</p>
                   </div>
                   <div class="a-list__item-label">
-                    <span class="label a-color-label-3">MAC 주소</span>
+                    <span class="label">MAC 주소</span>
                     <p class="desc">00.00.00.00.F4.7B</p>
                   </div>
                 </div>
                 <div class="a-list__item-row">
                   <div class="a-list__item-label">
-                    <span class="label a-color-label-3">서비스</span>
+                    <span class="label">서비스</span>
                     <p class="desc">서빙</p>
                   </div>
                   <div class="a-list__item-label">
-                    <span class="label a-color-label-3">고객사명</span>
+                    <span class="label">고객사명</span>
                     <p class="desc">천천</p>
                   </div>
                   <div class="a-list__item-label">
-                    <span class="label a-color-label-3">본부</span>
+                    <span class="label">본부</span>
                     <p class="desc">강북/강원</p>
                   </div>
                   <div class="a-list__item-label">
-                    <span class="label a-color-label-3">관제레벨</span>
+                    <span class="label">관제레벨</span>
                     <p class="desc">L2</p>
                   </div>
                 </div>
@@ -83,35 +83,35 @@
               <div class="a-list__body">
                 <div class="a-list__item-row">
                   <div class="a-list__item-label">
-                    <span class="label a-color-label-3">알람구분</span>
+                    <span class="label">알람구분</span>
                     <p class="desc">장애물 감지</p>
                   </div>
                   <div class="a-list__item-label">
-                    <span class="label a-color-label-3">알람코드</span>
+                    <span class="label">알람코드</span>
                     <p class="desc">10019</p>
                   </div>
                   <div class="a-list__item-label">
-                    <span class="label a-color-label-3">알람등급</span>
+                    <span class="label">알람등급</span>
                     <p class="desc">Major</p>
                   </div>
                   <div class="a-list__item-label">
-                    <span class="label a-color-label-3">관제레벨</span>
+                    <span class="label">관제레벨</span>
                     <p class="desc">L2</p>
                   </div>
                 </div>
                 <div class="a-list__item-row">
                   <div class="a-list__item-label">
-                    <span class="label a-color-label-3">발신일시</span>
+                    <span class="label">발신일시</span>
                     <p class="desc">2022-01-20 14:08:10</p>
                   </div>
                   <div class="a-list__item-label">
-                    <span class="label a-color-label-3">수신플랫폼</span>
+                    <span class="label">수신플랫폼</span>
                     <p class="desc">Robot Makers, 고객케어, 로봇케어</p>
                   </div>
                 </div>
                 <div class="a-list__item-row">
                   <div class="a-list__item-label">
-                    <span class="label a-color-label-3">내용</span>
+                    <span class="label">내용</span>
                     <p class="desc">로봇에서 장애물이 감지됐습니다.</p>
                   </div>
                 </div>
@@ -124,25 +124,25 @@
               <div class="a-list__body">
                 <div class="a-list__item-row">
                   <div class="a-list__item-label">
-                    <span class="label a-color-label-3">조치상태</span>
+                    <span class="label">조치상태</span>
                     <p class="desc">수동종료</p>
                   </div>
                   <div class="a-list__item-label">
-                    <span class="label a-color-label-3">처리자</span>
+                    <span class="label">처리자</span>
                     <p class="desc">10031696</p>
                   </div>
                   <div class="a-list__item-label">
-                    <span class="label a-color-label-3">처리일시</span>
+                    <span class="label">처리일시</span>
                     <p class="desc">2022-01-20 14:08:10</p>
                   </div>
                   <div class="a-list__item-label">
-                    <span class="label a-color-label-3">발생원인</span>
+                    <span class="label">발생원인</span>
                     <p class="desc">장애물 감지</p>
                   </div>
                 </div>
                 <div class="a-list__item-row">
                   <div class="a-list__item-label">
-                    <span class="label a-color-label-3">조치내역</span>
+                    <span class="label">조치내역</span>
                     <p class="desc">직접 조치 완료했습니다.</p>
                   </div>
                 </div>

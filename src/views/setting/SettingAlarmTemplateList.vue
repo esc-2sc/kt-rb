@@ -146,8 +146,8 @@
                   <div class="r-list__item">
                     <div class="r-list__header">
                       <div class="list-cont">
-                        <div class="tit color--green">주행실패</div>
-                        <div class="txt">플랫폼 요청에 의해 로봇이 정지됐습니다</div>
+                        <div class="tit color--green">충전이상</div>
+                        <div class="txt">충전 중 충전량의 변화량이 너무 낮습니다</div>
                       </div><!-- //header-cont -->
                       <div class="list-side"><button class="a-btn-type-1 color--white">수정</button></div>
                     </div><!-- //r-list__header-->
@@ -164,14 +164,14 @@
                           <span class="label">로봇케어</span>
                         </div>
                       </div>
-                      <div class="list-side icon"><img src="/resources/images/svg/icon-alerts-pan.svg" alt=""></div>
+                      <div class="list-side icon"><img src="/resources/images/svg/icon-battery-vert.svg" alt=""></div>
                     </div><!-- //r-list__body-->
                   </div><!-- //r-list__item-->
                   <div class="r-list__item">
                     <div class="r-list__header">
                       <div class="list-cont">
-                        <div class="tit color--green">주행실패</div>
-                        <div class="txt">로봇의 내부 하드웨어 에러로 주행에 실패했습니다.</div>
+                        <div class="tit color--green">방전이상</div>
+                        <div class="txt">급격한 방전 중입니다. 확인해주세요.</div>
                       </div><!-- //header-cont -->
                       <div class="list-side"><button class="a-btn-type-1 color--white">수정</button></div>
                     </div><!-- //r-list__header-->
@@ -188,7 +188,55 @@
                           <span class="label">로봇케어</span>
                         </div>
                       </div>
-                      <div class="list-side icon"><img src="/resources/images/svg/icon-alerts-noun-robot.svg" alt=""></div>
+                      <div class="list-side icon"><img src="/resources/images/svg/icon-battery_alert.svg" alt=""></div>
+                    </div><!-- //r-list__body-->
+                  </div><!-- //r-list__item-->
+                  <div class="r-list__item">
+                    <div class="r-list__header">
+                      <div class="list-cont">
+                        <div class="tit color--green">충전 패턴 이상</div>
+                        <div class="txt">혹시 로봇의 충전을 깜박하셨나요?</div>
+                      </div><!-- //header-cont -->
+                      <div class="list-side"><button class="a-btn-type-1 color--white">수정</button></div>
+                    </div><!-- //r-list__header-->
+                    <div class="r-list__body">
+                      <div class="list-cont">
+                        <div class="item">
+                          <span>알람코드 10098</span>
+                          <span>등급 Major</span>
+                        </div>
+                        <div class="item">발신 시간대 09:00 ~ 34:00</div>
+                        <div class="label-box">
+                          <span class="label">Robot Makers</span>
+                          <span class="label">고객케어</span>
+                          <span class="label">로봇케어</span>
+                        </div>
+                      </div>
+                      <div class="list-side icon"><img src="/resources/images/svg/icon-battery-unknown.svg" alt=""></div>
+                    </div><!-- //r-list__body-->
+                  </div><!-- //r-list__item-->
+                  <div class="r-list__item">
+                    <div class="r-list__header">
+                      <div class="list-cont">
+                        <div class="tit color--green">운행준비이상</div>
+                        <div class="txt">HH:MM 로봇 운행을 위해서는 지금 충전이 필요합니다.</div>
+                      </div><!-- //header-cont -->
+                      <div class="list-side"><button class="a-btn-type-1 color--white">수정</button></div>
+                    </div><!-- //r-list__header-->
+                    <div class="r-list__body">
+                      <div class="list-cont">
+                        <div class="item">
+                          <span>알람코드 10098</span>
+                          <span>등급 Major</span>
+                        </div>
+                        <div class="item">발신 시간대 09:00 ~ 34:00</div>
+                        <div class="label-box">
+                          <span class="label">Robot Makers</span>
+                          <span class="label">고객케어</span>
+                          <span class="label">로봇케어</span>
+                        </div>
+                      </div>
+                      <div class="list-side icon"><img src="/resources/images/svg/icon-battery-charging.svg" alt=""></div>
                     </div><!-- //r-list__body-->
                   </div><!-- //r-list__item-->
                 </div><!-- //r-list-1 columns-3-->

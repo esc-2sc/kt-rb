@@ -58,6 +58,7 @@ export default {
               {name:'icon-time.svg'},
               {name:'icon-close.svg'},
               {name:'icon-restart.svg'},
+              {name:'icon-info.svg'},
               {name:'icon-label-01.svg'},
               {name:'icon-label-02.svg'},
               {name:'icon-label-03.svg'},

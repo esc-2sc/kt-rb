@@ -1,5 +1,5 @@
 <template>
-  <div class="detail-content p-setting-alarm-send-list">
+  <div class="detail-content p-setting-alarm-template-modify">
 
     <div class="r-box full r-alarm-list">
       <div class="r-box__content">

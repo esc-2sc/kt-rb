@@ -39,23 +39,23 @@
               <div class="a-list__body">
                 <div class="a-list__item-row">
                   <div class="a-list__item-label">
-                    <span class="label a-color-label-3">서비스</span>
+                    <span class="label">서비스</span>
                     <p class="desc">서빙</p>
                   </div>
                   <div class="a-list__item-label">
-                    <span class="label a-color-label-3">알람구분</span>
+                    <span class="label">알람구분</span>
                     <p class="desc">장애물 감지</p>
                   </div>
                   <div class="a-list__item-label">
-                    <span class="label a-color-label-3">알람유형</span>
+                    <span class="label">알람유형</span>
                     <p class="desc">SW</p>
                   </div>
                   <div class="a-list__item-label">
-                    <span class="label a-color-label-3">알람코드</span>
+                    <span class="label">알람코드</span>
                     <p class="desc">10101010</p>
                   </div>
                   <div class="a-list__item-label">
-                    <span class="label a-color-label-3">알람 사용 여부</span>
+                    <span class="label">알람 사용 여부</span>
                     <p class="desc">Y</p>
                   </div>
                 </div>

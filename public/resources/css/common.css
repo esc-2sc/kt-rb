@@ -629,10 +629,9 @@ img.size--12{width:12px;height:12px;}
 /* textarea */
 .a-textarea{
   /*height:32px;*/
-  padding-left:15px;
-  padding-right:15px;
+  padding:16px;
   font-size:13px;
-  line-height:32px;
+  line-height:17px;
   background-color:#f2f2f2;
   border-radius:8px;
   box-shadow:0 0 0 2px transparent;
@@ -651,6 +650,11 @@ img.size--12{width:12px;height:12px;}
 .a-textarea.line:focus:not([readonly]),
 .a-textarea.line.state--focus{border-color:transparent;}
 .a-textarea.line.state--error{background-color:#ffe3e3;border-color:#e0c2c2;}
+
+.a-textarea:-ms-input-placeholder{ color:#4D4D4D;}
+.a-textarea::-webkit-input-placeholder{ color:#4D4D4D;}
+.a-textarea::-moz-placeholder{ color:#4D4D4D;}
+.a-textarea::placeholder{ color:#4D4D4D;}
 
 .a-label-textarea{min-height:103px;}
 .a-label-textarea:before{

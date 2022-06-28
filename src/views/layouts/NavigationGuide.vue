@@ -24,7 +24,7 @@ export default {
             {level:2, label:'발신관리 - 상세(팝업)', url:'setting-alarm-send-detail' },
             {level:2, label:'템플릿 관리', url:'setting-alarm-template-list'},
             {level:2, label:'템플릿 관리 - 시간설정(팝업)', url:'setting-alarm-template-time', ing: true, },
-            {level:2, label:'템플릿 관리 - 수정/저장(팝업)', url:'setting-alarm-template-modify', ing: true, },
+            {level:2, label:'템플릿 관리 - 수정/저장(팝업)', url:'setting-alarm-template-modify' },
             {level:2, label:'템플릿 관리 - 저장 완료(Snackbar)', url:'setting-alarm-template-snackbar'},
 
             {level:1, label:'PAGE - 설정 - 계정관리', },

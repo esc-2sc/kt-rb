@@ -1,0 +1,188 @@
+<template>
+  <div class="detail-content p-setting-alarm-send-list">
+
+    <div class="r-box full r-filter-list">
+      <div class="r-box__nav">
+        nav area
+      </div>
+      <div class="r-box__content">
+        <div class="r-tachyon full">
+          <div class="r-tachyon__header">
+            <div class="r-tachyon__header-l">
+              <h2 class="r-tachyon__title">알람 템플릿 수정</h2>
+            </div>
+            <div class="r-tachyon__header-r"></div>
+          </div><!-- //r-tachyon__header -->
+
+          <div>
+            <button class="a-btn-type-1" @click="openPopup">
+              <span class="label">알람 템플릿 수정 - Popup</span>
+            </button><!-- //a-btn-type-1 -->
+          </div>
+
+        </div><!-- //r-tachyon -->
+      </div><!-- //r-box__content -->
+    </div><!-- //r-box r-filter-list -->
+
+    <vx-popup ref="popup" modal close-on-outside-down>
+      <div class="r-popup r-popup-type-1 p-setting-alarm-detail-popup">
+        <div class="r-popup__header">
+          <div class="title">알람 템플릿 수정</div>
+          <div class="func">
+            <button class="btn-close"><img src="/resources/images/svg/icon-close.svg" alt="close"></button>
+          </div>
+        </div><!-- //r-popup__header -->
+        <div class="r-popup__body">
+
+          <div class="r-popup__row">
+            <div class="a-list-1">
+              <div class="a-list__body">
+                <div class="a-list__item-row">
+                  <div class="a-list__item-label">
+                    <span class="label a-color-label-3">서비스</span>
+                    <p class="desc">서빙</p>
+                  </div>
+                  <div class="a-list__item-label">
+                    <span class="label a-color-label-3">알람구분</span>
+                    <p class="desc">장애물 감지</p>
+                  </div>
+                  <div class="a-list__item-label">
+                    <span class="label a-color-label-3">알람유형</span>
+                    <p class="desc">SW</p>
+                  </div>
+                  <div class="a-list__item-label">
+                    <span class="label a-color-label-3">알람코드</span>
+                    <p class="desc">10101010</p>
+                  </div>
+                  <div class="a-list__item-label">
+                    <span class="label a-color-label-3">알람 사용 여부</span>
+                    <p class="desc">Y</p>
+                  </div>
+                </div>
+              </div><!-- //a-list__body -->
+            </div><!-- //a-list-1 -->
+          </div><!-- //r-popup__row -->
+
+          <div class="r-popup__row">
+            <div class="r-list-tab">
+                <div class="r-list-tab__item-l"><span class="label">알람등급</span></div>
+                <div class="r-list-tab__item-r">
+                  <div class="a-tab-3">
+                    <button class="selected">Major</button>
+                    <button>Fatal</button>
+                    <button>Critical</button>
+                    <button>Minor</button>
+                  </div>
+                </div>
+            </div><!--//r-list-tab-->
+          </div><!-- //r-popup__row -->
+
+          <div class="r-popup__row">
+            <textarea class="a-textarea size--full line" placeholder="알람내용"></textarea>
+          </div><!--//r-popup__row -->
+
+          <div class="r-popup__row">
+            <textarea class="a-textarea size--full line" placeholder="알람설명"></textarea>
+          </div><!--//r-popup__row -->
+
+          <div class="r-popup__row">
+            <div class="r-list-tab">
+              <div class="r-list-tab__item-l"><span class="label">알람 노출 여부</span></div>
+              <div class="r-list-tab__item-r">
+                <div class="a-tab-3">
+                  <button class="selected">노출</button>
+                  <button>숨김</button>
+                </div>
+              </div>
+            </div><!--//r-list-tab-->
+            <div class="r-list-tab">
+              <div class="r-list-tab__item-l"><span class="label">알림설정</span></div>
+              <div class="r-list-tab__item-r">
+                <div class="a-tab-3">
+                  <button class="selected">가시 알림 설정</button>
+                  <button>가청 알림 설정</button>
+                </div>
+              </div>
+            </div><!--//r-list-tab-->
+          </div><!--//r-popup__row -->
+
+          <div class="r-popup__row">
+            <div class="r-list-tab">
+              <div class="r-list-tab__item-l"><span class="label">SMS 발신설정</span></div>
+              <div class="r-list-tab__item-r">
+                <div class="a-tab-3">
+                  <button class="selected">발생  SMS</button>
+                  <button>복구  SMS</button>
+                </div>
+              </div>
+            </div><!--//r-list-tab-->
+            <div class="r-list-tab">
+              <div class="r-list-tab__item-l"><span class="label">발신 시간대  00:00~20:20</span></div>
+              <div class="r-list-tab__item-r">
+                <div class="a-tab-3">
+                  <button class="selected">기본 시간대</button>
+                  <button>직접입력</button>
+                </div>
+              </div>
+            </div><!--//r-list-tab-->
+          </div><!--//r-popup__row -->
+
+          <div class="r-popup__row">
+            <div class="r-list-tab">
+              <div class="r-list-tab__item-l"><span class="label">관제레벨</span></div>
+              <div class="r-list-tab__item-r">
+                <div class="a-tab-3">
+                  <button class="selected">L3</button>
+                  <button>L2</button>
+                  <button>L1</button>
+                </div>
+              </div>
+            </div><!--//r-list-tab-->
+            <div class="r-list-tab">
+              <div class="r-list-tab__item-l"><span class="label">발신 플랫폼</span></div>
+              <div class="r-list-tab__item-r">
+                <div class="a-tab-3">
+                  <button class="selected">Robot Makers</button>
+                  <button>고객케어</button>
+                  <button>로봇케어</button>
+                </div>
+              </div>
+            </div><!--//r-list-tab-->
+          </div><!--//r-popup__row -->
+
+          <div class="r-popup__row">
+            <textarea class="a-textarea size--full line" placeholder="관제 가이드 (SOP)"></textarea>
+          </div><!--//r-popup__row -->
+        </div><!-- // r-popup__body -->
+        <div class="r-popup__footer">
+          <div class="btn-wrap right">
+            <button type="button" class="a-btn-type-1 color--white">취소</button>
+            <button type="button" class="a-btn-type-1 color--blue">저장</button>
+          </div>
+        </div>
+      </div><!-- //r-popup, r-popup-type-1 -->
+    </vx-popup>
+
+  </div><!-- // detail-content -->
+</template>
+
+<script>
+export default {
+  name: 'SettingAlarmSendDetail',
+  components: {},
+  data() {
+    return {
+    };
+  },
+  mounted() {
+    this.openPopup();
+  },
+  methods: {
+    openPopup() {
+      this.$refs.popup.open();
+    }
+  },
+};
+</script>
+<style scoped>
+</style>

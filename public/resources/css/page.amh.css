@@ -106,3 +106,6 @@
 .r-alarm-list .r-icon-info:before{content: ''; width:24px;height:24px;margin-right:8px;background:url('../images/svg/icon-info.svg') 50% no-repeat}
 .r-alarm-list .r-box__list-body{}
 
+.a-list__item-columns{display:flex;align-items:center;justify-content: space-between;}
+.a-list__item-columns .a-list__item-label{flex:none}
+

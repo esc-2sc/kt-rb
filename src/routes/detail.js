@@ -36,11 +36,11 @@ export default [
 	// 	name: 'setting-alarm-template-time',
 	// 	component: () => import('@/views/setting/SettingAlarmTemplateTime.vue'),
 	// },
-	// {
-	// 	path: '/setting-alarm-template-modify',
-	// 	name: 'setting-alarm-template-modify',
-	// 	component: () => import('@/views/setting/SettingAlarmTemplateModify.vue'),
-	// },
+	{
+		path: '/setting-alarm-template-modify',
+		name: 'setting-alarm-template-modify',
+		component: () => import('@/views/setting/SettingAlarmTemplateModify.vue'),
+	},
 	{
 		path: '/setting-alarm-template-snackbar',
 		name: 'setting-alarm-template-snackbar',

@@ -26,11 +26,11 @@ export default [
 		name: 'setting-alarm-send-detail',
 		component: () => import('@/views/setting/SettingAlarmSendDetail.vue'),
 	},
-	// {
-	// 	path: '/setting-alarm-template-list',
-	// 	name: 'setting-alarm-template-list',
-	// 	component: () => import('@/views/setting/SettingAlarmTemplateList.vue'),
-	// },
+	{
+		path: '/setting-alarm-template-list',
+		name: 'setting-alarm-template-list',
+		component: () => import('@/views/setting/SettingAlarmTemplateList.vue'),
+	},
 	// {
 	// 	path: '/setting-alarm-template-time',
 	// 	name: 'setting-alarm-template-time',
@@ -41,11 +41,11 @@ export default [
 	// 	name: 'setting-alarm-template-modify',
 	// 	component: () => import('@/views/setting/SettingAlarmTemplateModify.vue'),
 	// },
-	// {
-	// 	path: '/setting-alarm-template-snackbar',
-	// 	name: 'setting-alarm-template-snackbar',
-	// 	component: () => import('@/views/setting/SettingAlarmTemplateSnackbar.vue'),
-	// },
+	{
+		path: '/setting-alarm-template-snackbar',
+		name: 'setting-alarm-template-snackbar',
+		component: () => import('@/views/setting/SettingAlarmTemplateSnackbar.vue'),
+	},
 
 	// 설정 - 계정관리
 	{

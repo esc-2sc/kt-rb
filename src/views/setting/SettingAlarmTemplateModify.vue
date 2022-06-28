@@ -1,26 +1,22 @@
 <template>
   <div class="detail-content p-setting-alarm-send-list">
 
-    <div class="r-box full r-filter-list">
-      <div class="r-box__nav">
-        nav area
-      </div>
+    <div class="r-box full r-alarm-list">
       <div class="r-box__content">
-        <div class="r-tachyon full">
-          <div class="r-tachyon__header">
-            <div class="r-tachyon__header-l">
-              <h2 class="r-tachyon__title">알람 템플릿 수정</h2>
+        <div class="r-box__list">
+
+          <div class="r-box__list-header">
+            <h2 class="tit">알람 템플릿 수정</h2>
+          </div><!--//r-box__list-header-->
+          <div class="r-box__list-body">
+            <div>
+              <button class="a-btn-type-1" @click="openPopup">
+                <span class="label">알람 템플릿 수정 - Popup</span>
+              </button><!-- //a-btn-type-1 -->
             </div>
-            <div class="r-tachyon__header-r"></div>
-          </div><!-- //r-tachyon__header -->
+          </div><!--// r-box__list-body-->
 
-          <div>
-            <button class="a-btn-type-1" @click="openPopup">
-              <span class="label">알람 템플릿 수정 - Popup</span>
-            </button><!-- //a-btn-type-1 -->
-          </div>
-
-        </div><!-- //r-tachyon -->
+        </div><!--//r-box__list-->
       </div><!-- //r-box__content -->
     </div><!-- //r-box r-filter-list -->
 
@@ -168,7 +164,7 @@
 
 <script>
 export default {
-  name: 'SettingAlarmSendDetail',
+  name: 'SettingAlarmTemplateModify',
   components: {},
   data() {
     return {

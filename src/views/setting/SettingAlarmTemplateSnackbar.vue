@@ -3,30 +3,23 @@
 
         <div class="r-box full r-alarm-list">
           <div class="r-box__content">
-            <div class="r-box__list">
-              <div class="r-tachyon full">
-                <div class="r-tachyon__header">
-                  <div class="r-tachyon__header-l">
-                    <h2 class="r-tachyon__title">Snackbar Message</h2>
-                  </div>
-                  <!-- div class="r-tachyon__header-r">
-                  </div -->
-                </div><!-- //r-tachyon__header -->
-
-                <div class="a-toast-message theme--dark">
-                  <div class="a-toast-message__icon"><img src="/resources/images/svg/circle-check-24.svg" class="size--22" alt="Success"></div>
-                  <div class="a-toast-message__label">
-                    <strong class="a-toast-message__title">저장완료</strong>
-                    <span class="a-toast-message__desc">변경사항이 저장 되었습니다.</span>
-                  </div>
-                  <button class="a-toast-message__close"><img src="/resources/images/svg/circle-minus-gray.svg" class="size--16" alt="Close"></button>
-                </div><!-- //a-toast-message -->
-              </div><!-- //r-tachyon -->
-            </div>
-          </div>
-
-
-        </div><!-- //r-box r-filter-list -->
+                  <div class="r-box__list">
+                    <div class="r-box__list-header">
+                      <h2 class="tit">알람 템플릿 수정</h2>
+                    </div><!--//r-box__list-header-->
+                    <div class="r-box__list-body">
+                      <div class="a-toast-message theme--dark">
+                        <div class="a-toast-message__icon"><img src="/resources/images/svg/circle-check-24.svg" class="size--22" alt="Success"></div>
+                        <div class="a-toast-message__label">
+                          <strong class="a-toast-message__title">저장완료</strong>
+                          <span class="a-toast-message__desc">변경사항이 저장 되었습니다.</span>
+                        </div>
+                        <button class="a-toast-message__close"><img src="/resources/images/svg/circle-minus-gray.svg" class="size--16" alt="Close"></button>
+                      </div><!-- //a-toast-message -->
+                    </div><!--//r-box__list-body-->
+                  </div><!--//r-box__list-->
+                </div><!--//r-box__content-->
+        </div><!-- //r-box r-alarm-list -->
 
     </div><!-- // detail-content -->
 </template>

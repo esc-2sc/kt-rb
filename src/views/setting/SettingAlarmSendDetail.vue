@@ -29,7 +29,7 @@
         <div class="r-popup__header">
           <div class="title">알람 발신 이력 상세</div>
           <div class="func">
-            <button class="btn-close"><img src="/resources/images/svg/icon-close.svg" alt="close"></button>
+            <button class="btn-close" @click="closePopup"><img src="/resources/images/svg/icon-close.svg" alt="close"></button>
           </div>
         </div><!-- //r-popup__header -->
         <div class="r-popup__body">
@@ -170,6 +170,9 @@ export default {
   methods: {
     openPopup() {
       this.$refs.popup.open();
+    },
+    closePopup() {
+      this.$refs.popup.close();
     }
   },
 };

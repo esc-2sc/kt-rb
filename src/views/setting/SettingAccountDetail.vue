@@ -29,7 +29,7 @@
         <div class="r-popup__header">
           <div class="title">계정 상세정보</div>
           <div class="func">
-            <button class="btn-close"><img src="/resources/images/svg/icon-close.svg" alt="close"></button>
+            <button class="btn-close" @click="closePopup"><img src="/resources/images/svg/icon-close.svg" alt="close"></button>
           </div>
         </div><!-- //r-popup__header -->
         <div class="r-popup__body">
@@ -101,6 +101,12 @@
                 </div>
               </div><!-- //a-list__body -->
             </div><!-- //a-list-1 -->
+            <div class="r-popup__footer">
+              <div class="btn-wrap right">
+                <button type="button" class="a-btn-type-1 color--white a-color-point-3">계정 삭제</button>
+                <button type="button" class="a-btn-type-1 color--white"><strong>계정 수정</strong></button>
+              </div>
+            </div><!-- r-popup__footer -->
           </div><!-- //r-list-group -->
         </div><!-- // r-popup__body -->
       </div><!-- //r-popup, r-popup-type-1 -->
@@ -123,6 +129,9 @@ export default {
   methods: {
     openPopup() {
       this.$refs.popup.open();
+    },
+    closePopup() {
+      this.$refs.popup.close();
     }
   },
 };

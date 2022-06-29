@@ -31,11 +31,6 @@ export default [
 		name: 'setting-alarm-template-list',
 		component: () => import('@/views/setting/SettingAlarmTemplateList.vue'),
 	},
-	// {
-	// 	path: '/setting-alarm-template-time',
-	// 	name: 'setting-alarm-template-time',
-	// 	component: () => import('@/views/setting/SettingAlarmTemplateTime.vue'),
-	// },
 	{
 		path: '/setting-alarm-template-modify',
 		name: 'setting-alarm-template-modify',
@@ -53,26 +48,21 @@ export default [
 		name: 'setting-account-list',
 		component: () => import('@/views/setting/SettingAccountList.vue'),
 	},
-	// {
-	// 	path: '/setting-account-change',
-	// 	name: 'setting-account-change',
-	// 	component: () => import('@/views/setting/SettingAccountChange.vue'),
-	// },
-	// {
-	// 	path: '/setting-account-change-popup',
-	// 	name: 'setting-account-change-popup',
-	// 	component: () => import('@/views/setting/SettingAccountChangePopup.vue'),
-	// },
+	{
+		path: '/setting-account-change',
+		name: 'setting-account-change',
+		component: () => import('@/views/setting/SettingAccountChange.vue'),
+	},
 	{
 		path: '/setting-account-detail',
 		name: 'setting-account-detail',
 		component: () => import('@/views/setting/SettingAccountDetail.vue'),
 	},
-	// {
-	// 	path: '/setting-account-detail-modify',
-	// 	name: 'setting-account-detail-modify',
-	// 	component: () => import('@/views/setting/SettingAccountDetailModify.vue'),
-	// },
+	{
+		path: '/setting-account-detail-modify',
+		name: 'setting-account-detail-modify',
+		component: () => import('@/views/setting/SettingAccountDetailModify.vue'),
+	},
 	{
 		path: '/setting-account-snackbar',
 		name: 'setting-account-snackbar',

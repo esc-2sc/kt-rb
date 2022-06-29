@@ -59,7 +59,7 @@ body::-webkit-scrollbar-thumb{background:#fff;border:0;border-radius: 8px;}
 .scroll::-webkit-scrollbar-track{background-color:rgba(255,255,255,0);}
 .scroll::-webkit-scrollbar-thumb{background:rgba(100, 102, 105,.2);border:0;border-radius: 8px;}
 .scroll:hover::-webkit-scrollbar-thumb{background-color:#babac0;border-color:#babac0;}
-.scroll{overflow:auto;
+.scroll{overflow:auto;scroll-behavior: smooth;
     /*will-change:transform;*/
     /*transform:translate3d(0,0,0);*/
 }

@@ -98,3 +98,7 @@
 .p-setting-alarm-detail-popup{min-width:960px;}
 
 /* page: setting - account */
+.p-setting-account-modify-popup{min-width:640px;}
+.p-setting-account-change-popup{min-width:960px;}
+.p-setting-account-change-popup .btn-close img{width:32px;height:32px;}
+.p-setting-account-change-popup .r-popup__footer{padding:32px 40px 12px 40px;}

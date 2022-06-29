@@ -1,7 +1,7 @@
 <template>
     <main class="wrap">
         <header class="header">
-            <h1 class="logo"><a href="#"><img src="/resources/images/svg/logo-black.svg" alt="R-Brain"></a></h1>
+            <h1 class="logo"><router-link to="/guide"><img src="/resources/images/svg/logo-black.svg" alt="R-Brain"></router-link></h1>
             <navigation/>
             <div class="aside">
                 <span class="user">robot_seoul45</span>

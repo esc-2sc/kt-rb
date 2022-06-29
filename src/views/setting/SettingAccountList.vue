@@ -102,7 +102,7 @@
 <script>
 import VueRangedatePicker from 'vue-rangedate-picker';
 export default {
-  name: 'SettingAlarmSendList',
+  name: 'SettingAccountList',
   components: {VueRangedatePicker},
   data() {
     return {

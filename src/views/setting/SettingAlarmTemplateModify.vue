@@ -9,23 +9,24 @@
             <h2 class="tit">알람 템플릿 수정</h2>
           </div><!--//r-box__list-header-->
           <div class="r-box__list-body">
+
             <div>
               <button class="a-btn-type-1" @click="openPopup">
                 <span class="label">알람 템플릿 수정 - Popup</span>
               </button><!-- //a-btn-type-1 -->
             </div>
-          </div><!--// r-box__list-body-->
 
+          </div><!--// r-box__list-body-->
         </div><!--//r-box__list-->
       </div><!-- //r-box__content -->
     </div><!-- //r-box r-filter-list -->
 
-    <vx-popup ref="popup" modal close-on-outside-down>
+    <vx-popup ref="popup" modal>
       <div class="r-popup r-popup-type-1 p-setting-alarm-detail-popup">
         <div class="r-popup__header">
           <div class="title">알람 템플릿 수정</div>
           <div class="func">
-            <button class="btn-close"><img src="/resources/images/svg/icon-close.svg" alt="close"></button>
+            <button class="btn-close" @click="closePopup"><img src="/resources/images/svg/icon-close.svg" alt="close"></button>
           </div>
         </div><!-- //r-popup__header -->
         <div class="r-popup__body">
@@ -61,15 +62,15 @@
 
           <div class="r-popup__row">
             <div class="r-list-tab">
-                <div class="r-list-tab__item-l"><span class="label">알람등급</span></div>
-                <div class="r-list-tab__item-r">
-                  <div class="a-tab-3">
-                    <button class="selected">Major</button>
-                    <button>Fatal</button>
-                    <button>Critical</button>
-                    <button>Minor</button>
-                  </div>
+              <div class="r-list-tab__item-l"><span class="label">알람등급</span></div>
+              <div class="r-list-tab__item-r">
+                <div class="a-tab-3">
+                  <button class="selected">Major</button>
+                  <button>Fatal</button>
+                  <button>Critical</button>
+                  <button>Minor</button>
                 </div>
+              </div>
             </div><!--//r-list-tab-->
           </div><!-- //r-popup__row -->
 
@@ -115,10 +116,34 @@
             <div class="r-list-tab">
               <div class="r-list-tab__item-l"><span class="label">발신 시간대  00:00~20:20</span></div>
               <div class="r-list-tab__item-r">
-                <div class="a-tab-3">
-                  <button class="selected">기본 시간대</button>
-                  <button>직접입력</button>
+                <div :class="['a-tab-3', {'open-time-view':isTimeView}]">
+                  <button >기본 시간대</button>
+                  <button id="time-select" @click="testTimeView" selected>직접입력</button>
                 </div>
+                <div class="r-time-select" v-if="false">
+                  <div class="r-time-select__group">
+                    <div class="r-time-select__title">시작</div>
+                    <div class="r-time-select__list">
+                      <ul class="scroll">
+                        <li v-for="hour in 24"><button :selected="hour == 1">{{ `${hour}시` }}</button></li>
+                      </ul>
+                      <ul class="scroll">
+                        <li v-for="(minute, index) in minutes"><button :selected="index == 0">{{`${minute}분`}}</button></li>
+                      </ul>
+                    </div><!-- //r-time-select__list -->
+                  </div><!-- //r-time-select__group -->
+                  <div class="r-time-select__group">
+                    <div class="r-time-select__title">종료</div>
+                    <div class="r-time-select__list">
+                      <ul class="scroll">
+                        <li v-for="hour in 24"><button :selected="hour == 6">{{ `${hour}시` }}</button></li>
+                      </ul>
+                      <ul class="scroll">
+                        <li v-for="(minute, index) in minutes"><button :selected="index == 5">{{`${minute}분`}}</button></li>
+                      </ul>
+                    </div><!-- //r-time-select__list -->
+                  </div><!-- //r-time-select__group -->
+                </div><!-- //r-time-select -->
               </div>
             </div><!--//r-list-tab-->
           </div><!--//r-popup__row -->
@@ -158,7 +183,37 @@
         </div>
       </div><!-- //r-popup, r-popup-type-1 -->
     </vx-popup>
-
+    <vx-popup ref="timeSelect"
+              position-target="#time-select"
+              :horizontalOffset="-24"
+              :verticalOffset="9"
+              horizontalAlign="right"
+              close-on-outside-down>
+      <div class="r-time-select">
+        <div class="r-time-select__group">
+          <div class="r-time-select__title">시작</div>
+          <div class="r-time-select__list">
+            <ul class="scroll">
+              <li v-for="hour in 24"><button :selected="hour == 1">{{ `${hour}시` }}</button></li>
+            </ul>
+            <ul class="scroll">
+              <li v-for="(minute, index) in minutes"><button :selected="index == 0">{{`${minute}분`}}</button></li>
+            </ul>
+          </div><!-- //r-time-select__list -->
+        </div><!-- //r-time-select__group -->
+        <div class="r-time-select__group">
+          <div class="r-time-select__title">종료</div>
+          <div class="r-time-select__list">
+            <ul class="scroll">
+              <li v-for="hour in 24"><button :selected="hour == 6">{{ `${hour}시` }}</button></li>
+            </ul>
+            <ul class="scroll">
+              <li v-for="(minute, index) in minutes"><button :selected="index == 5">{{`${minute}분`}}</button></li>
+            </ul>
+          </div><!-- //r-time-select__list -->
+        </div><!-- //r-time-select__group -->
+      </div><!-- //r-time-select -->
+    </vx-popup>
   </div><!-- // detail-content -->
 </template>
 
@@ -168,6 +223,8 @@ export default {
   components: {},
   data() {
     return {
+      minutes: ['00', '05', '15', '20', '25', '30', '35', '40', '45', '50', '55', '60'],
+      isTimeView: false
     };
   },
   mounted() {
@@ -175,7 +232,16 @@ export default {
   },
   methods: {
     openPopup() {
-      this.$refs.popup.open();
+      this.$refs.popup.open().opened(() => {
+        this.$refs.timeSelect.open();
+      });
+    },
+    closePopup() {
+      this.$refs.popup.close();
+    },
+    testTimeView() {
+      this.isTimeView = !this.isTimeView;
+      this.$refs.timeSelect.open();
     }
   },
 };

@@ -10,8 +10,8 @@
                                 <div class="a-alert-message__desc">변경된 내용으로 저장하시겠습니까?</div>
                             </div>
                             <div class="a-alert-message__buttons">
-                                <button class="a-btn-type-1">저장하기</button>
                                 <button class="a-btn-type-1 transparent">취소하기</button>
+                              <button class="a-btn-type-1">저장하기</button>
                             </div>
                         </div><!-- //a-alert-message -->
                     </div>
@@ -43,8 +43,8 @@
                                 <div class="a-alert-message__desc">변경된 내용으로 저장하시겠습니까?</div>
                             </div>
                             <div class="a-alert-message__buttons">
-                                <button class="a-btn-type-1">저장하기</button>
                                 <button class="a-btn-type-1 transparent">취소하기</button>
+                              <button class="a-btn-type-1">저장하기</button>
                             </div>
                         </div><!-- //a-alert-message -->
                     </div>

@@ -112,6 +112,18 @@
       </div><!-- //r-popup, r-popup-type-1 -->
     </vx-popup>
 
+    <vx-popup ref="alertMessage" modal>
+      <div class="a-alert-message">
+        <div class="a-alert-message__label">
+          <div class="a-alert-message__title">계정 삭제</div>
+          <div class="a-alert-message__desc">계정 삭제를 진행하시겠습니까?</div>
+        </div>
+        <div class="a-alert-message__buttons">
+          <button class="a-btn-type-1 transparent" @click="closeMessagePopup">취소</button>
+          <button class="a-btn-type-1" @click="closeMessagePopup">확인</button>
+        </div>
+      </div><!-- //a-alert-message -->
+    </vx-popup>
   </div><!-- // detail-content -->
 </template>
 
@@ -128,10 +140,18 @@ export default {
   },
   methods: {
     openPopup() {
-      this.$refs.popup.open();
+      this.$refs.popup.open().opened(() => {
+        this.openMessagePopup();
+      });
     },
     closePopup() {
       this.$refs.popup.close();
+    },
+    openMessagePopup() {
+      this.$refs.alertMessage.open();
+    },
+    closeMessagePopup() {
+      this.$refs.alertMessage.close();
     }
   },
 };

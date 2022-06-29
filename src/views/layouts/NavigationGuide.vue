@@ -23,15 +23,14 @@ export default {
             {level:2, label:'발신관리 - 검색결과', url:'setting-alarm-send-search' },
             {level:2, label:'발신관리 - 상세(팝업)', url:'setting-alarm-send-detail' },
             {level:2, label:'템플릿 관리', url:'setting-alarm-template-list'},
-            {level:2, label:'템플릿 관리 - 시간설정(팝업)', url:'setting-alarm-template-time', ing: true, },
             {level:2, label:'템플릿 관리 - 수정/저장(팝업)', url:'setting-alarm-template-modify' },
             {level:2, label:'템플릿 관리 - 저장 완료(Snackbar)', url:'setting-alarm-template-snackbar'},
 
             {level:1, label:'PAGE - 설정 - 계정관리', },
             {level:2, label:'계정관리', url:'setting-account-list' },
-            {level:2, label:'계정관리 - 권한변경(팝업)', url:'setting-account-change', ing: true, },
+            {level:2, label:'계정관리 - 권한변경(팝업)', url:'setting-account-change' },
             {level:2, label:'계정관리 - 상세정보(팝업)', url:'setting-account-detail' },
-            {level:2, label:'계정관리 - 계정수정(팝업)', url:'setting-account-detail-modify', ing: true, },
+            {level:2, label:'계정관리 - 계정수정(팝업)', url:'setting-account-detail-modify' },
             {level:2, label:'계정관리 - Snackbar', url:'setting-account-snackbar'},
 
             {level:1, label:'GUIDE-A', },

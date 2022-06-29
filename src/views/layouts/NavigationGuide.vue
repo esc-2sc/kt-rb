@@ -18,6 +18,9 @@ export default {
             {level:2, label:'layout - detail', url:'detail' },
             {level:2, label:'login', url:'login' },
 
+            {level:1, label:'PAGE - Viewer', },
+            {level:2, label:'PAGE - ', },
+
             {level:1, label:'PAGE - 설정 - 알람', },
             {level:2, label:'발신관리', url:'setting-alarm-send-list' },
             {level:2, label:'발신관리 - 검색결과', url:'setting-alarm-send-search' },

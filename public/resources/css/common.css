@@ -3738,3 +3738,8 @@ div.a-paging__combobox-dropdown .vx-list__item{justify-content:center;}
 .r-time-select__list button[selected],
 .r-time-select__list button:hover{background-color:#fff;}
 .open-time-view + .r-time-select{display:flex;}
+
+/* r-paging-box - small */
+.r-paging-box{display:flex;gap:4px;background: #F2F2F2;border-radius: 8px;padding:4px}
+.r-paging-box button{width:24px;height:24px;background:#fff;border-radius:6px;display:flex;align-items: center;justify-content: center;}
+

@@ -65,6 +65,8 @@ export default {
               {name:'icon-battery-unknown.svg'},
               {name:'icon-battery-vert.svg'},
               {name:'icon-battery_alert.svg'},
+              {name:'icon-gray-arrow-left.svg'},
+              {name:'icon-gray-arrow-right.svg'},
               {name:'icon-label-01.svg'},
               {name:'icon-label-02.svg'},
               {name:'icon-label-03.svg'},

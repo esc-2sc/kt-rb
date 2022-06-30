@@ -88,7 +88,7 @@
 .r-filter-header{display: flex; justify-content: space-between; align-items: center;padding-top:43px;}
 .r-filter-header .title{display:flex;align-items: center}
 .r-filter-header .title:before{content: '';flex:none;display:block; width:16px;height:16px;background:url('../images/svg/icon-filter.svg') 50% no-repeat; margin-right:8px}
-.r-filter-options .title{padding-bottom:12px}
+.r-filter-options .title{padding-bottom:12px;color:#242424}
 .r-filter-options .r-calendar{margin-top:8px; width:193px}
 .r-filter-options .r-calendar .input-date{width:100% !important; border-color:#DDDEDE;}
 .r-filter-options .option-box{padding:8px 0 16px}
@@ -105,4 +105,21 @@
 .r-box__list .r-icon-info{color:#242424;display:flex;align-items: center;}
 .r-box__list .r-icon-info:before{content: ''; width:24px;height:24px;margin-right:8px;background:url('../images/svg/icon-info.svg') 50% no-repeat}
 
-
+.contents-inner{padding:210px 48px 141px;display: flex;flex-direction: column;gap:40px}
+.r-search-box{flex:none; display:flex; gap:40px;}
+.r-search-filter,.r-search-recent{min-height:232px; background:#fff; border-radius: 24px; padding:32px 40px}
+.r-search-filter{flex:1;display:flex;flex-direction:column;gap:30px}
+.r-search-filter .r-filter{display:flex; gap:20px}
+.r-search-filter .r-filter-options + .r-filter-options{margin:0}
+.r-search-recent{flex:none;width:560px;display:flex;flex-direction: column; gap:24px}
+.r-search-recent .item-header{display:flex; justify-content: space-between; align-items: center}
+.r-search-recent .item-header .tit{font-size: 15px;line-height: 20px;font-weight: 600}
+.r-search-recent .item-list{display:flex;gap: 24px}
+.r-search-recent .item{flex:1;background: #F2F2F2; border-radius: 16px; padding:16px; min-height:110px; position:relative; overflow: hidden;cursor: pointer}
+.r-search-recent .item .tit{font-size:15px;line-height: 20px;color:#242424}
+.r-search-recent .item .txt{margin-top:16px; font-size:13px; color:#4D4D4D; line-height: 17px; padding-right:65px; position: relative;z-index:1}
+.r-search-recent .item .img{position:absolute;right:7px;bottom:0;z-index:0}
+.r-search-recent .item .img img{max-width:56px;height:auto}
+.r-search-result{flex:1; background:#fff; border-radius: 24px;}
+.r-search-result .r-tachyon__header{padding:32px 40px}
+.r-search-result .r-tachyon__footer{padding:32px 50px}

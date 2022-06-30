@@ -98,5 +98,6 @@
 .p-setting-account-change-popup{min-width:960px;}
 
 /* page: driving */
-.p-driving-map-completion-popup{min-width:960px;padding-bottom:0;}
-.p-driving-map-completion-popup{}
+.p-driving-map-completion-popup{min-width:960px;}
+.p-driving-map-completion-content{display:flex;flex-direction:column;}
+.p-driving-map-completion-content .r-tachyon__footer{padding-bottom:16px;}

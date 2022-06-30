@@ -3629,7 +3629,7 @@ div.a-paging__combobox-dropdown .vx-list__item{justify-content:center;}
 .r-popup-auto > .r-popup-auto__content{padding:32px;}
 .r-popup-auto .r-popup{display:flex;flex-direction: column;max-height:calc(100vh - 64px);}
 .r-popup-auto .r-popup__header{flex:none;}
-.r-popup-auto .r-popup__body{flex:1;overflow:auto;scroll-behavior: smooth;}
+.r-popup-auto .r-popup__body{flex:1;position:relative;overflow:auto;scroll-behavior: smooth;}
 .r-popup-auto .r-popup__body::-webkit-scrollbar{background-color:rgba(255,255,255,0);width:6px;height:8px;opacity:0;}
 .r-popup-auto .r-popup__body::-webkit-scrollbar-button{display:none}
 .r-popup-auto .r-popup__body::-webkit-scrollbar-track{background-color:rgba(255,255,255,0);}

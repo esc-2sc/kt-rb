@@ -21,7 +21,7 @@ export default {
             {level:1, label:'PAGE - 주행분석', },
             {level:2, label:'주행분석 - 로봇선택',  url:'driving-robot-selection'},
             {level:2, label:'주행분석 - 상세',  url:'viewer'},
-            {level:2, label:'주행분석 - 상세 - 지도 완성도 현황',  url:'driving-map-completion-status'},
+            {level:2, label:'주행분석 - 지도 완성도 현황(팝업)',  url:'driving-map-completion-status'},
 
             {level:1, label:'PAGE - 설정 - 알람', },
             {level:2, label:'발신관리', url:'setting-alarm-send-list' },

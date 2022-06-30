@@ -3633,6 +3633,9 @@ div.a-paging__combobox-dropdown .vx-list__item{justify-content:center;}
 .r-popup-type-1 .r-popup__row{display:flex;gap:16px;}
 .r-popup-type-1 .r-popup__row > *{flex:1;}
 .r-popup-type-1 .r-popup__row + .r-popup__row{margin-top:16px}
+.r-popup-type-2 .btn-close img{width:32px;height:32px;}
+.r-popup-type-2 .r-popup__footer{padding:32px 40px 12px 40px;}
+
 
 /* r-tachyon */
 .r-tachyon{}

@@ -105,7 +105,7 @@
 .r-box__list .r-icon-info{color:#242424;display:flex;align-items: center;}
 .r-box__list .r-icon-info:before{content: ''; width:24px;height:24px;margin-right:8px;background:url('../images/svg/icon-info.svg') 50% no-repeat}
 
-.contents-inner{padding:210px 48px 141px;display: flex;flex-direction: column;gap:40px}
+.r-search-dashboard{display:flex; flex-direction: column;gap:40px}
 .r-search-box{flex:none; display:flex; gap:40px;}
 .r-search-filter,.r-search-recent{min-height:232px; background:#fff; border-radius: 24px; padding:32px 40px}
 .r-search-filter{flex:1;display:flex;flex-direction:column;gap:30px}

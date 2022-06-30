@@ -1,6 +1,6 @@
 <template>
-  <div class="contents p-driving-robot-selection">
-    <div class="contents-inner">
+  <div class="detail-content p-driving-robot-selection">
+    <div class="r-box full r-search-dashboard">
       <div class="r-search-box">
         <div class="r-search-filter">
           <div class="r-search-row">
@@ -78,47 +78,46 @@
           </div>
         </div><!--//r-search-recent-->
       </div><!--//r-search-box-->
-
       <div class="r-search-result">
-        <div class="r-tachyon full">
-          <div class="r-tachyon__header">
-            <div class="r-tachyon__header-l">
-              <h2 class="r-tachyon__title">전체 <em>345건</em></h2>
-            </div>
-          </div><!-- //r-tachyon__header -->
-          <tachyon-grid
-              theme="themeBoardLine"
-              :row-height="56"
-              :header-row-height="56"
-              :row-count="5"
-              :items="gridItems"
-              @collection-change="onGridItemReset"
-              @scroll="onGridScrollEvent">
-            <columns>
-              <tachyon-column header-text="번호" data-field=""></tachyon-column>
-              <tachyon-column header-text="로봇모델명" data-field=""></tachyon-column>
-              <tachyon-column header-text="서비스" data-field=""></tachyon-column>
-              <tachyon-column header-text="제조사" data-field=""></tachyon-column>
-              <tachyon-column header-text="서비스 계약 ID" data-field=""></tachyon-column>
-              <tachyon-column header-text="MAC 주소" data-field=""></tachyon-column>
-              <tachyon-column header-text="고객사명" data-field=""></tachyon-column>
-              <tachyon-column header-text="사업장명" data-field=""></tachyon-column>
-              <tachyon-column header-text="본부" data-field=""></tachyon-column>
-            </columns>
-          </tachyon-grid>
-          <div class="r-tachyon__footer">
-            <div class="r-tachyon__footer-l">
-              <com-paging
-                  v-model="pageNum"
-                  :page-count="pageCount"
-                  :page-range="5"></com-paging>
-            </div>
-            <div class="r-tachyon__footer-r" v-if="false">
-              button
-            </div>
+      <div class="r-tachyon full">
+        <div class="r-tachyon__header">
+          <div class="r-tachyon__header-l">
+            <h2 class="r-tachyon__title">전체 <em>345건</em></h2>
           </div>
-        </div><!-- //r-tachyon -->
-      </div><!--///r-search-result-->
+        </div><!-- //r-tachyon__header -->
+        <tachyon-grid
+            theme="themeBoardLine"
+            :row-height="56"
+            :header-row-height="56"
+            :row-count="5"
+            :items="gridItems"
+            @collection-change="onGridItemReset"
+            @scroll="onGridScrollEvent">
+          <columns>
+            <tachyon-column header-text="번호" data-field=""></tachyon-column>
+            <tachyon-column header-text="로봇모델명" data-field=""></tachyon-column>
+            <tachyon-column header-text="서비스" data-field=""></tachyon-column>
+            <tachyon-column header-text="제조사" data-field=""></tachyon-column>
+            <tachyon-column header-text="서비스 계약 ID" data-field=""></tachyon-column>
+            <tachyon-column header-text="MAC 주소" data-field=""></tachyon-column>
+            <tachyon-column header-text="고객사명" data-field=""></tachyon-column>
+            <tachyon-column header-text="사업장명" data-field=""></tachyon-column>
+            <tachyon-column header-text="본부" data-field=""></tachyon-column>
+          </columns>
+        </tachyon-grid>
+        <div class="r-tachyon__footer">
+          <div class="r-tachyon__footer-l">
+            <com-paging
+                v-model="pageNum"
+                :page-count="pageCount"
+                :page-range="5"></com-paging>
+          </div>
+          <div class="r-tachyon__footer-r" v-if="false">
+            button
+          </div>
+        </div>
+      </div><!-- //r-tachyon -->
+    </div><!--///r-search-result-->
     </div>
   </div>
 </template>

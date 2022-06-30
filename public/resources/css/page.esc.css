@@ -96,3 +96,7 @@
 /* page: setting - account */
 .p-setting-account-modify-popup{min-width:640px;}
 .p-setting-account-change-popup{min-width:960px;}
+
+/* page: driving */
+.p-driving-map-completion-popup{min-width:960px;padding-bottom:0;}
+.p-driving-map-completion-popup{}

@@ -86,11 +86,7 @@
 /*.map-info-window{display:none;}*/
 
 /* detail content */
-.detail-content{
-  position: relative;;
-  min-height:100%;
-  padding:180px 48px 48px 48px;
-}
+.detail-content{position: relative;min-height:100%;padding:180px 48px 48px 48px;}
 /*.detail-content.auto{height:auto;}*/
 
 /* page: setting - alarm */
@@ -100,5 +96,3 @@
 /* page: setting - account */
 .p-setting-account-modify-popup{min-width:640px;}
 .p-setting-account-change-popup{min-width:960px;}
-.p-setting-account-change-popup .btn-close img{width:32px;height:32px;}
-.p-setting-account-change-popup .r-popup__footer{padding:32px 40px 12px 40px;}

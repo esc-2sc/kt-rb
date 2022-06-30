@@ -99,7 +99,7 @@
                 </div><!-- //r-box__nav-cont -->
             </div>
             <div class="r-box__content">
-                <div class="r-tachyon full">
+                <div class="r-tachyon min--auto full">
                     <div class="r-tachyon__header">
                         <div class="r-tachyon__header-l">
                             <h2 class="r-tachyon__title">전체 <em>345건</em></h2>

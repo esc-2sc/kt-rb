@@ -79,7 +79,7 @@
         </div><!--//r-search-recent-->
       </div><!--//r-search-box-->
       <div class="r-search-result">
-      <div class="r-tachyon full">
+      <div class="r-tachyon min--auto full">
         <div class="r-tachyon__header">
           <div class="r-tachyon__header-l">
             <h2 class="r-tachyon__title">전체 <em>345건</em></h2>

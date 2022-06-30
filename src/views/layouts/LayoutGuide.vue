@@ -37,7 +37,7 @@ export default {
   top: calc(var(--height-header) - 5px);
   bottom: 27px;
   background-color:#fff;
-  backdrop-filter: blur(20px);
+  /*backdrop-filter: blur(20px);*/
   border-radius: 24px;
   padding-top:40px;
   overflow: auto;

@@ -97,7 +97,7 @@
 .r-filter-options .a-tab-3 > *{margin-top:8px}
 
 /* r-alarm-list */
-.r-box__list{background: #FFFFFF;box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);border-radius: 24px;padding: 0 56px 56px}
+.r-box__list{background: #FFFFFF;box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);border-radius: 24px;padding: 0 56px 56px}
 .r-box__list + .r-box__list{margin-top:80px}
 .r-box__list-header{min-height:96px;padding:35px 0; display:flex;justify-content: space-between}
 .r-box__list-header .tit{flex:1;font-size:20px;font-weight: 600;line-height: 26px}
@@ -110,6 +110,7 @@
 .r-search-filter,.r-search-recent{min-height:232px; background:#fff; border-radius: 24px; padding:32px 40px}
 .r-search-filter{flex:1;display:flex;flex-direction:column;gap:30px}
 .r-search-filter .r-filter{display:flex; gap:20px}
+.r-search-filter .r-filter-options{flex:1}
 .r-search-filter .r-filter-options + .r-filter-options{margin:0}
 .r-search-recent{flex:none;width:560px;display:flex;flex-direction: column; gap:24px}
 .r-search-recent .item-header{display:flex; justify-content: space-between; align-items: center}

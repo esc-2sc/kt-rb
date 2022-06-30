@@ -39,6 +39,7 @@
     outline:none;
     border-color:#c4c4c4;
 }
+.tachyon-grid .tachyon-scroll-container{min-height: inherit !important;}
 .tachyon-grid-wrapper.scroll--hidden .tachyon-scroll-container{
     overflow:hidden;
 }

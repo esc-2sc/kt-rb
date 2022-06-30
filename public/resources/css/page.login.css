@@ -1,0 +1,29 @@
+.r-login-wrap{position:absolute;left:0;right:0;top:0;bottom:0;background-color:#030204;}
+.r-login__form{
+  position: absolute;
+  left:50%;
+  top:50%;
+  display: flex;
+  flex-direction: column;
+  width:480px;
+  min-height:540px;
+  margin:-270px 0 0 -240px;
+  padding:0 64px 40px 64px;
+  background-color: #fff;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(20px);
+  border-radius: 24px;
+}
+.r-login__form-header{flex:none;display:flex;align-items:center;height:120px;}
+.r-login__form-header .logo-rb{flex:1;}
+.r-login__form-header .logo-kt{flex:none;}
+.r-login__form-content{flex:1;}
+.r-login__form-write{display: flex;flex-direction: column;gap:24px;}
+.r-login__form-write .btn-login button{width:100%;}
+.r-login__form-option{display: flex;align-items: center;margin-top:32px;}
+.r-login__form-option .option-l{flex:1;}
+.r-login__form-option .option-r{flex:none;}
+.r-login__form-footer{flex:none;line-height:20px;color:#4d4d4d;}
+.r-login__form-footer p{text-align: center;}
+.r-login__video{width: 100%;height:100%;}
+.r-login__video video{width:inherit;height:inherit;object-fit: cover;}

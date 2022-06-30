@@ -10,6 +10,18 @@ export default [
 		component: () => import('@/views/Detail.vue'),
 	},
 
+	//주행분석
+	{
+		path: '/driving-robot-selection',
+		name: 'driving-robot-selection',
+		component: () => import('@/views/driving/DrivingRobotSelection.vue'),
+	},
+	{
+		path: '/driving-map-completion-status',
+		name: 'driving-map-completion-status',
+		component: () => import('@/views/driving/DrivingMapCompletionStatus.vue'),
+	},
+
 	// 설정 - 알람
 	{
 		path: '/setting-alarm-send-list',

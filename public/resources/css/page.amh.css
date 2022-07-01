@@ -95,7 +95,7 @@
 .r-filter-options .option-box{border-top:1px solid #E8E8E8; padding-top:8px}
 .r-filter-options + .r-filter-options{margin-top:27px}
 .r-filter-options .a-tab-3 > *{margin-top:8px;letter-spacing: -0.01em}
-.r-filter-options .vx-combobox{border-color:#DDDEDE; /*width:calc(100% - 2px); margin-left:2px*/}
+.r-filter-options .vx-combobox{border-color:#DDDEDE; margin-top:8px /*width:calc(100% - 2px); margin-left:2px*/}
 .r-filter-options .vx-combobox__placeholder, .vx-combobox__selection{color:#242424}
 .r-filter-options .vx-combobox:hover{box-shadow: 0 0 0 2px #1781F4; border-color:transparent}
 

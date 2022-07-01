@@ -25,132 +25,136 @@
     </div><!-- //r-box r-filter-list -->
 
     <vx-popup ref="popup" modal close-on-outside-down>
-      <div class="r-popup r-popup-type-1 p-setting-alarm-detail-popup">
-        <div class="r-popup__header">
-          <div class="title">알람 발신 이력 상세</div>
-          <div class="func">
-            <button class="btn-close" @click="closePopup"><img src="/resources/images/svg/icon-close.svg" alt="close"></button>
-          </div>
-        </div><!-- //r-popup__header -->
-        <div class="r-popup__body">
+      <div class="r-popup-auto">
+        <div class="r-popup-auto__content">
+          <div class="r-popup r-popup-type-1 p-setting-alarm-detail-popup">
+            <div class="r-popup__header">
+              <div class="title">알람 발신 이력 상세</div>
+              <div class="func">
+                <button class="btn-close" @click="closePopup"><img src="/resources/images/svg/icon-close.svg" alt="close"></button>
+              </div>
+            </div><!-- //r-popup__header -->
+            <div class="r-popup__body">
 
-          <div class="r-list-group">
-            <h3 class="r-list__title">로봇정보</h3>
-            <div class="a-list-1">
-              <div class="a-list__body">
-                <div class="a-list__item-row">
-                  <div class="a-list__item-label">
-                    <span class="label">로봇모델</span>
-                    <p class="desc">KT_서빙로봇_임대형</p>
-                  </div>
-                  <div class="a-list__item-label">
-                    <span class="label">제조사</span>
-                    <p class="desc">베어로보틱스</p>
-                  </div>
-                  <div class="a-list__item-label">
-                    <span class="label">서비스계약</span>
-                    <p class="desc">S003693850</p>
-                  </div>
-                  <div class="a-list__item-label">
-                    <span class="label">MAC 주소</span>
-                    <p class="desc">00.00.00.00.F4.7B</p>
-                  </div>
-                </div>
-                <div class="a-list__item-row">
-                  <div class="a-list__item-label">
-                    <span class="label">서비스</span>
-                    <p class="desc">서빙</p>
-                  </div>
-                  <div class="a-list__item-label">
-                    <span class="label">고객사명</span>
-                    <p class="desc">천천</p>
-                  </div>
-                  <div class="a-list__item-label">
-                    <span class="label">본부</span>
-                    <p class="desc">강북/강원</p>
-                  </div>
-                  <div class="a-list__item-label">
-                    <span class="label">관제레벨</span>
-                    <p class="desc">L2</p>
-                  </div>
-                </div>
-              </div><!-- //a-list__body -->
-            </div><!-- //a-list-1 -->
-          </div><!-- //r-list-group -->
-          <div class="r-list-group">
-            <h3 class="r-list__title">알람상세</h3>
-            <div class="a-list-1">
-              <div class="a-list__body">
-                <div class="a-list__item-row">
-                  <div class="a-list__item-label">
-                    <span class="label">알람구분</span>
-                    <p class="desc">장애물 감지</p>
-                  </div>
-                  <div class="a-list__item-label">
-                    <span class="label">알람코드</span>
-                    <p class="desc">10019</p>
-                  </div>
-                  <div class="a-list__item-label">
-                    <span class="label">알람등급</span>
-                    <p class="desc">Major</p>
-                  </div>
-                  <div class="a-list__item-label">
-                    <span class="label">관제레벨</span>
-                    <p class="desc">L2</p>
-                  </div>
-                </div>
-                <div class="a-list__item-row">
-                  <div class="a-list__item-label">
-                    <span class="label">발신일시</span>
-                    <p class="desc">2022-01-20 14:08:10</p>
-                  </div>
-                  <div class="a-list__item-label">
-                    <span class="label">수신플랫폼</span>
-                    <p class="desc">Robot Makers, 고객케어, 로봇케어</p>
-                  </div>
-                </div>
-                <div class="a-list__item-row">
-                  <div class="a-list__item-label">
-                    <span class="label">내용</span>
-                    <p class="desc">로봇에서 장애물이 감지됐습니다.</p>
-                  </div>
-                </div>
-              </div><!-- //a-list__body -->
-            </div><!-- //a-list-1 -->
-          </div><!-- //r-list-group -->
-          <div class="r-list-group">
-            <h3 class="r-list__title">조치이력</h3>
-            <div class="a-list-1">
-              <div class="a-list__body">
-                <div class="a-list__item-row">
-                  <div class="a-list__item-label">
-                    <span class="label">조치상태</span>
-                    <p class="desc">수동종료</p>
-                  </div>
-                  <div class="a-list__item-label">
-                    <span class="label">처리자</span>
-                    <p class="desc">10031696</p>
-                  </div>
-                  <div class="a-list__item-label">
-                    <span class="label">처리일시</span>
-                    <p class="desc">2022-01-20 14:08:10</p>
-                  </div>
-                  <div class="a-list__item-label">
-                    <span class="label">발생원인</span>
-                    <p class="desc">장애물 감지</p>
-                  </div>
-                </div>
-                <div class="a-list__item-row">
-                  <div class="a-list__item-label">
-                    <span class="label">조치내역</span>
-                    <p class="desc">직접 조치 완료했습니다.</p>
-                  </div>
-                </div>
-              </div><!-- //a-list__body -->
-            </div><!-- //a-list-1 -->
-          </div><!-- //r-list-group -->
-        </div><!-- // r-popup__body -->
-      </div><!-- //r-popup, r-popup-type-1 -->
+              <div class="r-list-group">
+                <h3 class="r-list__title">로봇정보</h3>
+                <div class="a-list-1">
+                  <div class="a-list__body">
+                    <div class="a-list__item-row">
+                      <div class="a-list__item-label">
+                        <span class="label">로봇모델</span>
+                        <p class="desc">KT_서빙로봇_임대형</p>
+                      </div>
+                      <div class="a-list__item-label">
+                        <span class="label">제조사</span>
+                        <p class="desc">베어로보틱스</p>
+                      </div>
+                      <div class="a-list__item-label">
+                        <span class="label">서비스계약</span>
+                        <p class="desc">S003693850</p>
+                      </div>
+                      <div class="a-list__item-label">
+                        <span class="label">MAC 주소</span>
+                        <p class="desc">00.00.00.00.F4.7B</p>
+                      </div>
+                    </div>
+                    <div class="a-list__item-row">
+                      <div class="a-list__item-label">
+                        <span class="label">서비스</span>
+                        <p class="desc">서빙</p>
+                      </div>
+                      <div class="a-list__item-label">
+                        <span class="label">고객사명</span>
+                        <p class="desc">천천</p>
+                      </div>
+                      <div class="a-list__item-label">
+                        <span class="label">본부</span>
+                        <p class="desc">강북/강원</p>
+                      </div>
+                      <div class="a-list__item-label">
+                        <span class="label">관제레벨</span>
+                        <p class="desc">L2</p>
+                      </div>
+                    </div>
+                  </div><!-- //a-list__body -->
+                </div><!-- //a-list-1 -->
+              </div><!-- //r-list-group -->
+              <div class="r-list-group">
+                <h3 class="r-list__title">알람상세</h3>
+                <div class="a-list-1">
+                  <div class="a-list__body">
+                    <div class="a-list__item-row">
+                      <div class="a-list__item-label">
+                        <span class="label">알람구분</span>
+                        <p class="desc">장애물 감지</p>
+                      </div>
+                      <div class="a-list__item-label">
+                        <span class="label">알람코드</span>
+                        <p class="desc">10019</p>
+                      </div>
+                      <div class="a-list__item-label">
+                        <span class="label">알람등급</span>
+                        <p class="desc">Major</p>
+                      </div>
+                      <div class="a-list__item-label">
+                        <span class="label">관제레벨</span>
+                        <p class="desc">L2</p>
+                      </div>
+                    </div>
+                    <div class="a-list__item-row">
+                      <div class="a-list__item-label">
+                        <span class="label">발신일시</span>
+                        <p class="desc">2022-01-20 14:08:10</p>
+                      </div>
+                      <div class="a-list__item-label">
+                        <span class="label">수신플랫폼</span>
+                        <p class="desc">Robot Makers, 고객케어, 로봇케어</p>
+                      </div>
+                    </div>
+                    <div class="a-list__item-row">
+                      <div class="a-list__item-label">
+                        <span class="label">내용</span>
+                        <p class="desc">로봇에서 장애물이 감지됐습니다.</p>
+                      </div>
+                    </div>
+                  </div><!-- //a-list__body -->
+                </div><!-- //a-list-1 -->
+              </div><!-- //r-list-group -->
+              <div class="r-list-group">
+                <h3 class="r-list__title">조치이력</h3>
+                <div class="a-list-1">
+                  <div class="a-list__body">
+                    <div class="a-list__item-row">
+                      <div class="a-list__item-label">
+                        <span class="label">조치상태</span>
+                        <p class="desc">수동종료</p>
+                      </div>
+                      <div class="a-list__item-label">
+                        <span class="label">처리자</span>
+                        <p class="desc">10031696</p>
+                      </div>
+                      <div class="a-list__item-label">
+                        <span class="label">처리일시</span>
+                        <p class="desc">2022-01-20 14:08:10</p>
+                      </div>
+                      <div class="a-list__item-label">
+                        <span class="label">발생원인</span>
+                        <p class="desc">장애물 감지</p>
+                      </div>
+                    </div>
+                    <div class="a-list__item-row">
+                      <div class="a-list__item-label">
+                        <span class="label">조치내역</span>
+                        <p class="desc">직접 조치 완료했습니다.</p>
+                      </div>
+                    </div>
+                  </div><!-- //a-list__body -->
+                </div><!-- //a-list-1 -->
+              </div><!-- //r-list-group -->
+            </div><!-- // r-popup__body -->
+          </div><!-- //r-popup, r-popup-type-1 -->
+        </div><!-- //r-popup-auto__content -->
+      </div><!-- //r-popup-auto -->
     </vx-popup>
 
   </div><!-- // detail-content -->

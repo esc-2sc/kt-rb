@@ -25,7 +25,9 @@
     </div><!-- //r-box r-filter-list -->
 
     <vx-popup ref="popup" modal close-on-outside-down>
-      <div class="r-popup r-popup-type-1 p-setting-alarm-detail-popup">
+      <div class="r-popup-auto">
+        <div class="r-popup-auto__content">
+          <div class="r-popup r-popup-type-1 p-setting-alarm-detail-popup">
         <div class="r-popup__header">
           <div class="title">계정 상세정보</div>
           <div class="func">
@@ -110,6 +112,8 @@
           </div>
         </div><!-- r-popup__footer -->
       </div><!-- //r-popup, r-popup-type-1 -->
+        </div><!-- //r-popup-auto__content -->
+      </div><!-- //r-popup-auto -->
     </vx-popup>
 
     <vx-popup ref="alertMessage" modal>

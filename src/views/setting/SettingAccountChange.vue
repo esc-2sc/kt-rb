@@ -25,7 +25,9 @@
         </div><!-- //r-box r-filter-list -->
 
         <vx-popup ref="popup" modal>
-            <div class="r-popup r-popup-type-2 p-setting-account-change-popup">
+          <div class="r-popup-auto">
+            <div class="r-popup-auto__content">
+              <div class="r-popup r-popup-type-2 p-setting-account-change-popup">
                 <div class="r-popup__header">
                     <div class="title">권한변경</div>
                     <div class="func">
@@ -89,6 +91,8 @@
                     </div>
                 </div>
             </div><!-- //r-popup, r-popup-type-1 -->
+            </div><!-- //r-popup-auto__content -->
+          </div><!-- //r-popup-auto -->
         </vx-popup>
 
     </div><!-- // detail-content -->

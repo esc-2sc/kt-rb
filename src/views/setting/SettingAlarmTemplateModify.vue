@@ -22,7 +22,9 @@
     </div><!-- //r-box r-filter-list -->
 
     <vx-popup ref="popup" modal>
-      <div class="r-popup r-popup-type-1 p-setting-alarm-detail-popup">
+      <div class="r-popup-auto">
+        <div class="r-popup-auto__content">
+         <div class="r-popup r-popup-type-1 p-setting-alarm-detail-popup">
         <div class="r-popup__header">
           <div class="title">알람 템플릿 수정</div>
           <div class="func">
@@ -182,6 +184,8 @@
           </div>
         </div>
       </div><!-- //r-popup, r-popup-type-1 -->
+        </div><!-- //r-popup-auto__content -->
+      </div><!-- //r-popup-auto -->
     </vx-popup>
     <vx-popup ref="timeSelect"
               position-target="#time-select"

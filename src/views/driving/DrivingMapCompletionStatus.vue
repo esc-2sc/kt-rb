@@ -58,7 +58,8 @@
               </div><!-- //r-tachyon -->
 
             </div><!-- // r-popup__body -->
-          </div><!-- //r-popup, r-popup-type-1 -->
+          </div><!-- //r-popup, r-popup-type-2 -->
+
         </div><!-- //r-popup-auto__content -->
       </div><!-- //r-popup-auto -->
     </vx-popup>

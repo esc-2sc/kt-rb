@@ -82,19 +82,22 @@
 .r-box__nav{}
 .r-box__nav-header{flex:none;padding-bottom:44px}
 .r-box__nav-header .a-input-search{display: block}
-.r-box__nav-body{flex:1; margin-right:-25px}
+.r-box__nav-body{flex:1; margin-right:-25px;margin-left:-2px;padding-left:2px}
 .r-box__nav-body .title{font-size:13px; color:#242424}
 .r-box__nav-body .r-filter{width:244px}
 .r-filter-header{display: flex; justify-content: space-between; align-items: center;padding-top:43px;}
 .r-filter-header .title{display:flex;align-items: center}
 .r-filter-header .title:before{content: '';flex:none;display:block; width:16px;height:16px;background:url('../images/svg/icon-filter.svg') 50% no-repeat; margin-right:8px}
 .r-filter-options .title{padding-bottom:12px;color:#242424}
-.r-filter-options .r-calendar{margin-top:8px; width:193px}
+.r-filter-options .r-calendar{margin-top:8px; width:100%}
 .r-filter-options .r-calendar .input-date{width:100% !important; border-color:#DDDEDE;}
 .r-filter-options .option-box{padding:8px 0 16px}
 .r-filter-options .option-box{border-top:1px solid #E8E8E8; padding-top:8px}
 .r-filter-options + .r-filter-options{margin-top:27px}
-.r-filter-options .a-tab-3 > *{margin-top:8px}
+.r-filter-options .a-tab-3 > *{margin-top:8px;letter-spacing: -0.01em}
+.r-filter-options .vx-combobox{border-color:#DDDEDE; margin-top:8px /*width:calc(100% - 2px); margin-left:2px*/}
+.r-filter-options .vx-combobox__placeholder, .vx-combobox__selection{color:#242424}
+.r-filter-options .vx-combobox:hover{box-shadow: 0 0 0 2px #1781F4; border-color:transparent}
 
 /* r-alarm-list */
 .r-box__list{background: #FFFFFF;box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);border-radius: 24px;padding: 0 56px 56px}

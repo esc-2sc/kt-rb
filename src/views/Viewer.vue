@@ -74,24 +74,27 @@
                             <div class="r-eyes">
                                 <div class="r-eyes__item">
                                     <span class="label">경계선 분석</span>
-                                    <label class="r-eye-toggle">
+                                    <label class="r-eye-toggle color--blue">
                                         <input type="checkbox" class="r-eye-toggle__input" checked>
                                         <span class="r-eye-toggle__label"></span>
                                     </label><!-- //r-eye-toggle -->
                                 </div>
                                 <div class="r-eyes__item">
                                     <span class="label">주행영역 노이즈</span>
-                                    <label class="r-eye-toggle">
+                                    <label class="r-eye-toggle color--orange">
                                         <input type="checkbox" class="r-eye-toggle__input" checked>
                                         <span class="r-eye-toggle__label"></span>
                                     </label><!-- //r-eye-toggle -->
                                 </div>
                                 <div class="r-eyes__item">
                                     <span class="label">라벨 지정 적정성</span>
-                                    <label class="r-eye-toggle">
+                                    <label class="r-eye-toggle color--green">
                                         <input type="checkbox" class="r-eye-toggle__input">
                                         <span class="r-eye-toggle__label"></span>
                                     </label><!-- //r-eye-toggle -->
+                                </div>
+                                <div class="r-eyes__more">
+                                  <button class="btn-more">상세보기</button>
                                 </div>
                             </div><!-- //r-eyes -->
                         </div><!-- //control-item__content -->
@@ -102,35 +105,35 @@
                     <div class="r-eyes">
                         <div class="r-eyes__item">
                             <span class="label">A</span>
-                            <label class="r-eye-toggle">
+                            <label class="r-eye-toggle color--blue">
                                 <input type="checkbox" class="r-eye-toggle__input" checked>
                                 <span class="r-eye-toggle__label"></span>
                             </label><!-- //r-eye-toggle -->
                         </div>
                         <div class="r-eyes__item">
                             <span class="label">B</span>
-                            <label class="r-eye-toggle">
+                            <label class="r-eye-toggle color--green">
                                 <input type="checkbox" class="r-eye-toggle__input" checked>
                                 <span class="r-eye-toggle__label"></span>
                             </label><!-- //r-eye-toggle -->
                         </div>
                         <div class="r-eyes__item">
                             <span class="label">C</span>
-                            <label class="r-eye-toggle">
+                            <label class="r-eye-toggle color--purple">
                                 <input type="checkbox" class="r-eye-toggle__input">
                                 <span class="r-eye-toggle__label"></span>
                             </label><!-- //r-eye-toggle -->
                         </div>
                         <div class="r-eyes__item">
                             <span class="label">D</span>
-                            <label class="r-eye-toggle">
+                            <label class="r-eye-toggle color--pink">
                                 <input type="checkbox" class="r-eye-toggle__input">
                                 <span class="r-eye-toggle__label"></span>
                             </label><!-- //r-eye-toggle -->
                         </div>
                         <div class="r-eyes__item">
                             <span class="label">E</span>
-                            <label class="r-eye-toggle">
+                            <label class="r-eye-toggle color--orange">
                                 <input type="checkbox" class="r-eye-toggle__input">
                                 <span class="r-eye-toggle__label"></span>
                             </label><!-- //r-eye-toggle -->
@@ -149,14 +152,14 @@
         <div class="control-map" :class="{'active': isActive}">
             <div class="control-map__top">
                 <div class="r-btns-icon column">
-                    <button @click="onChangeOpenMenu"><img src="/resources/images/svg/format-list.svg" alt=""></button>
-                    <button><img src="/resources/images/svg/map.svg" alt=""></button>
+                    <button class="btn-list" @click="onChangeOpenMenu" :class="{'selected': isActive}"><img src="/resources/images/svg/format-list.svg" alt=""></button>
+                    <button class="btn-map"><img src="/resources/images/svg/map.svg" alt=""></button>
                 </div>
             </div>
             <div class="control-map__bottom">
                 <div class="r-btns-icon column">
-                    <button><img src="/resources/images/svg/signal.svg" alt=""></button>
-                    <button><img src="/resources/images/svg/label-off.svg" alt=""></button>
+                    <button class="btn-signal"><img src="/resources/images/svg/signal.svg" alt=""></button>
+                    <button class="btn-label"><img src="/resources/images/svg/label-off.svg" alt=""></button>
                 </div>
                 <div class="r-zoom-in-out">
                     <button class="btn-in"><img src="/resources/images/svg/plus.svg" alt=""></button>
@@ -558,7 +561,7 @@ export default {
     },
 	data() {
 		return {
-            isActive:0,
+              isActive:0,
               comboboxData1SelectedValue: null,
               comboboxData1: [
                 {label: '장애물감지', value: '' },

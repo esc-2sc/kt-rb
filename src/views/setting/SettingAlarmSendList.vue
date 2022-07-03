@@ -5,7 +5,7 @@
             <div class="r-box__nav">
                 <div class="r-box__nav-header">
                     <div class="a-input-search">
-                        <input type="text" placeholder="장애물" value="Value">
+                        <input type="text" placeholder="사업장 , 고객사 또는 MAC 주소" value="">
                         <button class="btn-clear"><img src="/resources/images/svg/circle-x-fill-gray-24.svg" class="size--16" alt="Clear"></button>
                     </div><!-- //a-input-search -->
                     <div class="r-filter-header">
@@ -15,86 +15,100 @@
                 </div><!--//r-box__nav-search-->
                 <div class="r-box__nav-body scroll">
                     <div class="r-filter">
-                        <div class="r-filter-options">
-                            <div class="title">기간선택</div>
-                            <div class="option-box">
-                                <div class="a-tab-3">
-                                    <button selected>발신 요청일</button>
-                                    <button>발신 처리일</button>
-                                </div>
-                            </div><!--//option-box-->
-                            <div class="option-box">
-                                <div class="a-tab-3">
-                                    <button selected>1년</button>
-                                    <button>3개월</button>
-                                    <button>1개월</button>
-                                    <button>직접입력</button>
-                                </div>
-                            </div><!--//option-box-->
-                            <div class="option-box">
-                                <vue-rangedate-picker class="r-calendar" :months="this.months" :shortDays="this.shortDays" :captions=this.captions i18n="EN" format="YYYY-MM-DD"></vue-rangedate-picker>
-                            </div><!--//option-box-->
-                        </div><!--//r-filter-options -->
-                        <div class="r-filter-options">
-                            <div class="title">발신상태</div>
-                            <div class="option-box">
-                                <div class="a-tab-3">
-                                    <button selected>전체</button>
-                                    <button>발신완료</button>
-                                    <button>발신대기</button>
-                                    <button>발신실패</button>
-                                    <button>발신취소</button>
-                                </div>
-                            </div><!--//option-box-->
-                        </div><!--//r-filter-options -->
-                        <div class="r-filter-options">
-                            <div class="title">알람구분</div>
-                            <div class="option-box">
-                                <div class="a-tab-3">
-                                    <button selected>전체</button>
-                                    <button>장애물 감지</button>
-                                    <button>주행취소</button>
-                                    <button>플랫폼 요청 정지</button>
-                                    <button>SM 요청 정지</button>
-                                    <button>비상버튼 정지</button>
-                                    <button>금지구역 진입</button>
-                                </div>
-                            </div><!--//option-box-->
-                        </div><!--//r-filter-options -->
-                        <div class="r-filter-options">
-                            <div class="title">서비스</div>
-                            <div class="option-box">
-                                <div class="a-tab-3">
-                                    <button selected>전체</button>
-                                    <button>서빙</button>
-                                    <button>방역</button>
-                                    <button>러기지</button>
-                                    <button>호텔</button>
-                                    <button>기타</button>
-                                </div>
-                            </div><!--//option-box-->
-                        </div><!--//r-filter-options -->
-                        <div class="r-filter-options">
-                            <div class="title">조치여부</div>
-                            <div class="option-box">
-                                <div class="a-tab-3">
-                                    <button selected>전체</button>
-                                    <button>조치완료</button>
-                                    <button>미조치</button>
-                                </div>
-                            </div><!--//option-box-->
-                        </div><!--//r-filter-options -->
-                        <div class="r-filter-options">
-                            <div class="title">수신 플랫폼</div>
-                            <div class="option-box">
-                                <div class="a-tab-3">
-                                    <button selected>전체</button>
-                                    <button>Robot Makers</button>
-                                    <button>고객케어</button>
-                                    <button>로봇케어</button>
-                                </div>
-                            </div><!--//option-box-->
-                        </div><!--//r-filter-options -->
+                      <div class="r-filter-options">
+                        <div class="title">기간선택</div>
+                        <div class="option-box">
+                          <div class="a-tab-3">
+                            <button selected>발신 요청일</button>
+                            <button>발신 처리일</button>
+                          </div>
+                        </div><!--//option-box-->
+                        <div class="option-box">
+                          <div class="a-tab-3">
+                            <button selected>1년</button>
+                            <button>3개월</button>
+                            <button>1개월</button>
+                            <button>직접입력</button>
+                          </div>
+                        </div><!--//option-box-->
+                        <div class="option-box">
+                          <vue-rangedate-picker class="r-calendar" :months="this.months" :shortDays="this.shortDays" :captions=this.captions i18n="EN" format="YYYY-MM-DD"></vue-rangedate-picker>
+                        </div><!--//option-box-->
+                      </div><!--//r-filter-options -->
+                      <div class="r-filter-options">
+                        <div class="title">로봇모델</div>
+                        <div class="option-box">
+                          <vx-combobox placeholder="전체"
+                                       :items="comboboxData1"
+                                       :row-count="getMaxRowCount(comboboxData1)"
+                                       label-field="label"
+                                       value-field="value"></vx-combobox>
+                        </div><!--//option-box-->
+                      </div><!--//r-filter-options -->
+                      <div class="r-filter-options">
+                        <div class="title">제조사</div>
+                        <div class="option-box">
+                          <div class="a-tab-3">
+                            <button selected>전체</button>
+                            <button>현대로보틱스</button>
+                            <button>베어로보틱스</button>
+                            <button>로봇케어</button>
+                          </div>
+                        </div><!--//option-box-->
+                      </div><!--//r-filter-options -->
+                      <div class="r-filter-options">
+                        <div class="title">알람구분</div>
+                        <div class="option-box">
+                          <div class="a-tab-3">
+                            <button selected>전체</button>
+                            <button>장애물 감지</button>
+                            <button>주행취소</button>
+                            <button>플랫폼 요청 정지</button>
+                            <button>SM 요청 정지</button>
+                            <button>비상버튼 정지</button>
+                            <button>금지구역 진입</button>
+                            <button>충전이상</button>
+                            <button>방전이상</button>
+                            <button>충전패턴이상</button>
+                            <button>운행준비이상</button>
+                          </div>
+                        </div><!--//option-box-->
+                      </div><!--//r-filter-options -->
+                      <div class="r-filter-options">
+                        <div class="title">알람등급</div>
+                        <div class="option-box">
+                          <div class="a-tab-3">
+                            <button selected>전체</button>
+                            <button>Major</button>
+                            <button>Fatal</button>
+                            <button>Critical</button>
+                            <button>Minor</button>
+                          </div>
+                        </div><!--//option-box-->
+                      </div><!--//r-filter-options -->
+                      <div class="r-filter-options">
+                        <div class="title">조치상태</div>
+                        <div class="option-box">
+                          <div class="a-tab-3">
+                            <button selected>전체</button>
+                            <button>이벤트 발생</button>
+                            <button>조치중</button>
+                            <button>수동종료</button>
+                            <button>로봇케어</button>
+                          </div>
+                        </div><!--//option-box-->
+                      </div><!--//r-filter-options -->
+                      <div class="r-filter-options">
+                        <div class="title">수신 플랫폼</div>
+                        <div class="option-box">
+                          <div class="a-tab-3">
+                            <button selected>전체</button>
+                            <button>Robot Makers</button>
+                            <button>고객케어</button>
+                            <button>로봇케어</button>
+                          </div>
+                        </div><!--//option-box-->
+                      </div><!--//r-filter-options -->
                     </div><!-- // r-box-filter -->
                 </div><!-- //r-box__nav-cont -->
             </div>
@@ -126,15 +140,16 @@
                       @collection-change="onGridItemReset"
                       @scroll="onGridScrollEvent">
                         <columns>
-                            <tachyon-column header-text="번호" data-field=""></tachyon-column>
-                            <tachyon-column header-text="발신상태" data-field=""></tachyon-column>
-                            <tachyon-column header-text="알람구분" data-field=""></tachyon-column>
-                            <tachyon-column header-text="내용" data-field=""></tachyon-column>
-                            <tachyon-column header-text="로봇명" data-field=""></tachyon-column>
-                            <tachyon-column header-text="서비스" data-field=""></tachyon-column>
-                            <tachyon-column header-text="발신 일시 / 조치 일시" data-field=""></tachyon-column>
-                            <tachyon-column header-text="소요시간" data-field=""></tachyon-column>
-                            <tachyon-column header-text="수신 플랫폼" data-field=""></tachyon-column>
+                          <tachyon-column header-text="번호" data-field=""></tachyon-column>
+                          <tachyon-column header-text="로봇모델" data-field=""></tachyon-column>
+                          <tachyon-column header-text="MAC주소" data-field=""></tachyon-column>
+                          <tachyon-column header-text="알람구분" data-field=""></tachyon-column>
+                          <tachyon-column header-text="알람코드" data-field=""></tachyon-column>
+                          <tachyon-column header-text="알람등급" data-field=""></tachyon-column>
+                          <tachyon-column header-text="발신 일시" data-field=""></tachyon-column>
+                          <tachyon-column header-text="조치 일시" data-field=""></tachyon-column>
+                          <tachyon-column header-text="조치상태" data-field=""></tachyon-column>
+                          <tachyon-column header-text="알람내용" data-field=""></tachyon-column>
                         </columns>
                     </tachyon-grid>
                     <div class="r-tachyon__footer">
@@ -160,7 +175,7 @@
 <script>
 import VueRangedatePicker from 'vue-rangedate-picker';
 export default {
-  name: 'SettingAlarmSendList',
+  name: 'SettingAlarmSendSearch',
   components: {VueRangedatePicker},
   data() {
     return {
@@ -172,8 +187,19 @@ export default {
         ok_button: '확인'
       },
       shortDays:['일','월','화','수','목','금','토'],
-      months:['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월']
+      months:['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'],
+      comboboxData1SelectedValue: null,
+      comboboxData1: [
+        {label: 'Option 1', value: '' },
+        {label: 'Option 2', value: '' },
+        {label: 'Option 3', value: '' },
+        {label: 'Option 4', value: '' },
+        {label: 'Option 5', value: '' },
+      ],
     };
+  },
+  mounted() {
+    this.comboboxData1SelectedValue = this.comboboxData1[1];
   },
   methods: {
     onGridItemReset() {
@@ -181,6 +207,9 @@ export default {
     },
     onGridScrollEvent() {
       console.log('scroll');
+    },
+    getMaxRowCount(items = [],maxCount=5) {
+      return Math.min(items.length, maxCount);
     }
   },
 };

@@ -67,9 +67,10 @@
 .control-robot__panel .control-item + .control-item{border-top:1px solid #e8e8e8;}
 .control-robot__panel .control-item.disabled{pointer-events: none;}
 .control-robot__panel .control-item.disabled .label,
-.control-robot__panel .control-item.disabled label{opacity: .2;}
+.control-robot__panel .control-item.disabled label,
+.control-robot__panel .control-item.disabled button{opacity: .2;}
 
-.control-map{position:absolute;right:40px;top:calc(var(--height-header) + 30px);bottom:calc(var(--height-contetol-timeline) + 78px);display: flex;flex-direction: column;}
+.control-map{position:absolute;right:40px;top:calc(var(--height-header) + 30px);bottom:calc(var(--height-contetol-timeline) + 78px);display: flex;flex-direction: column;z-index:1}
 .control-map__top{flex:1;}
 .control-map__bottom{flex:none;}
 .control-timeline{position:absolute;left:0;right:0;bottom:0;height:var(--height-contetol-timeline);background:linear-gradient(180deg, rgba(205, 205, 205, 0) 0%, var(--color-bg-main) 39.4%);overflow: hidden;}

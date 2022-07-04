@@ -11,8 +11,8 @@
 .map-info-window .info-date .total{color:var(--color-r-point-1); font-weight: 600;}
 .map-info-window .info-date:hover{background-color:#f2f2f2}
 .map-info-window .info-date.selected{background-color:#1781F4}
-.map-info-window .info-date.selected .date,
-.map-info-window .info-date.selected .total{color:#fff}
+.map-info-window .info-date.selected .date{color:#fff}
+.map-info-window .info-date.selected .total{color:#2BFFD9}
 
 .map-info-window .map-info__body{flex:1;padding:0 16px}
 .map-info-window .info-box{display:flex; align-items: center}

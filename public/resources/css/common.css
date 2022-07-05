@@ -3555,6 +3555,7 @@ div.a-paging__combobox-dropdown .vx-list__item{justify-content:center;}
 .r-eyes{background-color: var(--color-white);border: 1px solid #dddede;border-radius:8px;padding-top:4px;padding-bottom:4px;}
 .r-eyes__item{display: flex;align-items: center;padding:8px 16px;}
 .r-eyes__item .label{flex:1;font-weight: 500;font-size:12px;color:var(--color-primary);}
+.r-eyes__item .label em{display: inline-flex; margin-left:15px; font-size:11px; color:#4D4D4D}
 .r-eyes__item .r-eye-toggle{flex:none;cursor: pointer;}
 .r-eyes__more .btn-more{display:block;width:100%;padding:8px 16px;font-weight: 500;font-size:12px;text-align:left;color:var(--color-r-point-1);background:url('../images/svg/icon-doc.svg') calc(100% - 16px) 50% no-repeat;}
 
@@ -3562,7 +3563,7 @@ div.a-paging__combobox-dropdown .vx-list__item{justify-content:center;}
 .r-select{height:32px;padding:0 8px;font-weight:600;font-size:13px;color:var(--color-primary);background-color:var(--color-white);border:1px solid #dddede;border-radius: 8px;}
 
 /* r-select-calendar */
-.r-select-calendar{display: inline-flex;align-items: center;justify-content: center;height:48px;padding:0 24px;font-weight: 600;text-align: center;background-color: var(--r-select-calendar-bg);border-radius: var(--r-select-calendar-radius);cursor: pointer;}
+.r-select-calendar{display: inline-flex;align-items: center;justify-content: center;height:44px;padding:0 24px;font-weight: 600;text-align: center;background-color: var(--r-select-calendar-bg);border-radius: var(--r-select-calendar-radius);cursor: pointer;border: 1px solid #ADADB0;}
 
 /* calendar */
 .r-calendar{}
@@ -3792,4 +3793,5 @@ div.a-paging__combobox-dropdown .vx-list__item{justify-content:center;}
 .user-info > .email:before{background-image: url('../images/svg/icon-email.svg')}
 .user-info .name span{color:#4d4d4d; margin-left:8px}
 .user-info > * + *{margin-top:10px}
+/* user popup */
 .a-alert-message.user{width:243px;padding:30px; border-radius: 8px}

@@ -121,6 +121,7 @@ export default {
               {name:'icon-dissatisfied.svg',isWhite:true},
               {name:'icon-fill.svg'},
               {name:'icon-user.svg'},
+              {name:'icon-email.svg'},
             ],
 		    icons: [
                   {name:'airplain.svg'},

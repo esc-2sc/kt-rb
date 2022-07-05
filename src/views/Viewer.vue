@@ -6,18 +6,19 @@
             </div>
         </div><!-- // content-map -->
         <aside class="control-robot">
-            <div class="control-robot__info">
-                <div class="info-robot">
-                    <span class="robot-model">SR01_00.00.00.96.E7.C5</span>
-                    <a href="#" class="robot-change">로봇변경</a>
-                </div>
-                <div class="info-map">
-                    <span class="map-location">수라채그릴</span>
-                    <span class="map-num">641</span>
-                </div>
-            </div><!-- //control-robot__info -->
             <div class="control-robot__panel">
                 <figure class="panel-img"><img src="/resources/images/temp/temp_robot_model_1.png" alt=""></figure>
+                <div class="panel-robot-info">
+                  <div class="info-robot">
+                    <span class="robot-name">베어서빙로봇_판매형 </span>
+                    <span class="robot-model">00.00.00.46.00.00</span>
+                    <a href="#" class="robot-change">로봇변경</a>
+                  </div>
+                  <div class="info-map">
+                    <span class="map-location">수라채그릴</span>
+                    <span class="map-num">641</span>
+                  </div>
+                </div><!-- //panel-robot`-info -->
                 <div class="a-tab-5 round panel-tab">
                     <button selected>Map</button>
                     <button>Zone</button>
@@ -43,14 +44,14 @@
 <!--                            <select class="r-select">-->
 <!--                                <option>장애물 감지</option>-->
 <!--                            </select>-->
-                            <div class="r-bar-legend">
+                            <!--<div class="r-bar-legend">
                                 <div class="r-bar-legend__bar"></div>
                                 <div class="r-bar-legend__label">
                                     <span>양호</span>
                                     <span>주의</span>
                                     <span>위험</span>
                                 </div>
-                            </div><!-- //r-bar-legend -->
+                            </div>--><!-- //r-bar-legend -->
                         </div><!-- //control-item__content -->
                     </div>
                     <div class="control-item">
@@ -104,42 +105,42 @@
                 <div class="panel-content zone" style="display: none;">
                     <div class="r-eyes">
                         <div class="r-eyes__item">
-                            <span class="label">A</span>
+                            <span class="label">A<em>20 m²</em></span>
                             <label class="r-eye-toggle color--blue">
                                 <input type="checkbox" class="r-eye-toggle__input" checked>
                                 <span class="r-eye-toggle__label"></span>
                             </label><!-- //r-eye-toggle -->
                         </div>
                         <div class="r-eyes__item">
-                            <span class="label">B</span>
+                            <span class="label">B <em>20 m²</em></span>
                             <label class="r-eye-toggle color--green">
                                 <input type="checkbox" class="r-eye-toggle__input" checked>
                                 <span class="r-eye-toggle__label"></span>
                             </label><!-- //r-eye-toggle -->
                         </div>
                         <div class="r-eyes__item">
-                            <span class="label">C</span>
+                            <span class="label">C<em>20 m²</em></span>
                             <label class="r-eye-toggle color--purple">
                                 <input type="checkbox" class="r-eye-toggle__input">
                                 <span class="r-eye-toggle__label"></span>
                             </label><!-- //r-eye-toggle -->
                         </div>
                         <div class="r-eyes__item">
-                            <span class="label">D</span>
+                            <span class="label">D<em>20 m²</em></span>
                             <label class="r-eye-toggle color--pink">
                                 <input type="checkbox" class="r-eye-toggle__input">
                                 <span class="r-eye-toggle__label"></span>
                             </label><!-- //r-eye-toggle -->
                         </div>
                         <div class="r-eyes__item">
-                            <span class="label">E</span>
+                            <span class="label">E<em>20 m²</em></span>
                             <label class="r-eye-toggle color--orange">
                                 <input type="checkbox" class="r-eye-toggle__input">
                                 <span class="r-eye-toggle__label"></span>
                             </label><!-- //r-eye-toggle -->
                         </div>
                         <div class="r-eyes__item">
-                            <span class="label">F</span>
+                            <span class="label">F<em>20 m²</em></span>
                             <label class="r-eye-toggle">
                                 <input type="checkbox" class="r-eye-toggle__input">
                                 <span class="r-eye-toggle__label"></span>

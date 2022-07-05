@@ -118,6 +118,9 @@ export default {
               {name:'icon-alerts-on.svg' ,isWhite:true},
               {name:'icon-zoom.svg'},
               {name:'icon-zoom-on.svg' ,isWhite:true},
+              {name:'icon-dissatisfied.svg',isWhite:true},
+              {name:'icon-fill.svg'},
+              {name:'icon-user.svg'},
             ],
 		    icons: [
                   {name:'airplain.svg'},

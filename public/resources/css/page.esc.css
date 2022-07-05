@@ -17,14 +17,14 @@
 /*.header .user:before{content:''; width:40px;height:40px}*/
 
 .navigation ul{display: flex;align-items: center;}
-.navigation .depth1{position:relative;display: flex;align-items: center;height:48px;gap: 8px;padding:8px;color: var(--r-tab-1-text);background-color: var(--r-tab-1-bg);border-radius: var(--r-tab-1-radius);}
+.navigation .depth1{position:relative;display: flex;align-items: center;height:40px;gap: 8px;padding:4px;color: var(--r-tab-1-text);background-color: var(--color-white);border-radius: var(--r-tab-1-radius);border:1px solid #B3B3B3}
 .navigation .depth1 > li{height:100%;}
-.navigation .depth1 > li > a{display:flex;align-items: center;justify-content: center;min-width:90px;height:inherit;padding:0 18px;font-weight:600;color:var(--color-secondary);}
-.navigation .depth1 > li.selected > a{color:var(--color-primary);background-color:var(--r-tab-1-selected-bg);border:var(--r-tab-1-selected-border);border-radius: var(--r-tab-1-selected-radius);box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);}
+.navigation .depth1 > li > a{display:flex;align-items: center;justify-content: center;min-width:90px;height:inherit;padding:0 18px;font-weight:600;color:#242424;}
+.navigation .depth1 > li.selected > a{color:var(--color-white);background-color:var(--color-r-point-1);border:var(--r-tab-1-selected-border);border-radius: var(--r-tab-1-selected-radius);box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);}
 .navigation .depth2{position:absolute;left:50%;top:100%;padding:16px 8px;transform: translateX(-50%);}
 .navigation .depth2 > li + li{margin-left:24px;}
-.navigation .depth2 > li > a{display:flex;align-items: center;height:32px;padding:0 16px;font-weight:600;font-size:13px;background-color:transparent;color:#464646;border-radius:16px;white-space: nowrap;}
-.navigation .depth2 > li.selected > a{color:var(--color-white);background-color:var(--color-r-point-1);}
+.navigation .depth2 > li > a{display:flex;align-items: center;height:32px;padding:0 16px;font-weight:600;font-size:13px;background-color:transparent;color:#242424;border-radius:16px;white-space: nowrap;}
+.navigation .depth2 > li.selected > a{color:var(--color-white);background-color:#4d4d4d;}
 
 .contents{height:inherit;}
 

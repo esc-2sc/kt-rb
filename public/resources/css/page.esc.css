@@ -78,7 +78,7 @@
 .control-timeline{position:absolute;left:0;right:0;bottom:0;height:var(--height-contetol-timeline);background:linear-gradient(180deg, rgba(205, 205, 205, 0) 0%, var(--color-bg-main) 39.4%);overflow: hidden;}
 .timeline-filter{position: absolute;left:0;right:0;top:0;}
 .timeline-filter > div{position: absolute;top:0;z-index:1;}
-.timeline-filter .date-mode{left:40px;}
+.timeline-filter .date-mode{left:48px;}
 .timeline-filter .date-mode button,
 .timeline-filter .date-type button{padding-left:18px;padding-right:18px;}
 .timeline-filter .date-current{left:50%;transform: translateX(-50%);}

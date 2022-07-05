@@ -12,9 +12,9 @@
 .header .logo img{vertical-align: middle;}
 .header .logo a{display: inline-block;vertical-align: middle;padding:10px;}
 .header .navigation{position:absolute;left:50%;top:30px;transform: translateX(-50%);}
-.header .aside{position:absolute;right:24px;top:35px;}
-.header .user{display: inline-flex;align-items: center;padding:10px 16px;}
-.header .user:before{content:'';display: inline-block;width:16px;height:16px;margin-right:8px;vertical-align: middle;background: url('../images/svg/person.svg') 0 0 no-repeat;}
+.header .aside{position:absolute;right:48px;top:35px;}
+.header .user{display: inline-block; vertical-align: top;  width:40px;height:40px;background:#Fff url('../images/svg/icon-user.svg') 50%no-repeat; border:1px solid #ADADB0; border-radius:24px; font-size:0; text-indent: -999px}
+/*.header .user:before{content:''; width:40px;height:40px}*/
 
 .navigation ul{display: flex;align-items: center;}
 .navigation .depth1{position:relative;display: flex;align-items: center;height:48px;gap: 8px;padding:8px;color: var(--r-tab-1-text);background-color: var(--r-tab-1-bg);border-radius: var(--r-tab-1-radius);}
@@ -70,7 +70,7 @@
 .control-robot__panel .control-item.disabled label,
 .control-robot__panel .control-item.disabled button{opacity: .2;}
 
-.control-map{position:absolute;right:40px;top:calc(var(--height-header) + 30px);bottom:calc(var(--height-contetol-timeline) + 78px);display: flex;flex-direction: column;z-index:1}
+.control-map{position:absolute;right:48px;top:calc(var(--height-header) + 30px);bottom:calc(var(--height-contetol-timeline) + 78px);display: flex;flex-direction: column;z-index:1}
 .control-map__top{flex:1;}
 .control-map__bottom{flex:none;}
 .control-timeline{position:absolute;left:0;right:0;bottom:0;height:var(--height-contetol-timeline);background:linear-gradient(180deg, rgba(205, 205, 205, 0) 0%, var(--color-bg-main) 39.4%);overflow: hidden;}
@@ -80,7 +80,7 @@
 .timeline-filter .date-mode button,
 .timeline-filter .date-type button{padding-left:18px;padding-right:18px;}
 .timeline-filter .date-current{left:50%;transform: translateX(-50%);}
-.timeline-filter .date-type{right:40px;}
+.timeline-filter .date-type{right:48px;}
 .timeline-chart{position:absolute;left:0;right:0;bottom:0;}
 .timeline-nav img{width:100%;height:100%;vertical-align: middle}
 .timeline-nav{ margin:0 40px 40px 40px;}

@@ -3,11 +3,12 @@
   position: absolute;
   left:50%;
   top:50%;
+  z-index: 1;
   display: flex;
   flex-direction: column;
   width:480px;
   min-height:540px;
-  margin:-270px 0 0 -240px;
+  margin:-270px 0 0 90px;
   padding:0 64px 40px 64px;
   background-color: #fff;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
@@ -25,5 +26,8 @@
 .r-login__form-option .option-r{flex:none;}
 .r-login__form-footer{flex:none;line-height:20px;color:#4d4d4d;}
 .r-login__form-footer p{text-align: center;}
-.r-login__video{width: 100%;height:100%;}
-.r-login__video video{width:inherit;height:inherit;object-fit: cover;}
+.r-login__video{position:relative;width: 100%;height:100%;}
+.r-login__video:after{content: '';position: absolute;left:0;right:0;top:0;bottom:0;background-color:rgba(0,0,0,.9);opacity: 1; transition:opacity .85s ease-in-out;}
+.r-login__video video{width:inherit;height:inherit;object-fit: cover;filter:grayscale(1);transition:filter .5s ease-out;}
+.r-login__video.play:after{opacity:0;}
+.r-login__video.play video{filter:grayscale(0);}

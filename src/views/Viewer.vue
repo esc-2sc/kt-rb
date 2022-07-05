@@ -6,18 +6,19 @@
             </div>
         </div><!-- // content-map -->
         <aside class="control-robot">
-            <div class="control-robot__info">
-                <div class="info-robot">
-                    <span class="robot-model">SR01_00.00.00.96.E7.C5</span>
-                    <a href="#" class="robot-change">로봇변경</a>
-                </div>
-                <div class="info-map">
-                    <span class="map-location">수라채그릴</span>
-                    <span class="map-num">641</span>
-                </div>
-            </div><!-- //control-robot__info -->
             <div class="control-robot__panel">
                 <figure class="panel-img"><img src="/resources/images/temp/temp_robot_model_1.png" alt=""></figure>
+                <div class="panel-robot-info">
+                  <div class="info-robot">
+                    <span class="robot-name">베어서빙로봇_판매형 </span>
+                    <span class="robot-model">00.00.00.46.00.00</span>
+                    <a href="#" class="robot-change">로봇변경</a>
+                  </div>
+                  <div class="info-map">
+                    <span class="map-location">수라채그릴</span>
+                    <span class="map-num">641</span>
+                  </div>
+                </div><!-- //panel-robot`-info -->
                 <div class="a-tab-5 round panel-tab">
                     <button selected>Map</button>
                     <button>Zone</button>
@@ -43,14 +44,6 @@
 <!--                            <select class="r-select">-->
 <!--                                <option>장애물 감지</option>-->
 <!--                            </select>-->
-                            <div class="r-bar-legend">
-                                <div class="r-bar-legend__bar"></div>
-                                <div class="r-bar-legend__label">
-                                    <span>양호</span>
-                                    <span>주의</span>
-                                    <span>위험</span>
-                                </div>
-                            </div><!-- //r-bar-legend -->
                         </div><!-- //control-item__content -->
                     </div>
                     <div class="control-item">
@@ -104,42 +97,42 @@
                 <div class="panel-content zone" style="display: none;">
                     <div class="r-eyes">
                         <div class="r-eyes__item">
-                            <span class="label">A</span>
+                            <span class="label">A<em>20 m²</em></span>
                             <label class="r-eye-toggle color--blue">
                                 <input type="checkbox" class="r-eye-toggle__input" checked>
                                 <span class="r-eye-toggle__label"></span>
                             </label><!-- //r-eye-toggle -->
                         </div>
                         <div class="r-eyes__item">
-                            <span class="label">B</span>
+                            <span class="label">B <em>20 m²</em></span>
                             <label class="r-eye-toggle color--green">
                                 <input type="checkbox" class="r-eye-toggle__input" checked>
                                 <span class="r-eye-toggle__label"></span>
                             </label><!-- //r-eye-toggle -->
                         </div>
                         <div class="r-eyes__item">
-                            <span class="label">C</span>
+                            <span class="label">C<em>20 m²</em></span>
                             <label class="r-eye-toggle color--purple">
                                 <input type="checkbox" class="r-eye-toggle__input">
                                 <span class="r-eye-toggle__label"></span>
                             </label><!-- //r-eye-toggle -->
                         </div>
                         <div class="r-eyes__item">
-                            <span class="label">D</span>
+                            <span class="label">D<em>20 m²</em></span>
                             <label class="r-eye-toggle color--pink">
                                 <input type="checkbox" class="r-eye-toggle__input">
                                 <span class="r-eye-toggle__label"></span>
                             </label><!-- //r-eye-toggle -->
                         </div>
                         <div class="r-eyes__item">
-                            <span class="label">E</span>
+                            <span class="label">E<em>20 m²</em></span>
                             <label class="r-eye-toggle color--orange">
                                 <input type="checkbox" class="r-eye-toggle__input">
                                 <span class="r-eye-toggle__label"></span>
                             </label><!-- //r-eye-toggle -->
                         </div>
                         <div class="r-eyes__item">
-                            <span class="label">F</span>
+                            <span class="label">F<em>20 m²</em></span>
                             <label class="r-eye-toggle">
                                 <input type="checkbox" class="r-eye-toggle__input">
                                 <span class="r-eye-toggle__label"></span>
@@ -152,14 +145,14 @@
         <div class="control-map" :class="{'active': isActive}">
             <div class="control-map__top">
                 <div class="r-btns-icon column">
-                    <button class="btn-list" @click="onChangeOpenMenu" :class="{'selected': isActive}"><img src="/resources/images/svg/format-list.svg" alt=""></button>
-                    <button class="btn-map"><img src="/resources/images/svg/map.svg" alt=""></button>
+                    <button class="btn-list" @click="onChangeOpenMenu" :class="{'selected': isActive}"></button>
+                    <button class="btn-zoom"></button>
                 </div>
             </div>
             <div class="control-map__bottom">
                 <div class="r-btns-icon column">
-                    <button class="btn-signal"><img src="/resources/images/svg/signal.svg" alt=""></button>
-                    <button class="btn-label"><img src="/resources/images/svg/label-off.svg" alt=""></button>
+                    <button class="btn-signal"></button>
+                    <button class="btn-label"></button>
                 </div>
                 <div class="r-zoom-in-out">
                     <button class="btn-in"><img src="/resources/images/svg/plus.svg" alt=""></button>
@@ -168,6 +161,11 @@
                 </div>
             </div>
         </div><!-- //control-map -->
+        <div class="control-bar-legend">
+          <div class="r-bar-legend__bar">
+            <span></span><span></span><span></span><span></span><span></span>
+          </div>
+        </div><!-- //control-bar-legend -->
         <div class="control-timeline">
             <div class="timeline-filter">
                 <div class="a-tab-5 round date-mode">
@@ -488,65 +486,100 @@
         </div><!--//label-list-->
         <div class="map-info-window" :class="{'open': isActive}">
             <div class="map-info__header">
-                <span class="info-date">2022-12-28</span>
-                <span class="info-time">17:05:23</span>
-                <span class="r-btns-icon"><button><img src="/resources/images/svg/icon-restart.svg" alt="reload"></button></span>
-            </div><!-- // map-info__header --->
-            <div class="map-info__body">
-              <div class="info-item map">
-                <h2>MAP</h2>
+              <div class="info-label">
                 <div class="info-box">
                   <div class="label"><span>라벨</span><em class="bg-blue">23</em></div>
                   <div class="label"><span>충전</span><em class="bg-green">D1</em></div>
                   <div class="label"><span>대기</span><em class="bg-yellow">W1</em></div>
                 </div>
-                <p class="info-txt">현재지도 생성일자 : 2022.08.09</p>
-              </div>
-              <div class="info-item zone">
-                <h2>ZONE</h2>
                 <div class="info-box">
-                  <div class="label"><span>ZONE</span><em class="bg-blue">14</em></div>
+                  <div class="label"><span>Zone</span><em class="bg-blue">14</em></div>
                   <p class="info-txt">평균 넓이: 약 50 cm²</p>
                 </div>
+              </div><!--//info-label-box-->
+              <div class="info-date selected">
+                <div class="date">4월20 ~ 5월19일</div>
+                <div class="total">345건</div>
               </div>
-              <div class="info-item alerts">
-                <h2>RECENT ALERTS</h2>
-                <div class="alerts-list">
-                  <div class="list-item">
-                    <strong class="tit">금지구역 진입</strong>
-                    <span class="date">2022-11-02/01:03:38</span>
-                    <span class="icon"><img src="/resources/images/svg/icon-alerts-warning.svg" alt=""></span>
-                  </div><!--// list-item -->
-                  <div class="list-item">
-                    <strong class="tit">장애물 감지</strong>
-                    <span class="date">2022-11-02/01:03:38</span>
-                    <span class="icon"><img src="/resources/images/svg/icon-alerts-emergency.svg" alt=""></span>
-                  </div><!--// list-item -->
-                  <div class="list-item">
-                    <strong class="tit">주행취소</strong>
-                    <span class="date">2022-11-02/01:03:38</span>
-                    <span class="icon"><img src="/resources/images/svg/icon-alerts-noun-robot.svg" alt=""></span>
-                  </div><!--// list-item -->
-                  <div class="list-item">
-                    <strong class="tit">비상버튼 정지</strong>
-                    <span class="date">2022-11-02/01:03:38</span>
-                    <span class="icon"><img src="/resources/images/svg/icon-alerts-compress.svg" alt=""></span>
-                  </div><!--// list-item -->
-                  <div class="list-item">
-                    <strong class="tit">플랫폼 요청 정지</strong>
-                    <span class="date">2022-11-02/01:03:38</span>
-                    <span class="icon"><img src="/resources/images/svg/icon-alerts-pan.svg" alt=""></span>
-                  </div><!--// list-item -->
-                  <div class="list-item">
-                    <strong class="tit">SM 요청 정지</strong>
-                    <span class="date">2022-11-02/01:03:38</span>
-                    <span class="icon"><img src="/resources/images/svg/icon-alerts-wifi.svg" alt=""></span>
-                  </div><!--// list-item -->
-                </div><!--//alerts-list-->
-                <div class="r-btns-line">
-                  <button>더보기</button>
-                </div>
-              </div>
+            </div><!-- // map-info__header --->
+            <div class="map-info__body scroll">
+              <!--<h2>RECENT ALERTS</h2>-->
+              <div class="alerts-list">
+                <div class="list-item">
+                  <strong class="tit">금지구역 진입</strong>
+                  <span class="date">2022-11-02/01:03:38</span>
+                  <p class="txt">로봇이 금지구역에 진입했습니다</p>
+                  <span class="icon warning"></span>
+                </div><!--// list-item -->
+                <div class="list-item">
+                  <strong class="tit">장애물 감지</strong>
+                  <p class="txt">로봇에서 장애물이 감지됐습니다</p>
+                  <span class="date">2022-11-02/01:03:38</span>
+                  <span class="icon emergency"></span>
+                </div><!--// list-item -->
+                <div class="list-item">
+                  <strong class="tit">주행취소</strong>
+                  <p class="txt">로봇 화면에서 취소 버튼이 선택되어 주행이 취소됐습니다</p>
+                  <span class="date">2022-11-02/01:03:38</span>
+                  <span class="icon robot-cancel"></span>
+                </div><!--// list-item -->
+                <div class="list-item selected">
+                  <strong class="tit">주행실패</strong>
+                  <p class="txt">로봇의 내부 하드웨어 에러로 주행에 실패했습니다</p>
+                  <span class="date">2022-11-02/01:03:38</span>
+                  <span class="icon robot-noun"></span>
+                </div><!--// list-item -->
+                <div class="list-item">
+                  <strong class="tit">비상버튼 정지</strong>
+                  <p class="txt">로봇의 비상버튼이 선택되어 로봇이 정지됐습니다</p>
+                  <span class="date">2022-11-02/01:03:38</span>
+                  <span class="icon compress"></span>
+                </div><!--// list-item -->
+                <div class="list-item">
+                  <strong class="tit">플랫폼 요청 정지</strong>
+                  <p class="txt">플랫폼 요청에 의해 로봇이 정지됐습니다</p>
+                  <span class="date">2022-11-02/01:03:38</span>
+                  <span class="icon pan"></span>
+                </div><!--// list-item -->
+                <div class="list-item">
+                  <strong class="tit selected">SM 요청 정지</strong>
+                  <p class="txt">로봇 내부 서비스매니저에서 오류가 발생해 주행이 취소됐습니다</p>
+                  <span class="date">2022-11-02/01:03:38</span>
+                  <span class="icon wifi"></span>
+                </div><!--// list-item -->
+                <div class="list-item">
+                  <strong class="tit">SM 요청 정지</strong>
+                  <p class="txt">로봇 내부 서비스매니저에서 오류가 발생해 주행이 취소됐습니다</p>
+                  <span class="date">2022-11-02/01:03:38</span>
+                  <span class="icon wifi"></span>
+                </div><!--// list-item -->
+                <div class="list-item">
+                  <strong class="tit">SM 요청 정지</strong>
+                  <p class="txt">로봇 내부 서비스매니저에서 오류가 발생해 주행이 취소됐습니다</p>
+                  <span class="date">2022-11-02/01:03:38</span>
+                  <span class="icon wifi"></span>
+                </div><!--// list-item -->
+                <div class="list-item">
+                  <strong class="tit">SM 요청 정지</strong>
+                  <p class="txt">로봇 내부 서비스매니저에서 오류가 발생해 주행이 취소됐습니다</p>
+                  <span class="date">2022-11-02/01:03:38</span>
+                  <span class="icon wifi"></span>
+                </div><!--// list-item -->
+                <div class="list-item">
+                  <strong class="tit">SM 요청 정지</strong>
+                  <p class="txt">로봇 내부 서비스매니저에서 오류가 발생해 주행이 취소됐습니다</p>
+                  <span class="date">2022-11-02/01:03:38</span>
+                  <span class="icon wifi"></span>
+                </div><!--// list-item -->
+                <div class="list-item">
+                  <strong class="tit">SM 요청 정지</strong>
+                  <p class="txt">로봇 내부 서비스매니저에서 오류가 발생해 주행이 취소됐습니다</p>
+                  <span class="date">2022-11-02/01:03:38</span>
+                  <span class="icon wifi"></span>
+                </div><!--// list-item -->
+
+              </div><!--//alerts-list-->
+              <div class="r-btns-line"><button>더보기</button></div>
             </div><!-- //map-info__body -->
         </div><!-- //map-info-window -->
     </div>

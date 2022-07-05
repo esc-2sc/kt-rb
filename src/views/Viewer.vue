@@ -44,14 +44,6 @@
 <!--                            <select class="r-select">-->
 <!--                                <option>장애물 감지</option>-->
 <!--                            </select>-->
-                            <!--<div class="r-bar-legend">
-                                <div class="r-bar-legend__bar"></div>
-                                <div class="r-bar-legend__label">
-                                    <span>양호</span>
-                                    <span>주의</span>
-                                    <span>위험</span>
-                                </div>
-                            </div>--><!-- //r-bar-legend -->
                         </div><!-- //control-item__content -->
                     </div>
                     <div class="control-item">
@@ -169,6 +161,11 @@
                 </div>
             </div>
         </div><!-- //control-map -->
+        <div class="control-bar-legend">
+          <div class="r-bar-legend__bar">
+            <span></span><span></span><span></span><span></span><span></span>
+          </div>
+        </div><!-- //control-bar-legend -->
         <div class="control-timeline">
             <div class="timeline-filter">
                 <div class="a-tab-5 round date-mode">

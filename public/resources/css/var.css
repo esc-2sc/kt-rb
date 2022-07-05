@@ -51,7 +51,8 @@
     --color-tab-btn-text: --color-primary;
 
     --height-header: 150px;
-    --height-contetol-timeline: 192px;
+    /*--height-contetol-timeline: 192px;*/
+    --height-contetol-timeline: 164px;
 
     /* common - r */
     --r-btns-icon-bg: var(--color-white);
@@ -59,7 +60,7 @@
 
     --r-tab-1-bg: var(--color-bg-1);
     --r-tab-1-text: var(--color-primary);
-    --r-tab-1-radius: 32px;
+    --r-tab-1-radius: 24px;
     --r-tab-1-selected-bg: var(--color-white);
     --r-tab-1-selected-border: 1px solid rgba(0, 0, 0, 0.02);
     --r-tab-1-selected-radius: 16px;
@@ -70,5 +71,5 @@
 
     --r-select-calendar-bg: var(--color-white);
     --r-select-calendar-text: var(--color-primary);
-    --r-select-calendar-radius: 32px;
+    --r-select-calendar-radius: 24px;
 }

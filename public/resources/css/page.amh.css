@@ -72,13 +72,13 @@
 .graph-layer-header .btn-close{position:absolute;width:40px;height:40px;left:20px;top:calc(50% - 20px);display:flex;align-items: center;justify-content: center;}
 .graph-layer-body{flex:1;}
 .graph-view{height:100%; display:flex; flex-direction: column; padding-bottom:7px}
-.graph-view .cell{flex:none;width:118px;height:32px; display:flex;align-items: center;justify-content:center;color:var(--color-secondary)}
+.graph-view .cell{flex:none;width:117px;height:32px; display:flex;align-items: center;justify-content:center;color:var(--color-secondary)}
 .graph-view .cell.time{flex:none; width:64px; color:#4D4D4D}
 .graph-view .view-header{flex:none;border-top:1px solid rgba(0,0,0,.05);border-bottom:1px solid rgba(0,0,0,.05);}
 .graph-view .view-header .cell{height:40px; color:var(--color-primary);}
 .graph-view .view-header .cell:first-child{margin-left:5px}
 .graph-view .view-body{flex:1;  overflow-y: auto; width:calc(100% - 5px); max-height:448px}
-.graph-view .view-item{display:flex;width:100%}
+.graph-view .view-item{display:flex;width:100%; justify-content: center}
 .graph-view .view-item .cell .bar{width:80px; background:#F2F2F2; display:flex; border-radius: 6px}
 .graph-view .view-item .cell .bar,
 .graph-view .view-item .cell .bar span{height:6px; border-radius: 6px}

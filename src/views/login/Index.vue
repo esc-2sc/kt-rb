@@ -31,7 +31,7 @@
             <p>대표이메일 : kt_robot_mg@kt.com</p>
         </div>
       </div><!-- //r-login__form -->
-      <div class="r-login__video"></div><!-- //r-login__video -->
+      <div :class="['r-login__video', {'play' : isAutoplay}]"><video ref="backgroundVideo" src="/resources/video/login.mp4" :autoplay="isAutoplay" muted playsinline loop></video></div><!-- //r-login__video -->
     </div><!-- //r-login -->
 </template>
 
@@ -39,9 +39,17 @@
 export default {
     name: 'login',
 	data() {
-    return {};
+    return {
+      isAutoplay: false
+    };
 	},
-	methods: {
+  mounted() {
+      setTimeout(() => {
+        this.$refs.backgroundVideo.play();
+        this.isAutoplay = true;
+      }, 1000);
+  },
+  methods: {
 	},
 };
 </script>

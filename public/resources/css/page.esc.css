@@ -13,8 +13,9 @@
 .header .logo a{display: inline-block;vertical-align: middle;padding:10px;}
 .header .navigation{position:absolute;left:50%;top:30px;transform: translateX(-50%);}
 .header .aside{position:absolute;right:48px;top:35px;}
-.header .user{display: inline-block; vertical-align: top;  width:40px;height:40px;background:#Fff url('../images/svg/icon-user.svg') 50%no-repeat; border:1px solid #ADADB0; border-radius:24px; font-size:0; text-indent: -999px}
-/*.header .user:before{content:''; width:40px;height:40px}*/
+.header .user{display: inline-block; vertical-align: top;  width:40px;height:40px;background:#Fff url('../images/svg/icon-user.svg') 50% no-repeat; border:1px solid #ADADB0; border-radius:24px; font-size:0; text-indent: -999px; overflow: hidden;}
+.header .user.selected{border:0}
+.header .user.selected:after{content:''; display:block; vertical-align:top;width:40px;height:40px;background:#1781F4 url('../images/svg/icon-user-on.svg') 50% no-repeat;}
 
 .navigation ul{display: flex;align-items: center;}
 .navigation .depth1{position:relative;display: flex;align-items: center;height:40px;gap: 8px;padding:4px;color: var(--r-tab-1-text);background-color: var(--color-white);border-radius: var(--r-tab-1-radius);border:1px solid #B3B3B3}

@@ -4,7 +4,7 @@
             <h1 class="logo"><a href="#"><img src="/resources/images/svg/logo-black.svg" alt="R-Brain"></a></h1>
             <navigation/>
             <div class="aside">
-                <span class="user" id="userInfoPopup" @click="openUserDetailPopup">user</span>
+                <span class="user" id="userInfoPopup" :class="{'selected':isUserActive}" @click="openUserDetailPopup">user</span>
             </div>
         </header>
         <div class="contents">
@@ -38,13 +38,16 @@ export default {
 	},
     data() {
         return {
+          isUserActive:0,
         };
     },
   methods: {
     openUserDetailPopup() {
-      this.$refs.userDetail.open();
+      this.isUserActive = !this.isUserActive;
+      (this.isUserActive) ? this.$refs.userDetail.open() :  this.$refs.userDetail.close();
     },
     closeUserDetailPopup() {
+      this.isUserActive = !this.isUserActive;
       this.$refs.userDetail.close();
     }
   },

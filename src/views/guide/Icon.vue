@@ -120,7 +120,9 @@ export default {
               {name:'icon-zoom-on.svg' ,isWhite:true},
               {name:'icon-dissatisfied.svg',isWhite:true},
               {name:'icon-fill.svg'},
+              {name:'icon-user-black.svg'},
               {name:'icon-user.svg'},
+              {name:'icon-user-on.svg' ,isWhite:true},
               {name:'icon-email.svg'},
             ],
 		    icons: [

@@ -3798,7 +3798,7 @@ div.a-paging__combobox-dropdown .vx-list__item{justify-content:center;}
 .user-info > *:before{content: ''; display: block; width:16px; height:16px; margin-right:8px;background-repeat: no-repeat;background-position: 50%}
 .user-info > .name,
 .user-info > .email{color:#242424; line-height: 20px}
-.user-info > .name:before{background-image: url('../images/svg/icon-user.svg')}
+.user-info > .name:before{background-image: url('../images/svg/icon-user-black.svg')}
 .user-info > .email:before{background-image: url('../images/svg/icon-email.svg')}
 .user-info .name span{color:#4d4d4d; margin-left:8px}
 .user-info > * + *{margin-top:10px}

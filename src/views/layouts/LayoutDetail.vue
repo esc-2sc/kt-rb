@@ -4,14 +4,14 @@
             <h1 class="logo"><a href="#"><img src="/resources/images/svg/logo-black.svg" alt="R-Brain"></a></h1>
             <navigation/>
             <div class="aside">
-                <span class="user" @click="openUserDetailPopup">user</span>
+                <span class="user" id="userInfoPopup" @click="openUserDetailPopup">user</span>
             </div>
         </header>
         <div class="contents">
             <router-view></router-view>
         </div>
 
-      <vx-popup ref="userDetail" modal>
+      <vx-popup ref="userDetail" positionTarget="#userInfoPopup" :horizontalOffset=0 :verticalOffset=13 close-on-outside-down>
         <div class="a-alert-message user">
           <div class="a-alert-message__label">
             <div class="a-alert-message__desc">

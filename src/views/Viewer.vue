@@ -16,7 +16,6 @@
                   </div>
                   <div class="info-map">
                     <span class="map-location">수라채그릴</span>
-                    <span class="map-num">641</span>
                   </div>
                 </div><!-- //panel-robot`-info -->
                 <div class="a-tab-5 round panel-tab">
@@ -495,6 +494,10 @@
                 <div class="info-box">
                   <div class="label"><span>Zone</span><em class="bg-blue">14</em></div>
                   <p class="info-txt">평균 넓이: 약 50 cm²</p>
+                </div>
+                <div class="info-box map">
+                  <div class="label"><span>Map</span><em>141</em></div>
+                  <p class="info-txt">현재지도 생성일자 : 2022.09.08</p>
                 </div>
               </div><!--//info-label-box-->
               <div class="info-date selected">

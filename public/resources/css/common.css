@@ -3804,3 +3804,4 @@ div.a-paging__combobox-dropdown .vx-list__item{justify-content:center;}
 .user-info > * + *{margin-top:10px}
 /* user popup */
 .a-alert-message.user{width:243px;padding:30px; border-radius: 8px}
+.a-alert-message.user:after{content:''; position:absolute; top:-53px; right:0; display:block; vertical-align:top;width:40px;height:40px;background:#1781F4 url('../images/svg/icon-user-on.svg') 50% no-repeat; border-radius:24px; }

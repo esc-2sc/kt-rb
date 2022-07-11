@@ -14,44 +14,44 @@
           </div><!-- //주행상태 -->
 
           <!-- 배터리 분석 -->
-          <div class="item-view type-2">
+          <!--div class="item-view type-2">
             <div class="label">충전 패턴 이상</div>
             <div class="state">45%</div>
             <div class="state-bar" style="width:45%"></div>
             <div class="txt-1">로봇 충전을 잊지 않으셨나요?<br> 혹시 충전중이시라면 어댑터 부분의<br> 확인이 필요 합니다</div>
             <div class="photo"><img src="/resources/images/temp/temp-landing-robot-01.png" alt=""></div>
-          </div><!-- //배터리 분석 -->
+          </div--><!-- //배터리 분석 -->
 
           <!-- 금지구역 진입 -->
-          <div class="item-view type-3">
+          <!--div class="item-view type-3">
             <div class="label">이상 주행 발생</div>
             <div class="txt-1">아래 위치에서 로봇의 주행이<br>비정상적 입니다</div>
             <div class="photo"><img src="/resources/images/temp/temp-landing-robot-01.png" alt=""></div>
-          </div><!-- //금지구역 진입 -->
+          </div--><!-- //금지구역 진입 -->
 
           <!-- 지도완성도 분석 -->
-          <div class="item-view type-4">
+          <!--div class="item-view type-4">
             <div class="label">이상 주행 발생</div>
             <div class="txt-1">작성된 로봇 지도 기반<br>주행영역을 추출합니다</div>
             <div class="txt-2">주행영역을 수정하고 싶다면, 금지구역을<br>재설정해주세요</div>
             <div class="photo"><img src="/resources/images/temp/temp-landing-robot-01.png" alt=""></div>
-          </div><!-- //지도완성도 분석 -->
+          </div--><!-- //지도완성도 분석 -->
 
           <!--  지도완성도 분석 - 조치완료 -->
-          <div class="item-view">
+          <!--div class="item-view">
             <div class="label">조치완료</div>
             <div class="icon"><img src="/resources/images/svg/icon-complete.svg" alt=""></div>
             <div class="txt-1">발생알람에 대해<br>조치완료 처리 되었습니다</div>
             <div class="photo"><img src="/resources/images/temp/temp-landing-robot-01.png" alt=""></div>
-          </div><!-- //지도완성도 분석 - 조치완료 -->
+          </div--><!-- //지도완성도 분석 - 조치완료 -->
 
           <!--  지도완성도 분석 - 분석중 -->
-          <div class="item-view">
+          <!--div class="item-view">
             <div class="label">분석중</div>
             <div class="icon"><img src="/resources/images/svg/icon-loading.svg" alt=""></div>
             <div class="txt-1">분석이 완료되면<br>결과페이지가 노출됩니다</div>
             <div class="photo"><img src="/resources/images/temp/temp-landing-robot-01.png" alt=""></div>
-          </div><!-- //지도완성도 분석 - 분석중 -->
+          </div--><!-- //지도완성도 분석 - 분석중 -->
 
           <div class="item-table">
             <div class="a-list-1">
@@ -86,10 +86,10 @@
                 </div>
               </div><!-- //a-list__body -->
             </div><!-- //a-list-1 -->
-          </div>
+          </div><!-- //item-table -->
           <div class="item-map">
             <img src="/resources/images/temp/temp-landing-map.png" alt="">
-          </div>
+          </div><!-- //item-map-->
           <div class="item-check-list">
             <div class="tit">Check list</div>
             <ul class="list">
@@ -97,14 +97,14 @@
               <li>지도 완성도를 체크하여 주세요</li>
               <li>rbrain.kt.co.kr 웹접속하여 상세정보를 확인해주세요.<br>로그인>로봇선택>주행>주행상태분석</li>
             </ul>
-          </div>
+          </div><!-- //item-check-list-->
         </div><!--//r-landing__body -->
         <div class="r-landing__footer">
           <p>자세한 사항은 R-Brain에서 확인 가능 합니다</p>
           <p>ⓒ R-Brain</p>
         </div><!-- //r-landing__footer -->
-        <div class="r-landing__fix"><button class="btn-completed">조치완료</button></div>
       </div><!-- //r-landing__inner -->
+      <div class="r-landing__fix"><button class="btn-completed">조치완료</button></div>
       <div class="r-landing__inner-bg"><img src="/resources/images/temp/temp-bg-landing.png" alt=""></div><!-- //r-landing__inner-bg-->
     </div><!-- //r-landing -->
 </template>

@@ -38,6 +38,15 @@ export default {
             {level:2, label:'계정관리 - 계정수정(팝업)', url:'setting-account-detail-modify' },
             {level:2, label:'계정관리 - Snackbar', url:'setting-account-snackbar'},
 
+            {level:1, label:'PAGE - LANDING', },
+            {level:2, label:'분석중', url:'landing-loading' },
+            {level:2, label:'조치완료', url:'landing-complete' },
+            {level:2, label:'주행상태 분석', url:'landing-drive-state' },
+            {level:2, label:'배터리 분석', url:'landing-battery' },
+            {level:2, label:'금지구역 진입', url:'landing-closed-area' },
+            {level:2, label:'지도완성도 분석', url:'landing-map-completion' },
+
+
             {level:1, label:'GUIDE-A', },
             // {level:2, label:'All', url:'guide' },
             // {level:2, label:'Typo', url:'guide-typo' },

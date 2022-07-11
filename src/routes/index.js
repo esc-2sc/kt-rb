@@ -13,7 +13,7 @@ const router = new VueRouter({
 	routes: [
 		{
 			path: '/',
-			redirect: '/viewer'
+			redirect: '/guide'
 		},
 		{
 			path: '/home',

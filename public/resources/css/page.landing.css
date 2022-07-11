@@ -1,1 +1,58 @@
-.r-landing{}
+.r-landing{min-height:100%;overflow-y: auto}
+.r-landing__inner-bg{min-height:100%; position:fixed;top:0;left:0;right:0;bottom:0;z-index:0;text-align: center; overflow: hidden}
+.r-landing__inner{width:528px; margin:133px auto 50px; padding: 0 40px 136px; background: rgba(255, 255, 255, 0.8); border-radius: 24px;position:relative;z-index:1}
+/* header */
+.r-landing__header{height:140px; padding:48px 0 24px; display:flex; flex-direction: column;justify-content: center;align-items: center; gap:20px}
+.r-landing__header .logo img{width:33px; height:auto}
+.r-landing__header .tit{font-size:18px; line-height:24px; color:#242424;}
+/* body */
+.r-landing__body > [class*='item-']{border-radius: 16px; overflow: hidden}
+.r-landing__body > * + *{margin-top:24px}
+.r-landing__body .item-view{padding:24px 24px 0; background:#E2E2E2; display:flex;flex-direction: column;align-items: center; position:relative}
+.r-landing__body .item-view > *{position:relative; z-index:1; text-align: center}
+.r-landing__body .item-view > * + *{margin-top:24px}
+.r-landing__body .item-view .label{display:inline-flex; font-size:15px; color:#fff; line-height: 20px; padding:6px 16px; background:#191F28; border-radius: 16px}
+.r-landing__body .item-view .txt-1{font-size:18px; line-height: 24px;text-align: center; color:#242424}
+.r-landing__body .item-view .txt-2{font-size:15px; line-height: 20px}
+.r-landing__body .item-view .state{margin-top:16px;font-size:40px; font-weight: 600; line-height: 40px}
+.r-landing__body .item-view .state + .txt-1{margin-top:16px}
+.r-landing__body .item-view .state-bar{position:absolute; left:0; top:-24px; bottom:0; background:#39D878; box-shadow:0 0 50px rgba(57, 216, 120, 0.8); z-index:0}
+.r-landing__body .item-view .photo{height:190px; overflow: hidden; margin-top:30px}
+.r-landing__body .item-view .photo img{width:245px; height:auto}
+/*.r-landing__body .item-view .icon,*/
+/*.r-landing__body .item-view .icon + *{margin-top:29px;}*/
+.r-landing__body .item-table{}
+.r-landing__body .item-map{height:344px;  background:#c9c9c9; border:1px solid rgba(0, 0, 0, 0.1); display:flex; align-items: center; justify-content: center}
+.r-landing__body .item-check-list{padding:0 24px 32px; background:#F2F2F2}
+.r-landing__body .item-check-list .tit{font-size:16px; color:#1781F4; font-weight:600; height:56px; padding:17px 0 0; background:url('../images/svg/icon-construction-blue.svg') 100% 50% no-repeat}
+.r-landing__body .item-check-list li{color:#4d4d4d; line-height: 20px; position:relative;padding-left:13px}
+.r-landing__body .item-check-list li:before{content: '';display: block;width:5px;height:5px;background:#CACCCF;border-radius: 20px;position:absolute; top:7px; left:0}
+.r-landing__body .item-check-list li + li{margin-top:16px}
+/* footer */
+.r-landing__footer{margin-top:64px; text-align: center;}
+.r-landing__footer p{font-size:13px;color:#4D4D4D;line-height: 17px;text-align: center;}
+.r-landing__footer * + *{margin-top:8px}
+/* footer -fix */
+.r-landing__fix{position:fixed; width:400px;bottom:100px; left:calc(50% - 200px);  z-index:3}
+.r-landing__fix .btn-completed{width:100%; height:56px; font-size:20px; color:#fff; font-weight:600; background:#1781F4; border-radius: 16px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);}
+.r-landing__fix .btn-completed:before{content:''; display:inline-block; vertical-align: top; margin-right:8px; width:24px; height:24px; background:url('../images/svg/icon-construction-white.svg') 0 0 no-repeat}
+
+/* type */
+.r-landing .r-landing__body > [class*='type-'] > *{color:#fff}
+.r-landing__body .item-view.type-1{background:#1781F4}
+.r-landing__body .item-view.type-2{background:linear-gradient(180deg, #545454 0%, #2B2B2B 100%);}
+.r-landing__body .item-view.type-2 .txt-1{margin-top:16px}
+.r-landing__body .item-view.type-3{background:#ED5F5E}
+.r-landing__body .item-view.type-4{background:#554BC4}
+.r-landing__body .item-view.type-4 .txt-2{color:#D9C1FF}
+
+
+@media (max-width: 528px) {
+    .r-landing{overflow: inherit; background:#fff}
+    .r-landing__inner-bg{display:none}
+    .r-landing__inner{width:100%; margin:0;padding:40px 16px 120px; border-radius: 0; background:#fff}
+    .r-landing__header{height:116px; padding:0}
+    .r-landing__fix{width:100%; padding: 0 40px; left:0; bottom:40px}
+
+
+}

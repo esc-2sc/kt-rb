@@ -4,6 +4,7 @@ import login from '@/routes/login';
 import error from '@/routes/error';
 import detail from '@/routes/detail';
 import guide from '@/routes/guide';
+import landing from '@/routes/landing';
 
 Vue.use(VueRouter);
 
@@ -34,6 +35,12 @@ const router = new VueRouter({
 			component: () => import('@/views/layouts/LayoutGuide.vue'),
 			children: [...guide],
 		},
+		{
+			path: '/',
+			component: () => import('@/views/layouts/LayoutLanding.vue'),
+			children: [...landing],
+		},
+
 		...error,
 	],
 });

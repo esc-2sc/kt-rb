@@ -2393,7 +2393,7 @@ div.a-paging__combobox-dropdown .vx-list__item{justify-content:center;}
   height:40px;
   gap: 8px;
   padding:4px;
-  color: var(--r-tab-1-text);
+  color: var(--color-primary);
   background-color: #e8e8e8;
   border-radius: 8px;
 }
@@ -3501,7 +3501,7 @@ div.a-paging__combobox-dropdown .vx-list__item{justify-content:center;}
  *-------------------------------------*/
 /* btn */
 .r-btns-icon{display: flex;align-items: center;gap: 16px;}
-.r-btns-icon button{width:40px; height:40px;padding:10px;background-color:var(--r-btns-icon-bg);border-radius:var(--r-btns-icon-radius);}
+.r-btns-icon button{width:40px; height:40px;padding:10px;background-color:var(--color-white);border-radius:8px;}
 .r-btns-icon.column{flex-direction: column;}
 .r-btns-icon [class*='btn-']{border:1px solid #ADADB0}
 .r-btns-icon [class*='btn-'], .r-btns-icon [class*='btn-']:after{background-size: 20px; background-position:50%;background-repeat: no-repeat;}
@@ -3525,16 +3525,16 @@ div.a-paging__combobox-dropdown .vx-list__item{justify-content:center;}
 .r-btns-line button{font-size:12px;color:var(--color-primary);line-height:14px; min-width:56px; min-height:24px; padding:2px 10px; border: 1px solid #CDCDCD; border-radius: 16px;}
 
 /* tab */
-.r-tab-1{display:inline-flex;align-items: center;height:48px;gap: 8px;padding:8px;color: var(--r-tab-1-text);background-color: var(--r-tab-1-bg);border-radius: var(--r-tab-1-radius);}
+.r-tab-1{display:inline-flex;align-items: center;height:48px;gap: 8px;padding:8px;color: #191f28;background-color:#e8e8e8;border-radius: 24px;}
 .r-tab-1 button{display: flex;align-items: center;justify-content: center;height:100%;padding:0 18px;font-weight:600;font-size: 13px;color:var(--color-secondary);}
-.r-tab-1 button[selected]{color:var(--color-primary);background-color:var(--r-tab-1-selected-bg);border:var(--r-tab-1-selected-border);border-radius: var(--r-tab-1-selected-radius);box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);}
+.r-tab-1 button[selected]{color:var(--color-primary);background-color:var(--color-white);border:1px solid rgba(0, 0, 0, 0.02);border-radius: 16px;box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);}
 
 /* checkbox, radio, switch */
 .r-switch-1{display:inline-block;vertical-align: middle;}
 .r-switch-1 .r-switch__input{position: absolute;width:1px;height:1px;opacity: 0.00001;}
-.r-switch-1 .r-switch__label{position: relative;display:flex;align-items: center;width:30px;height:16px;padding:0 3px;border-radius:30px;background-color:var(--r-switch-1-bg);}
-.r-switch-1 .r-switch__label:before{content:'';display:inline-block;vertical-align: middle;width:12px;height:12px;border-radius: 12px;background-color:var(--r-switch-1-bar);transform: translateX(0);}
-.r-switch-1 .r-switch__input:checked + .r-switch__label{background-color: var(--r-switch-1-selected-bg); }
+.r-switch-1 .r-switch__label{position: relative;display:flex;align-items: center;width:30px;height:16px;padding:0 3px;border-radius:30px;background-color:#a9a9a9;}
+.r-switch-1 .r-switch__label:before{content:'';display:inline-block;vertical-align: middle;width:12px;height:12px;border-radius: 12px;background-color:var(--color-white);transform: translateX(0);}
+.r-switch-1 .r-switch__input:checked + .r-switch__label{background-color: var(--color-point-1); }
 .r-switch-1 .r-switch__input:checked + .r-switch__label:before{transform: translateX(100%);}
 
 .r-eye-toggle .r-eye-toggle__input{position: absolute;width:1px;height:1px;opacity: 0.00001;}
@@ -3563,7 +3563,7 @@ div.a-paging__combobox-dropdown .vx-list__item{justify-content:center;}
 .r-select{height:32px;padding:0 8px;font-weight:600;font-size:13px;color:var(--color-primary);background-color:var(--color-white);border:1px solid #dddede;border-radius: 8px;}
 
 /* r-select-calendar */
-.r-select-calendar{display: inline-flex;align-items: center;justify-content: center;height:44px;padding:0 24px;font-weight: 600;text-align: center;background-color: var(--r-select-calendar-bg);border-radius: var(--r-select-calendar-radius);cursor: pointer;border: 1px solid #ADADB0;}
+.r-select-calendar{display: inline-flex;align-items: center;justify-content: center;height:44px;padding:0 24px;font-weight: 600;text-align: center;background-color: var(--color-white);border-radius:24px;cursor: pointer;border: 1px solid #ADADB0;}
 
 /* calendar */
 .r-calendar{}

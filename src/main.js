@@ -1,6 +1,5 @@
 import Vue from 'vue';
 import App from './App.vue';
-
 // router
 import router from '@/routes/index';
 

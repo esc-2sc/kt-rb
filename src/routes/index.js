@@ -5,6 +5,7 @@ import error from '@/routes/error';
 import detail from '@/routes/detail';
 import guide from '@/routes/guide';
 import landing from '@/routes/landing';
+import konva from '@/routes/konva';
 
 Vue.use(VueRouter);
 
@@ -39,6 +40,11 @@ const router = new VueRouter({
 			path: '/',
 			component: () => import('@/views/layouts/LayoutLanding.vue'),
 			children: [...landing],
+		},
+		{
+			path: '/',
+			component: () => import('@/views/layouts/LayoutKonva.vue'),
+			children: [...konva],
 		},
 
 		...error,

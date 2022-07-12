@@ -98,6 +98,11 @@ export default {
             {level:1, label:'COMPONENT', },
             {level:2, label:'com-dropdown-bar', url:'guide-com-dropdown-bar' },
             {level:2, label:'com-paging', url:'guide-com-paging' },
+
+            {level:1, label:'Konva.js', },
+            {level:2, label:'konva-1', url:'konva-1' },
+            {level:2, label:'basic-shapes', url:'konva-basic-shapes' },
+            {level:2, label:'custom-shape', url:'konva-custom-shape' },
           ],
         };
     },

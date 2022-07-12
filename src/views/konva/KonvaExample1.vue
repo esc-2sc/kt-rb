@@ -1,5 +1,34 @@
 <template>
   <div class="viewer">
+    <v-stage ref="stage"
+             :config="configKonva"
+             @dragstart="handleDragstart"
+             @dragend="handleDragend">
+      <v-layer ref="layer">
+        <v-star
+            v-for="item in list"
+            :key="item.id"
+            :config="{
+            x: item.x,
+            y: item.y,
+            rotation: item.rotation,
+            id: item.id,
+            numPoints: 5,
+            innerRadius: 30,
+            outerRadius: 50, fill: '#89b717',
+            opacity: 0.8,
+            draggable: true,
+            scaleX: dragItemId === item.id ? item.scale * 1.2 : item.scale,
+            scaleY: dragItemId === item.id ? item.scale * 1.2 : item.scale,
+            shadowColor: 'black',
+            shadowBlur: 10,
+            shadowOffsetX: dragItemId === item.id ? 15 : 5,
+            shadowOffsetY: dragItemId === item.id ? 15 : 5,
+            shadowOpacity: 0.6
+          }"
+        ></v-star>
+      </v-layer>
+    </v-stage>
     <div class="content-map">
       <div class="map-inner">
         <img src="/resources/images/temp/temp_map.png" alt="">
@@ -589,14 +618,20 @@
 </template>
 
 <script>
+// https://konvajs.org/docs/vue/
 import NavigationChart from "@/views/layouts/NavigationChart";
+
 export default {
-  name: 'Viewer',
+  name: 'KonvaExample1',
   components: {
     NavigationChart
   },
   data() {
     return {
+      list: [],
+      dragItemId: null,
+      configKonva: {},
+      timerID: null,
       isActive:0,
       comboboxData1SelectedValue: null,
       comboboxData1: [
@@ -612,8 +647,47 @@ export default {
   },
   mounted() {
     this.comboboxData1SelectedValue = this.comboboxData1[0];
+    window.addEventListener('resize', this.resize);
+    this.resize();
   },
   methods: {
+    resize() {
+      const winW = window.innerWidth;
+      const winH = window.innerHeight;
+      this.configKonva.width = winW;
+      this.configKonva.height = winH;
+
+      clearTimeout(this.timerID);
+      this.timerID = setTimeout(() => {
+        this.list = [];
+        for (let n = 0; n < 30; n++) {
+          this.list.push({
+            id: Math.round(Math.random() * 10000).toString(),
+            x: Math.random() * winW,
+            y: Math.random() * winH,
+            rotation: Math.random() * 180,
+            scale: Math.random()
+          });
+        }
+
+        console.log('resize');
+      }, 150);
+
+    },
+    handleDragstart(e) {
+      console.log('handleDragstart');
+      // save drag element:
+      this.dragItemId = e.target.id();
+      // move current element to the top:
+      const item = this.list.find(i => i.id === this.dragItemId);
+      const index = this.list.indexOf(item);
+      this.list.splice(index, 1);
+      this.list.push(item);
+    },
+    handleDragend(e) {
+      console.log('handleDragend');
+      this.dragItemId = null;
+    },
     onChangeOpenMenu(){
       this.isActive = !this.isActive;
     },
@@ -623,3 +697,6 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+</style>

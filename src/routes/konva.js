@@ -38,4 +38,30 @@ export default [
 		name: 'KonvaExampleSaveLoad',
 		component: () => import('@/views/konva/KonvaExampleSaveLoad.vue'),
 	},
+	{
+		path: '/konva-drag-drop',
+		name: 'KonvaExampleDragDrop',
+		component: () => import('@/views/konva/KonvaExampleDragDrop.vue'),
+	},
+	{
+		path: '/konva-transformer',
+		name: 'KonvaExampleTransformer',
+		component: () => import('@/views/konva/KonvaExampleTransformer.vue'),
+	},
+	{
+		path: '/konva-simple-animations',
+		name: 'KonvaExampleSimpleAnimations',
+		component: () => import('@/views/konva/KonvaExampleSimpleAnimations.vue'),
+	},
+	{
+		path: '/konva-cache',
+		name: 'KonvaExampleCache',
+		component: () => import('@/views/konva/KonvaExampleCache.vue'),
+	},
+	{
+		path: '/konva-changing-z-index',
+		name: 'KonvaExampleChangingzIndex',
+		component: () => import('@/views/konva/KonvaExampleChangingzIndex.vue'),
+	},
+
 ];

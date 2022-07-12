@@ -107,6 +107,11 @@ export default {
             {level:2, label:'Images', url:'konva-images' },
             {level:2, label:'Filters', url:'konva-filters' },
             {level:2, label:'Save/Load', url:'konva-save-load' },
+            {level:2, label:'Drag and Drop', url:'konva-drag-drop' },
+            {level:2, label:'Transformer', url:'konva-transformer' },
+            {level:2, label:'Simple Animations', url:'konva-simple-animations' },
+            {level:2, label:'Cache', url:'konva-cache' },
+            {level:2, label:'Changing zIndex', url:'konva-changing-z-index' },
           ],
         };
     },

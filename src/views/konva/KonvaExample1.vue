@@ -5,28 +5,39 @@
              @dragstart="handleDragstart"
              @dragend="handleDragend">
       <v-layer ref="layer">
-        <v-star
+        <v-image :config="{
+            x: imagePos.x,
+            y: imagePos.y,
+            image: image
+          }"/>
+        <v-rect
             v-for="item in list"
             :key="item.id"
             :config="{
             x: item.x,
             y: item.y,
+            width: item.width,
+            height: item.height,
+            fill: 'green',
+            stroke: 'black',
+            strokeWidth: 0,
             rotation: item.rotation,
             id: item.id,
             numPoints: 5,
-            innerRadius: 30,
-            outerRadius: 50, fill: '#89b717',
-            opacity: 0.8,
+            innerRadius: 0,
+            outerRadius: 0,
+            fill: '#41d4dd',
+            opacity: item.opacity,
             draggable: true,
-            scaleX: dragItemId === item.id ? item.scale * 1.2 : item.scale,
-            scaleY: dragItemId === item.id ? item.scale * 1.2 : item.scale,
-            shadowColor: 'black',
-            shadowBlur: 10,
-            shadowOffsetX: dragItemId === item.id ? 15 : 5,
-            shadowOffsetY: dragItemId === item.id ? 15 : 5,
-            shadowOpacity: 0.6
+            // scaleX: dragItemId === item.id ? item.scale * 1.2 : item.scale,
+            // scaleY: dragItemId === item.id ? item.scale * 1.2 : item.scale,
+            shadowColor: '#41d4dd',
+            shadowBlur: dragItemId === item.id ? 0 : 10,
+            shadowOffsetX: 0,
+            shadowOffsetY: 0,
+            shadowOpacity: 0.5
           }"
-        ></v-star>
+        ></v-rect>
       </v-layer>
     </v-stage>
     <div class="content-map">
@@ -628,6 +639,11 @@ export default {
   },
   data() {
     return {
+      image: null,
+      imagePos: {
+        x: 0,
+        y: 0
+      },
       list: [],
       dragItemId: null,
       configKonva: {},
@@ -645,6 +661,20 @@ export default {
       ],
     };
   },
+  created() {
+    const image = new Image();
+    image.src = "/resources/images/map/01.png";
+    image.onload = (e) => {
+      // set image only when it is loaded
+      console.log(e);
+      // console.log(image.width, image.height);
+      this.image = image;
+      this.imagePos.width = image.width;
+      this.imagePos.height = image.height;
+      this.imagePos.x = (window.innerWidth/2) - image.width/2;
+      this.imagePos.y = (window.innerHeight/2) - image.height/2;
+    };
+  },
   mounted() {
     this.comboboxData1SelectedValue = this.comboboxData1[0];
     window.addEventListener('resize', this.resize);
@@ -652,21 +682,32 @@ export default {
   },
   methods: {
     resize() {
+      // console.log(this.image.width, this.image.height);
       const winW = window.innerWidth;
       const winH = window.innerHeight;
       this.configKonva.width = winW;
       this.configKonva.height = winH;
 
+      if(this.imagePos.width && this.imagePos.height) {
+        this.imagePos.x = (window.innerWidth/2) - this.imagePos.width/2;
+        this.imagePos.y = (window.innerHeight/2) - this.imagePos.height/2;
+      }
+
       clearTimeout(this.timerID);
       this.timerID = setTimeout(() => {
         this.list = [];
-        for (let n = 0; n < 30; n++) {
+        for (let n = 0; n < 100; n++) {
           this.list.push({
             id: Math.round(Math.random() * 10000).toString(),
             x: Math.random() * winW,
             y: Math.random() * winH,
-            rotation: Math.random() * 180,
-            scale: Math.random()
+            rotation: Math.random() * 0,
+            scale: 1,
+            width: 15,
+            height: 15,
+            opacity: Math.random(),
+            fill: 'green',
+            strokeWidth: 0,
           });
         }
 

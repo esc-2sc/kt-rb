@@ -18,5 +18,24 @@ export default [
 		name: 'KonvaExampleCustomShape',
 		component: () => import('@/views/konva/KonvaExampleCustomShape.vue'),
 	},
-
+	{
+		path: '/konva-events',
+		name: 'KonvaExampleEvents',
+		component: () => import('@/views/konva/KonvaExampleEvents.vue'),
+	},
+	{
+		path: '/konva-images',
+		name: 'KonvaExampleImages',
+		component: () => import('@/views/konva/KonvaExampleImages.vue'),
+	},
+	{
+		path: '/konva-filters',
+		name: 'KonvaExampleFilters',
+		component: () => import('@/views/konva/KonvaExampleFilters.vue'),
+	},
+	{
+		path: '/konva-save-load',
+		name: 'KonvaExampleSaveLoad',
+		component: () => import('@/views/konva/KonvaExampleSaveLoad.vue'),
+	},
 ];

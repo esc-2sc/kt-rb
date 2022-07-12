@@ -103,6 +103,10 @@ export default {
             {level:2, label:'konva-1', url:'konva-1' },
             {level:2, label:'basic-shapes', url:'konva-basic-shapes' },
             {level:2, label:'custom-shape', url:'konva-custom-shape' },
+            {level:2, label:'Events', url:'konva-events' },
+            {level:2, label:'Images', url:'konva-images' },
+            {level:2, label:'Filters', url:'konva-filters' },
+            {level:2, label:'Save/Load', url:'konva-save-load' },
           ],
         };
     },

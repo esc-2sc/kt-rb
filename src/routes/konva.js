@@ -63,5 +63,9 @@ export default [
 		name: 'KonvaExampleChangingzIndex',
 		component: () => import('@/views/konva/KonvaExampleChangingzIndex.vue'),
 	},
-
+	{
+		path: '/konva-zooming',
+		name: 'KonvaExampleZooming',
+		component: () => import('@/views/konva/KonvaExampleZooming.vue'),
+	},
 ];

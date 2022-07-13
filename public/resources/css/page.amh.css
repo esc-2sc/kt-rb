@@ -26,7 +26,8 @@
 .map-info-window .info-box .bg-yellow{background: #FFD951;}
 .map-info-window .info-txt{font-size:12px;line-height: 15px;color:#4d4d4d}
 .map-info-window .map .info-txt{font-size:11px}
-.map-info-window .alerts-list .list-item{position:relative; padding:16px 50px 16px 16px; min-height:64px; border-radius: 8px; cursor: pointer}
+.map-info-window .alerts-list .list-item{position:relative; display:block;padding:16px 50px 16px 16px; min-height:64px; border-radius: 8px; cursor: pointer}
+.map-info-window .alerts-list .list-item input[type="checkbox"]{position:absolute;width:0;height:0;}
 .map-info-window .alerts-list .list-item + .list-item{margin-top:4px}
 .map-info-window .alerts-list .icon{position:absolute;top:calc(50% - 12px); right:16px; width:24px;height:24px;background-position: 50%;background-repeat: no-repeat}
 .map-info-window .alerts-list span,

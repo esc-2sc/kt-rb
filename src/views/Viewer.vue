@@ -508,79 +508,89 @@
       <div class="map-info__body scroll">
         <!--<h2>RECENT ALERTS</h2>-->
         <div class="alerts-list">
-          <div class="list-item">
+          <label class="list-item">
             <strong class="tit">금지구역 진입</strong>
             <span class="date">2022-11-02/01:03:38</span>
             <p class="txt">로봇이 금지구역에 진입했습니다</p>
             <span class="icon warning"></span>
-          </div><!--// list-item -->
-          <div class="list-item">
+            <input type="checkbox"/>
+          </label><!--// list-item -->
+          <label class="list-item">
             <strong class="tit">장애물 감지</strong>
             <p class="txt">로봇에서 장애물이 감지됐습니다</p>
             <span class="date">2022-11-02/01:03:38</span>
             <span class="icon emergency"></span>
-          </div><!--// list-item -->
-          <div class="list-item">
+            <input type="checkbox"/>
+          </label><!--// list-item -->
+          <label class="list-item">
             <strong class="tit">주행취소</strong>
             <p class="txt">로봇 화면에서 취소 버튼이 선택되어 주행이 취소됐습니다</p>
             <span class="date">2022-11-02/01:03:38</span>
             <span class="icon robot-cancel"></span>
-          </div><!--// list-item -->
-          <div class="list-item selected">
+            <input type="checkbox"/>
+          </label><!--// list-item -->
+          <label class="list-item selected">
             <strong class="tit">주행실패</strong>
             <p class="txt">로봇의 내부 하드웨어 에러로 주행에 실패했습니다</p>
             <span class="date">2022-11-02/01:03:38</span>
             <span class="icon robot-noun"></span>
-          </div><!--// list-item -->
-          <div class="list-item">
+            <input type="checkbox"/>
+          </label><!--// list-item -->
+          <label class="list-item">
             <strong class="tit">비상버튼 정지</strong>
             <p class="txt">로봇의 비상버튼이 선택되어 로봇이 정지됐습니다</p>
             <span class="date">2022-11-02/01:03:38</span>
             <span class="icon compress"></span>
-          </div><!--// list-item -->
-          <div class="list-item">
+            <input type="checkbox"/>
+          </label><!--// list-item -->
+          <label class="list-item">
             <strong class="tit">플랫폼 요청 정지</strong>
             <p class="txt">플랫폼 요청에 의해 로봇이 정지됐습니다</p>
             <span class="date">2022-11-02/01:03:38</span>
             <span class="icon pan"></span>
-          </div><!--// list-item -->
-          <div class="list-item">
+          </label><!--// list-item -->
+          <label class="list-item">
             <strong class="tit selected">SM 요청 정지</strong>
             <p class="txt">로봇 내부 서비스매니저에서 오류가 발생해 주행이 취소됐습니다</p>
             <span class="date">2022-11-02/01:03:38</span>
             <span class="icon wifi"></span>
-          </div><!--// list-item -->
-          <div class="list-item">
+            <input type="checkbox"/>
+          </label><!--// list-item -->
+          <label class="list-item">
             <strong class="tit">SM 요청 정지</strong>
             <p class="txt">로봇 내부 서비스매니저에서 오류가 발생해 주행이 취소됐습니다</p>
             <span class="date">2022-11-02/01:03:38</span>
             <span class="icon wifi"></span>
-          </div><!--// list-item -->
-          <div class="list-item">
+            <input type="checkbox"/>
+          </label><!--// list-item -->
+          <label class="list-item">
             <strong class="tit">SM 요청 정지</strong>
             <p class="txt">로봇 내부 서비스매니저에서 오류가 발생해 주행이 취소됐습니다</p>
             <span class="date">2022-11-02/01:03:38</span>
             <span class="icon wifi"></span>
-          </div><!--// list-item -->
-          <div class="list-item">
+            <input type="checkbox"/>
+          </label><!--// list-item -->
+          <label class="list-item">
             <strong class="tit">SM 요청 정지</strong>
             <p class="txt">로봇 내부 서비스매니저에서 오류가 발생해 주행이 취소됐습니다</p>
             <span class="date">2022-11-02/01:03:38</span>
             <span class="icon wifi"></span>
-          </div><!--// list-item -->
-          <div class="list-item">
+            <input type="checkbox"/>
+          </label><!--// list-item -->
+          <label class="list-item">
             <strong class="tit">SM 요청 정지</strong>
             <p class="txt">로봇 내부 서비스매니저에서 오류가 발생해 주행이 취소됐습니다</p>
             <span class="date">2022-11-02/01:03:38</span>
             <span class="icon wifi"></span>
-          </div><!--// list-item -->
-          <div class="list-item">
+            <input type="checkbox"/>
+          </label><!--// list-item -->
+          <label class="list-item">
             <strong class="tit">SM 요청 정지</strong>
             <p class="txt">로봇 내부 서비스매니저에서 오류가 발생해 주행이 취소됐습니다</p>
             <span class="date">2022-11-02/01:03:38</span>
             <span class="icon wifi"></span>
-          </div><!--// list-item -->
-
+            <input type="checkbox"/>
+          </label><!--// list-item -->
         </div><!--//alerts-list-->
         <div class="r-btns-line"><button>더보기</button></div>
       </div><!-- //map-info__body -->

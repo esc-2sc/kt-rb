@@ -13,7 +13,7 @@
           }"/>
         <v-rect
             v-for="item in list"
-            :key="item.id"
+            :key="`o-${item.id}`"
             :config="{
             x: item.x,
             y: item.y,
@@ -30,7 +30,7 @@
             // fill: '#41d4dd',
             fill: item.fill,
             opacity: item.opacity,
-            draggable: true,
+            draggable: false,
             // scaleX: dragItemId === item.id ? item.scale * 1.2 : item.scale,
             // scaleY: dragItemId === item.id ? item.scale * 1.2 : item.scale,
             shadowColor: '#41d4dd',
@@ -197,7 +197,7 @@
         </div>
         <div class="r-zoom-in-out">
           <button class="btn-in" @click="zoomIn"><img src="/resources/images/svg/plus.svg" alt=""></button>
-          <div class="graph"><span style="height:50%"></span></div>
+          <div class="graph"><span :style="graphValue"></span></div>
           <button class="btn-out"  @click="zoomOut"><img src="/resources/images/svg/minus.svg" alt=""></button>
         </div>
       </div>
@@ -227,7 +227,7 @@
         </div>
       </div>
     </div><!-- //control-timeline -->
-    <div class="graph-layer">
+    <div class="graph-layer" v-if="true">
       <div class="graph-layer-header">
         <button class="btn-close"><img src="/resources/images/svg/icon-close.svg" alt=""></button>
         <h2>2022.05.19</h2>
@@ -433,7 +433,7 @@
         </div><!--//graph-view-->
       </div><!-- //com-layer-body -->
     </div><!--//com-layer-->
-    <div class="label-list">
+    <div class="label-list" v-if="false">
       <ul class="label-box">
         <li>
           <span class="label-icon"><img src="/resources/images/svg/icon-label-01.svg" alt=""></span>
@@ -641,7 +641,6 @@ export default {
   },
   data() {
     return {
-      scaleBy: 1.05,
       image: null,
       imagePos: {
         x: 0,
@@ -664,7 +663,19 @@ export default {
         {label: '비상버튼정지', value: '' },
         {label: '금지구역진입', value: '' },
       ],
+      scaleBy: 1.05,
+      scalePercent: 0,
+      scaleMinMax: {
+        min: 0.5,
+        max: 2.0
+      }
     };
+  },
+  computed: {
+    graphValue() {
+      // this.scalePercent = (1 / 1.5 * 100);
+      return `height: ${this.scalePercent}%;`;
+    }
   },
   created() {
     const image = new Image();
@@ -703,11 +714,11 @@ export default {
       clearTimeout(this.timerID);
       this.timerID = setTimeout(() => {
         this.list = [];
-        for (let n = 0; n < 50; n++) {
+        for (let n = 0; n < 73; n++) {
           // console.log((stage.width() / 2) + (n * 15));
           this.list.push({
             // id: Math.round(Math.random() * 10000).toString(),
-            id: 'n1' + n,
+            id: 'n1-' + n,
             // x: Math.random() * winW,
             // y: Math.random() * winH,
             // x: (stage.width() / 4) + (n * 15),
@@ -722,9 +733,9 @@ export default {
             strokeWidth: 0,
           });
         }
-        for (let n = 0; n < 50; n++) {
+        for (let n = 0; n < 73; n++) {
           this.list.push({
-            id: 'n2' + n,
+            id: 'n2-' + n,
             x: (stage.width() / 2) + 11,
             y: (stage.height() / 8) + (n * 16.5),
             rotation: Math.random() * 0,
@@ -736,9 +747,9 @@ export default {
             strokeWidth: 0,
           });
         }
-        for (let n = 0; n < 50; n++) {
+        for (let n = 0; n < 73; n++) {
           this.list.push({
-            id: 'n3' + n,
+            id: 'n3-' + n,
             x: (stage.width() / 2) + 27,
             y: (stage.height() / 8) + (n * 16.5),
             rotation: Math.random() * 0,
@@ -750,23 +761,150 @@ export default {
             strokeWidth: 0,
           });
         }
+        for (let n = 0; n < 63; n++) {
+          this.list.push({
+            id: 'n4' + n,
+            x: (stage.width() / 2) + 43,
+            y: (stage.height() / 8) + (n * 16.5) + 149,
+            rotation: Math.random() * 0,
+            scale: 1,
+            width: 15,
+            height: 15,
+            opacity: 1,
+            fill: colorSet[Math.floor(Math.random() * colorSet.length)],
+            strokeWidth: 0,
+          });
+        }
+        for (let n = 0; n < 63; n++) {
+          this.list.push({
+            id: 'n5-' + n,
+            x: (stage.width() / 2) + 59,
+            y: (stage.height() / 8) + (n * 16.5) + 149,
+            rotation: Math.random() * 0,
+            scale: 1,
+            width: 15,
+            height: 15,
+            opacity: 1,
+            fill: colorSet[Math.floor(Math.random() * colorSet.length)],
+            strokeWidth: 0,
+          });
+        }
+        for (let n = 0; n < 63; n++) {
+          this.list.push({
+            id: 'n6-' + n,
+            x: (stage.width() / 2) + 75,
+            y: (stage.height() / 8) + (n * 16.5) + 149,
+            rotation: Math.random() * 0,
+            scale: 1,
+            width: 15,
+            height: 15,
+            opacity: 1,
+            fill: colorSet[Math.floor(Math.random() * colorSet.length)],
+            strokeWidth: 0,
+          });
+        }
+        for (let n = 0; n < 63; n++) {
+          this.list.push({
+            id: 'n7-' + n,
+            x: (stage.width() / 2) + 91,
+            y: (stage.height() / 8) + (n * 16.5) + 149,
+            rotation: Math.random() * 0,
+            scale: 1,
+            width: 15,
+            height: 15,
+            opacity: 1,
+            fill: colorSet[Math.floor(Math.random() * colorSet.length)],
+            strokeWidth: 0,
+          });
+        }
+        for (let n = 0; n < 29; n++) {
+          this.list.push({
+            id: 'n8-' + n,
+            x: (stage.width() / 2) + 107,
+            y: (stage.height() / 8) + (n * 16.5) + 149,
+            rotation: Math.random() * 0,
+            scale: 1,
+            width: 15,
+            height: 15,
+            opacity: 1,
+            fill: colorSet[Math.floor(Math.random() * colorSet.length)],
+            strokeWidth: 0,
+          });
+        }
+        for (let n = 0; n < 28; n++) {
+          this.list.push({
+            id: 'n9-' + n,
+            x: (stage.width() / 2) + 107,
+            y: (stage.height() / 8) + (n * 16.5) + 726,
+            rotation: Math.random() * 0,
+            scale: 1,
+            width: 15,
+            height: 15,
+            opacity: 1,
+            fill: colorSet[Math.floor(Math.random() * colorSet.length)],
+            strokeWidth: 0,
+          });
+        }
+        for (let n = 0; n < 7; n++) {
+          this.list.push({
+            id: 'n10-' + n,
+            x: (stage.width() / 2) + 123,
+            y: (stage.height() / 8) + (n * 16.5) + 149,
+            rotation: Math.random() * 0,
+            scale: 1,
+            width: 15,
+            height: 15,
+            opacity: 1,
+            fill: colorSet[Math.floor(Math.random() * colorSet.length)],
+            strokeWidth: 0,
+          });
+        }
+        for (let n = 0; n < 7; n++) {
+          this.list.push({
+            id: 'n11-' + n,
+            x: (stage.width() / 2) + 139,
+            y: (stage.height() / 8) + (n * 16.5) + 149,
+            rotation: Math.random() * 0,
+            scale: 1,
+            width: 15,
+            height: 15,
+            opacity: 1,
+            fill: colorSet[Math.floor(Math.random() * colorSet.length)],
+            strokeWidth: 0,
+          });
+        }
+        for (let n = 0; n < 7; n++) {
+          this.list.push({
+            id: 'n12-' + n,
+            x: (stage.width() / 2) + 155,
+            y: (stage.height() / 8) + (n * 16.5) + 149,
+            rotation: Math.random() * 0,
+            scale: 1,
+            width: 15,
+            height: 15,
+            opacity: 1,
+            fill: colorSet[Math.floor(Math.random() * colorSet.length)],
+            strokeWidth: 0,
+          });
+        }
         console.log('resize');
-      }, 150);
+        this.updatePercent();
+      }, 0);
 
     },
     handleDragstart(e) {
       console.log('handleDragstart');
       // save drag element:
-      this.dragItemId = e.target.id();
+      // this.dragItemId = e.target.id();
       // move current element to the top:
-      const item = this.list.find(i => i.id === this.dragItemId);
-      const index = this.list.indexOf(item);
-      this.list.splice(index, 1);
-      this.list.push(item);
+      // const item = this.list.find(i => i.id === this.dragItemId);
+      // const index = this.list.indexOf(item);
+      // this.list.splice(index, 1);
+      // this.list.push(item);
     },
     handleDragend(e) {
       console.log('handleDragend');
-      this.dragItemId = null;
+      // this.dragItemId = null;
     },
     onChangeOpenMenu(){
       this.isActive = !this.isActive;
@@ -791,7 +929,9 @@ export default {
       if (e.evt.ctrlKey) {
         direction = -direction;
       }
-      var newScale = direction > 0 ? oldScale * this.scaleBy : oldScale / this.scaleBy;
+      // var newScale = direction > 0 ? oldScale * this.scaleBy : oldScale / this.scaleBy;
+      var newScale = direction > 0 ? Math.min(oldScale * this.scaleBy, this.scaleMinMax.max) : Math.max(oldScale / this.scaleBy, this.scaleMinMax.min);
+
       stage.scale({ x: newScale, y: newScale });
 
       var newPos = {
@@ -800,6 +940,7 @@ export default {
       };
       stage.position(newPos);
       console.log(this.scaleBy, newScale);
+      this.updatePercent();
     },
     zoomIn() {
       const stage = this.$refs.stage.getNode();
@@ -815,7 +956,7 @@ export default {
         y: (stageWH.h - stage.y()) / oldScale,
       };
 
-      var newScale = oldScale * this.scaleBy;
+      var newScale = Math.min(oldScale * this.scaleBy, this.scaleMinMax.max);
       stage.scale({ x: newScale, y: newScale });
 
       var newPos = {
@@ -824,6 +965,7 @@ export default {
       };
       stage.position(newPos);
       console.log(this.scaleBy, newScale);
+      this.updatePercent();
     },
     zoomOut() {
       const stage = this.$refs.stage.getNode();
@@ -839,7 +981,7 @@ export default {
         y: (stageWH.h - stage.y()) / oldScale,
       };
 
-      var newScale = oldScale / this.scaleBy;
+      var newScale = Math.max(oldScale / this.scaleBy, this.scaleMinMax.min);
       stage.scale({ x: newScale, y: newScale });
 
       var newPos = {
@@ -848,6 +990,13 @@ export default {
       };
       stage.position(newPos);
       console.log(this.scaleBy, newScale);
+      this.updatePercent();
+    },
+    updatePercent() {
+      const stage = this.$refs.stage.getNode();
+      var oldScale = stage.scaleX();
+      var newScale = Math.min(Math.max(oldScale * this.scaleBy, this.scaleMinMax.min), this.scaleMinMax.max) - this.scaleMinMax.min;
+      this.scalePercent = newScale / (this.scaleMinMax.max - this.scaleMinMax.min) * 100;
     }
   },
 };

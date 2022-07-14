@@ -195,9 +195,9 @@
           <button class="btn-label"></button>
         </div>
         <div class="r-zoom-in-out">
-          <button class="btn-in"><img src="/resources/images/svg/plus.svg" alt=""></button>
+          <button class="btn-in" @click="zoomIn"><img src="/resources/images/svg/plus.svg" alt=""></button>
           <div class="graph"><span style="height:50%"></span></div>
-          <button class="btn-out"><img src="/resources/images/svg/minus.svg" alt=""></button>
+          <button class="btn-out"  @click="zoomOut"><img src="/resources/images/svg/minus.svg" alt=""></button>
         </div>
       </div>
     </div><!-- //control-map -->
@@ -640,7 +640,7 @@ export default {
   },
   data() {
     return {
-      scaleBy: 1.01,
+      scaleBy: 1.05,
       image: null,
       imagePos: {
         x: 0,
@@ -683,6 +683,7 @@ export default {
     this.comboboxData1SelectedValue = this.comboboxData1[0];
     window.addEventListener('resize', this.resize);
     this.resize();
+    console.log('scaleBy : ', this.scaleBy);
   },
   methods: {
     resize() {
@@ -740,9 +741,9 @@ export default {
       return Math.min(items.length, maxCount);
     },
     onWheel(e) {
-      console.log(e.type);
+      // console.log(e.type);
       const stage = this.$refs.stage.getNode();
-      console.log(stage);
+      // console.log(stage);
       e.evt.preventDefault();
       var oldScale = stage.scaleX();
       var pointer = stage.getPointerPosition();
@@ -764,6 +765,55 @@ export default {
         y: pointer.y - mousePointTo.y * newScale,
       };
       stage.position(newPos);
+      console.log(this.scaleBy, newScale);
+    },
+    zoomIn() {
+      const stage = this.$refs.stage.getNode();
+      var oldScale = stage.scaleX();
+      // var pointer = stage.getPointerPosition();
+      var stageWH = {
+        w: stage.width() / 2,
+        h: stage.height() / 2,
+      }
+
+      var mousePointTo = {
+        x: (stageWH.w - stage.x()) / oldScale,
+        y: (stageWH.h - stage.y()) / oldScale,
+      };
+
+      var newScale = oldScale * this.scaleBy;
+      stage.scale({ x: newScale, y: newScale });
+
+      var newPos = {
+        x: stageWH.w - mousePointTo.x * newScale,
+        y: stageWH.h - mousePointTo.y * newScale,
+      };
+      stage.position(newPos);
+      console.log(this.scaleBy, newScale);
+    },
+    zoomOut() {
+      const stage = this.$refs.stage.getNode();
+      var oldScale = stage.scaleX();
+      // var pointer = stage.getPointerPosition();
+      var stageWH = {
+        w: stage.width() / 2,
+        h: stage.height() / 2,
+      }
+
+      var mousePointTo = {
+        x: (stageWH.w - stage.x()) / oldScale,
+        y: (stageWH.h - stage.y()) / oldScale,
+      };
+
+      var newScale = oldScale / this.scaleBy;
+      stage.scale({ x: newScale, y: newScale });
+
+      var newPos = {
+        x: stageWH.w - mousePointTo.x * newScale,
+        y: stageWH.h - mousePointTo.y * newScale,
+      };
+      stage.position(newPos);
+      console.log(this.scaleBy, newScale);
     }
   },
 };

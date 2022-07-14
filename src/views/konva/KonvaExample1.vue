@@ -27,7 +27,8 @@
             numPoints: 5,
             innerRadius: 0,
             outerRadius: 0,
-            fill: '#41d4dd',
+            // fill: '#41d4dd',
+            fill: item.fill,
             opacity: item.opacity,
             draggable: true,
             // scaleX: dragItemId === item.id ? item.scale * 1.2 : item.scale,
@@ -36,7 +37,7 @@
             shadowBlur: dragItemId === item.id ? 0 : 10,
             shadowOffsetX: 0,
             shadowOffsetY: 0,
-            shadowOpacity: 0.5
+            shadowOpacity: 0
           }"
         ></v-rect>
       </v-layer>
@@ -632,7 +633,7 @@
 <script>
 // https://konvajs.org/docs/vue/
 import NavigationChart from "@/views/layouts/NavigationChart";
-
+const colorSet = ['#C0F9E1','#5FE8AE','#42BC90','#04B978','#00462D']
 export default {
   name: 'KonvaExample1',
   components: {
@@ -687,6 +688,7 @@ export default {
   },
   methods: {
     resize() {
+      const stage = this.$refs.stage.getNode();
       // console.log(this.image.width, this.image.height);
       const winW = window.innerWidth;
       const winH = window.innerHeight;
@@ -701,21 +703,53 @@ export default {
       clearTimeout(this.timerID);
       this.timerID = setTimeout(() => {
         this.list = [];
-        for (let n = 0; n < 100; n++) {
+        for (let n = 0; n < 50; n++) {
+          // console.log((stage.width() / 2) + (n * 15));
           this.list.push({
-            id: Math.round(Math.random() * 10000).toString(),
-            x: Math.random() * winW,
-            y: Math.random() * winH,
+            // id: Math.round(Math.random() * 10000).toString(),
+            id: 'n1' + n,
+            // x: Math.random() * winW,
+            // y: Math.random() * winH,
+            // x: (stage.width() / 4) + (n * 15),
+            x: (stage.width() / 2) - 5,
+            y: (stage.height() / 8) + (n * 16.5),
             rotation: Math.random() * 0,
             scale: 1,
             width: 15,
             height: 15,
-            opacity: Math.random(),
-            fill: 'green',
+            opacity: 1,
+            fill: colorSet[Math.floor(Math.random() * colorSet.length)],
             strokeWidth: 0,
           });
         }
-
+        for (let n = 0; n < 50; n++) {
+          this.list.push({
+            id: 'n2' + n,
+            x: (stage.width() / 2) + 11,
+            y: (stage.height() / 8) + (n * 16.5),
+            rotation: Math.random() * 0,
+            scale: 1,
+            width: 15,
+            height: 15,
+            opacity: 1,
+            fill: colorSet[Math.floor(Math.random() * colorSet.length)],
+            strokeWidth: 0,
+          });
+        }
+        for (let n = 0; n < 50; n++) {
+          this.list.push({
+            id: 'n3' + n,
+            x: (stage.width() / 2) + 27,
+            y: (stage.height() / 8) + (n * 16.5),
+            rotation: Math.random() * 0,
+            scale: 1,
+            width: 15,
+            height: 15,
+            opacity: 1,
+            fill: colorSet[Math.floor(Math.random() * colorSet.length)],
+            strokeWidth: 0,
+          });
+        }
         console.log('resize');
       }, 150);
 

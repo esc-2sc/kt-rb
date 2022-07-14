@@ -10,7 +10,7 @@
         <div class="item-view type-3">
           <div class="label">이상 주행 발생</div>
           <div class="txt-1">아래 위치에서 로봇의 주행이<br>비정상적 입니다</div>
-          <div class="photo"><img src="/resources/images/temp/temp-landing-robot-01.png" alt=""></div>
+          <div class="photo"><img src="/resources/images/temp/temp-robot-01.png" alt=""></div>
         </div><!-- //금지구역 진입 -->
 
         <div class="item-table">
@@ -65,7 +65,7 @@
       </div><!-- //r-landing__footer -->
     </div><!-- //r-landing__inner -->
     <div class="r-landing__fix"><button class="btn-completed">조치완료</button></div>
-    <div class="r-landing__inner-bg"><img src="/resources/images/temp/temp-bg-landing.png" alt=""></div><!-- //r-landing__inner-bg-->
+    <div class="r-landing__inner-bg" style="background-image:url('/resources/images/temp/temp-robot-01.png')"><!--<img src="/resources/images/temp/temp-robot-01.png" alt="">--></div><!-- //r-landing__inner-bg-->
   </div><!-- //r-landing -->
 </template>
 

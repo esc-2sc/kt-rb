@@ -112,6 +112,7 @@ export default {
             {level:2, label:'Simple Animations', url:'konva-simple-animations' },
             {level:2, label:'Cache', url:'konva-cache' },
             {level:2, label:'Changing zIndex', url:'konva-changing-z-index' },
+            {level:2, label:'Zooming', url:'konva-zooming' },
           ],
         };
     },

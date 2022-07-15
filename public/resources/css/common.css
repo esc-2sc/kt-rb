@@ -3518,7 +3518,7 @@ div.a-paging__combobox-dropdown .vx-list__item{justify-content:center;}
 
 .r-zoom-in-out{margin-top:16px;background-color: #fff;border-radius: 8px; border:1px solid #ADADB0}
 .r-zoom-in-out .graph{position: relative;width:6px;height:77px;margin:0 auto;background-color: #E8E8E8;border-radius: 8px;overflow: hidden;}
-.r-zoom-in-out .graph span{position: absolute;left:0;right:0;bottom:0;background-color:#1781F4;}
+.r-zoom-in-out .graph span{position: absolute;left:0;right:0;bottom:0;background-color:#1781F4;transition: height .25s ease-out;}
 .r-zoom-in-out button{display: flex;align-items: center;justify-content: center;width:100%;height:40px;}
 .r-zoom-in-out .btn-in{}
 .r-zoom-in-out .btn-out{}

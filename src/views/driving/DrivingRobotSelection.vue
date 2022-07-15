@@ -66,13 +66,12 @@
             <div class="item-list">
               <div class="item">
                 <div class="tit">청약_베어서빙로봇_판매형</div>
-                <div class="txt">썬앳푸드<br>MAC : S2000242290</div>
-                <div class="img"><img src="/resources/images/temp/temp_robot_model_s_2.png" alt=""></div>
-              </div><!--//item-->
-              <div class="item">
-                <div class="tit">현대방역로봇_임대형</div>
-                <div class="txt">썬앳푸드<br>MAC : S2000242290</div>
-                <div class="img"><img src="/resources/images/temp/temp_robot_model_s_1.png" alt=""></div>
+                <div class="txt">
+                  <span>썬앳푸드</span>
+                  <span>사업장 : 썬앳푸드 아산지점</span>
+                  <span>MAC : S2000242290</span>
+                </div>
+                <div class="img"><img src="/resources/images/temp/temp-robot-01.png" alt=""></div>
               </div><!--//item-->
             </div>
           </div>

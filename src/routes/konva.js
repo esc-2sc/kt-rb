@@ -68,4 +68,9 @@ export default [
 		name: 'KonvaExampleZooming',
 		component: () => import('@/views/konva/KonvaExampleZooming.vue'),
 	},
+	{
+		path: '/konva-nodes-20000',
+		name: 'KonvaExampleNodes20000',
+		component: () => import('@/views/konva/KonvaExampleNodes20000.vue'),
+	},
 ];

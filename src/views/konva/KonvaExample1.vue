@@ -663,7 +663,7 @@ export default {
         {label: '비상버튼정지', value: '' },
         {label: '금지구역진입', value: '' },
       ],
-      scaleBy: 1.05,
+      scaleBy: 1.03,
       scalePercent: 0,
       scaleMinMax: {
         min: 0.5,

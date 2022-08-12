@@ -19,9 +19,9 @@
             y: item.y,
             width: item.width,
             height: item.height,
-            fill: 'green',
-            stroke: 'black',
-            strokeWidth: 0,
+            fill: item.fill,
+            stroke: item.stroke,
+            strokeWidth: 1,
             rotation: item.rotation,
             id: item.id,
             numPoints: 5,
@@ -33,11 +33,12 @@
             draggable: false,
             // scaleX: dragItemId === item.id ? item.scale * 1.2 : item.scale,
             // scaleY: dragItemId === item.id ? item.scale * 1.2 : item.scale,
-            shadowColor: '#41d4dd',
-            shadowBlur: dragItemId === item.id ? 0 : 10,
-            shadowOffsetX: 0,
-            shadowOffsetY: 0,
-            shadowOpacity: 0
+            shadowColor: '#FF2A58',
+            // shadowBlur: dragItemId === item.id ? 0 : 10,
+            shadowBlur: item.shadowBlur ? item.shadowBlur : 0,
+            shadowOffsetX: item.shadowOffsetX ? item.shadowOffsetX : 0,
+            shadowOffsetY: item.shadowOffsetY ? item.shadowOffsetY : 0,
+            shadowOpacity: item.shadowOpacity ? item.shadowOpacity : 0,
           }"
         ></v-rect>
       </v-layer>
@@ -633,7 +634,9 @@
 <script>
 // https://konvajs.org/docs/vue/
 import NavigationChart from "@/views/layouts/NavigationChart";
-const colorSet = ['#C0F9E1','#5FE8AE','#42BC90','#04B978','#00462D']
+const colorSet = ['#C0F9E1','#7BFDB7','#47D6A2','#00CC83','#057751'];
+const strokeSet = ['#A4E7CA','#5FE8AE','#42BC90','#04B978','#046544'];
+
 export default {
   name: 'KonvaExample1',
   components: {
@@ -716,6 +719,7 @@ export default {
         this.list = [];
         for (let n = 0; n < 73; n++) {
           // console.log((stage.width() / 2) + (n * 15));
+          let colorNum = Math.floor(Math.random() * colorSet.length);
           this.list.push({
             // id: Math.round(Math.random() * 10000).toString(),
             id: 'n1-' + n,
@@ -729,84 +733,95 @@ export default {
             width: 15,
             height: 15,
             opacity: 1,
-            fill: colorSet[Math.floor(Math.random() * colorSet.length)],
-            strokeWidth: 0,
+            fill: colorSet[colorNum],
+            stroke: strokeSet[colorNum],
+            strokeWidth: 1,
           });
         }
         for (let n = 0; n < 73; n++) {
+          let colorNum = Math.floor(Math.random() * colorSet.length);
           this.list.push({
             id: 'n2-' + n,
-            x: (stage.width() / 2) + 11,
+            x: (stage.width() / 2) + 10,
             y: (stage.height() / 8) + (n * 16.5),
             rotation: Math.random() * 0,
             scale: 1,
             width: 15,
             height: 15,
             opacity: 1,
-            fill: colorSet[Math.floor(Math.random() * colorSet.length)],
-            strokeWidth: 0,
+            fill: colorSet[colorNum],
+            stroke: strokeSet[colorNum],
+            strokeWidth: 1,
           });
         }
         for (let n = 0; n < 73; n++) {
+          let colorNum = Math.floor(Math.random() * colorSet.length);
           this.list.push({
             id: 'n3-' + n,
-            x: (stage.width() / 2) + 27,
+            x: (stage.width() / 2) + 25,
             y: (stage.height() / 8) + (n * 16.5),
             rotation: Math.random() * 0,
             scale: 1,
             width: 15,
             height: 15,
             opacity: 1,
-            fill: colorSet[Math.floor(Math.random() * colorSet.length)],
-            strokeWidth: 0,
+            fill: colorSet[colorNum],
+            stroke: strokeSet[colorNum],
+            strokeWidth: 1,
           });
         }
         for (let n = 0; n < 63; n++) {
+          let colorNum = Math.floor(Math.random() * colorSet.length);
           this.list.push({
             id: 'n4' + n,
-            x: (stage.width() / 2) + 43,
+            x: (stage.width() / 2) + 40,
             y: (stage.height() / 8) + (n * 16.5) + 149,
             rotation: Math.random() * 0,
             scale: 1,
             width: 15,
             height: 15,
             opacity: 1,
-            fill: colorSet[Math.floor(Math.random() * colorSet.length)],
-            strokeWidth: 0,
+            fill: colorSet[colorNum],
+            stroke: strokeSet[colorNum],
+            strokeWidth: 1,
           });
         }
         for (let n = 0; n < 63; n++) {
+          let colorNum = Math.floor(Math.random() * colorSet.length);
           this.list.push({
             id: 'n5-' + n,
-            x: (stage.width() / 2) + 59,
+            x: (stage.width() / 2) + 56,
             y: (stage.height() / 8) + (n * 16.5) + 149,
             rotation: Math.random() * 0,
             scale: 1,
             width: 15,
             height: 15,
             opacity: 1,
-            fill: colorSet[Math.floor(Math.random() * colorSet.length)],
-            strokeWidth: 0,
+            fill: colorSet[colorNum],
+            stroke: strokeSet[colorNum],
+            strokeWidth: 1,
           });
         }
         for (let n = 0; n < 63; n++) {
+          let colorNum = Math.floor(Math.random() * colorSet.length);
           this.list.push({
             id: 'n6-' + n,
-            x: (stage.width() / 2) + 75,
+            x: (stage.width() / 2) + 72,
             y: (stage.height() / 8) + (n * 16.5) + 149,
             rotation: Math.random() * 0,
             scale: 1,
             width: 15,
             height: 15,
             opacity: 1,
-            fill: colorSet[Math.floor(Math.random() * colorSet.length)],
-            strokeWidth: 0,
+            fill: colorSet[colorNum],
+            stroke: strokeSet[colorNum],
+            strokeWidth: 1,
           });
         }
         for (let n = 0; n < 63; n++) {
           this.list.push({
             id: 'n7-' + n,
-            x: (stage.width() / 2) + 91,
+            x: (stage.width() / 2) + 88,
             y: (stage.height() / 8) + (n * 16.5) + 149,
             rotation: Math.random() * 0,
             scale: 1,
@@ -814,77 +829,97 @@ export default {
             height: 15,
             opacity: 1,
             fill: colorSet[Math.floor(Math.random() * colorSet.length)],
-            strokeWidth: 0,
+            stroke: strokeSet[Math.floor(Math.random() * colorSet.length)],
+            strokeWidth: 1,
           });
         }
         for (let n = 0; n < 29; n++) {
+          let colorNum = Math.floor(Math.random() * colorSet.length);
           this.list.push({
             id: 'n8-' + n,
-            x: (stage.width() / 2) + 107,
+            x: (stage.width() / 2) + 104,
             y: (stage.height() / 8) + (n * 16.5) + 149,
             rotation: Math.random() * 0,
             scale: 1,
             width: 15,
             height: 15,
             opacity: 1,
-            fill: colorSet[Math.floor(Math.random() * colorSet.length)],
-            strokeWidth: 0,
+            fill: colorSet[colorNum],
+            stroke: strokeSet[colorNum],
+            strokeWidth: 1,
           });
         }
         for (let n = 0; n < 28; n++) {
+          let colorNum = Math.floor(Math.random() * colorSet.length);
           this.list.push({
             id: 'n9-' + n,
-            x: (stage.width() / 2) + 107,
+            x: (stage.width() / 2) + 108,
             y: (stage.height() / 8) + (n * 16.5) + 726,
             rotation: Math.random() * 0,
             scale: 1,
-            width: 15,
-            height: 15,
+            width: 5,
+            height: 5,
             opacity: 1,
-            fill: colorSet[Math.floor(Math.random() * colorSet.length)],
-            strokeWidth: 0,
+            fill: '#FF3E83',
+            stroke: '#BF1471',
+            strokeWidth: 1,
+            shadowColor: '#FF2A58',
+            shadowBlur: 10,
+            shadowOffsetX: 0,
+            shadowOffsetY: 0,
+            shadowOpacity: 1,
           });
         }
         for (let n = 0; n < 7; n++) {
+          let colorNum = Math.floor(Math.random() * colorSet.length);
           this.list.push({
             id: 'n10-' + n,
-            x: (stage.width() / 2) + 123,
+            x: (stage.width() / 2) + 120,
             y: (stage.height() / 8) + (n * 16.5) + 149,
             rotation: Math.random() * 0,
             scale: 1,
             width: 15,
             height: 15,
             opacity: 1,
-            fill: colorSet[Math.floor(Math.random() * colorSet.length)],
-            strokeWidth: 0,
+            fill: colorSet[colorNum],
+            stroke: strokeSet[colorNum],
+            strokeWidth: 1,
           });
         }
         for (let n = 0; n < 7; n++) {
           this.list.push({
             id: 'n11-' + n,
-            x: (stage.width() / 2) + 139,
+            x: (stage.width() / 2) + 140,
             y: (stage.height() / 8) + (n * 16.5) + 149,
             rotation: Math.random() * 0,
             scale: 1,
-            width: 15,
-            height: 15,
+            width: 5,
+            height: 5,
             opacity: 1,
-            fill: colorSet[Math.floor(Math.random() * colorSet.length)],
-            strokeWidth: 0,
+            fill: '#FF3E83',
+            stroke: '#BF1471',
+            strokeWidth: 1,
+            shadowColor: '#FF2A58',
+            shadowBlur: 10,
+            shadowOffsetX: 0,
+            shadowOffsetY: 0,
+            shadowOpacity: 1,
           });
         }
         for (let n = 0; n < 7; n++) {
+          let colorNum = Math.floor(Math.random() * colorSet.length);
           this.list.push({
             id: 'n12-' + n,
-            x: (stage.width() / 2) + 155,
+            x: (stage.width() / 2) + 152,
             y: (stage.height() / 8) + (n * 16.5) + 149,
             rotation: Math.random() * 0,
             scale: 1,
             width: 15,
             height: 15,
             opacity: 1,
-            fill: colorSet[Math.floor(Math.random() * colorSet.length)],
-            strokeWidth: 0,
+            fill: colorSet[colorNum],
+            stroke: strokeSet[colorNum],
+            strokeWidth: 1,
           });
         }
         console.log('resize');

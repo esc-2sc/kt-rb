@@ -21,7 +21,7 @@
             height: item.height,
             fill: item.fill,
             stroke: item.stroke,
-            strokeWidth: 1,
+            strokeWidth: item.strokeWidth ? item.strokeWidth : 0,
             rotation: item.rotation,
             id: item.id,
             numPoints: 5,
@@ -634,7 +634,7 @@
 <script>
 // https://konvajs.org/docs/vue/
 import NavigationChart from "@/views/layouts/NavigationChart";
-const colorSet = ['#C0F9E1','#7BFDB7','#47D6A2','#00CC83','#057751'];
+const colorSet = ['#C0F9E1','#7BFDB7','#47D6A2','#00CC83','#057751 '];
 const strokeSet = ['#A4E7CA','#5FE8AE','#42BC90','#04B978','#046544'];
 
 export default {
@@ -735,7 +735,7 @@ export default {
             opacity: 1,
             fill: colorSet[colorNum],
             stroke: strokeSet[colorNum],
-            strokeWidth: 1,
+            strokeWidth: 0,
           });
         }
         for (let n = 0; n < 73; n++) {
@@ -751,7 +751,7 @@ export default {
             opacity: 1,
             fill: colorSet[colorNum],
             stroke: strokeSet[colorNum],
-            strokeWidth: 1,
+            strokeWidth: 0,
           });
         }
         for (let n = 0; n < 73; n++) {
@@ -767,7 +767,7 @@ export default {
             opacity: 1,
             fill: colorSet[colorNum],
             stroke: strokeSet[colorNum],
-            strokeWidth: 1,
+            strokeWidth: 0,
           });
         }
         for (let n = 0; n < 63; n++) {
@@ -783,7 +783,7 @@ export default {
             opacity: 1,
             fill: colorSet[colorNum],
             stroke: strokeSet[colorNum],
-            strokeWidth: 1,
+            strokeWidth: 0,
           });
         }
         for (let n = 0; n < 63; n++) {
@@ -799,7 +799,7 @@ export default {
             opacity: 1,
             fill: colorSet[colorNum],
             stroke: strokeSet[colorNum],
-            strokeWidth: 1,
+            strokeWidth: 0,
           });
         }
         for (let n = 0; n < 63; n++) {
@@ -815,7 +815,7 @@ export default {
             opacity: 1,
             fill: colorSet[colorNum],
             stroke: strokeSet[colorNum],
-            strokeWidth: 1,
+            strokeWidth: 0,
           });
         }
         for (let n = 0; n < 63; n++) {
@@ -830,7 +830,7 @@ export default {
             opacity: 1,
             fill: colorSet[Math.floor(Math.random() * colorSet.length)],
             stroke: strokeSet[Math.floor(Math.random() * colorSet.length)],
-            strokeWidth: 1,
+            strokeWidth: 0,
           });
         }
         for (let n = 0; n < 29; n++) {
@@ -846,7 +846,7 @@ export default {
             opacity: 1,
             fill: colorSet[colorNum],
             stroke: strokeSet[colorNum],
-            strokeWidth: 1,
+            strokeWidth: 0,
           });
         }
         for (let n = 0; n < 28; n++) {
@@ -867,7 +867,7 @@ export default {
             shadowBlur: 10,
             shadowOffsetX: 0,
             shadowOffsetY: 0,
-            shadowOpacity: 1,
+            shadowOpacity: 0,
           });
         }
         for (let n = 0; n < 7; n++) {
@@ -883,7 +883,7 @@ export default {
             opacity: 1,
             fill: colorSet[colorNum],
             stroke: strokeSet[colorNum],
-            strokeWidth: 1,
+            strokeWidth: 0,
           });
         }
         for (let n = 0; n < 7; n++) {
@@ -903,7 +903,7 @@ export default {
             shadowBlur: 10,
             shadowOffsetX: 0,
             shadowOffsetY: 0,
-            shadowOpacity: 1,
+            shadowOpacity: 0,
           });
         }
         for (let n = 0; n < 7; n++) {
@@ -919,7 +919,7 @@ export default {
             opacity: 1,
             fill: colorSet[colorNum],
             stroke: strokeSet[colorNum],
-            strokeWidth: 1,
+            strokeWidth: 0,
           });
         }
         console.log('resize');

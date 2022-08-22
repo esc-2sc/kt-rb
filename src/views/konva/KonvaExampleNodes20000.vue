@@ -20,21 +20,22 @@
           }"></v-rect>
         </template>
         <v-label ref="tooltip" :config="{
-          opacity: .75,
+          opacity: 1,
           visible: false,
           listening: false,
           }">
           <v-tag :config="{
-            fill: 'black',
+            fill: '#1781F4',
             pointerDirection: 'down',
             pointerWidth: 10,
             pointerHeight: 10,
             lineJoin: 'round',
-            shadowColor: 'black',
-            shadowBlur: 10,
-            shadowOffsetX: 10,
-            shadowOffsetY: 10,
-            shadowOpacity: 0.2,
+            shadowColor: 'transparent',
+            shadowBlur: 0,
+            shadowOffsetX: 0,
+            shadowOffsetY: 0,
+            shadowOpacity: 1,
+            cornerRadius: 4,
           }"></v-tag>
           <v-text :config="textConfig"></v-text>
         </v-label>
@@ -66,9 +67,9 @@ export default {
       },
       textConfig: {
         text: '',
-        fontFamily: 'Calibri',
-        fontSize: 18,
-        padding: 5,
+        fontFamily: 'Pretendard',
+        fontSize: 13,
+        padding: 8,
         fill: 'white',
       }
     };

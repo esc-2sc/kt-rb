@@ -6,23 +6,42 @@
              @dragstart="handleDragstart"
              @dragend="handleDragend">
       <v-layer ref="layer">
+
         <v-image :config="{
             x: imagePos.x,
             y: imagePos.y,
             image: image
           }"/>
-        <v-image
+        <v-rect
             v-for="item in list"
             :key="`o-${item.id}`"
             :config="{
-              id: item.id,
-              draggable: false,
-              width: 10,
-              height: 10,
-              image: item.image,
-              x: item.x,
-              y: item.y,
-          }"/>
+            x: item.x,
+            y: item.y,
+            width: item.width,
+            height: item.height,
+            fill: item.fill,
+            stroke: item.stroke,
+            strokeWidth: item.strokeWidth ? item.strokeWidth : 0,
+            rotation: item.rotation,
+            id: item.id,
+            numPoints: 5,
+            innerRadius: 0,
+            outerRadius: 0,
+            // fill: '#41d4dd',
+            fill: item.fill,
+            opacity: item.opacity,
+            draggable: false,
+            // scaleX: dragItemId === item.id ? item.scale * 1.2 : item.scale,
+            // scaleY: dragItemId === item.id ? item.scale * 1.2 : item.scale,
+            shadowColor: '#FF2A58',
+            // shadowBlur: dragItemId === item.id ? 0 : 10,
+            shadowBlur: item.shadowBlur ? item.shadowBlur : 0,
+            shadowOffsetX: item.shadowOffsetX ? item.shadowOffsetX : 0,
+            shadowOffsetY: item.shadowOffsetY ? item.shadowOffsetY : 0,
+            shadowOpacity: item.shadowOpacity ? item.shadowOpacity : 0,
+          }"
+        ></v-rect>
       </v-layer>
       <v-layer>
         <v-circle :config="{
@@ -678,7 +697,7 @@ export default {
     image.src = "/resources/images/map/01.png";
     image.onload = (e) => {
       // set image only when it is loaded
-      // console.log(e);
+      console.log(e);
       // console.log(image.width, image.height);
       this.image = image;
       this.imagePos.width = image.width;
@@ -694,12 +713,6 @@ export default {
     console.log('scaleBy : ', this.scaleBy);
   },
   methods: {
-    setImage(imgPath) {
-      const image = new Image();
-      image.src = imgPath;
-      image.onload = (e) => {};
-      return image;
-    },
     resize() {
       const stage = this.$refs.stage.getNode();
       // console.log(this.image.width, this.image.height);
@@ -717,16 +730,24 @@ export default {
       this.timerID = setTimeout(() => {
         this.list = [];
         for (let n = 0; n < 73; n++) {
+          // console.log((stage.width() / 2) + (n * 15));
+          let colorNum = Math.floor(Math.random() * colorSet.length);
           this.list.push({
+            // id: Math.round(Math.random() * 10000).toString(),
             id: 'n1-' + n,
+            // x: Math.random() * winW,
+            // y: Math.random() * winH,
+            // x: (stage.width() / 4) + (n * 15),
             x: (stage.width() / 2) - 5,
             y: (stage.height() / 8) + (n * 16.5),
-            image: (() => {
-              const img  = new Image();
-              img.src = '/resources/images/svg/file/file_ai.svg';
-              img.onload = (e) => {};
-              return img;
-            })()
+            rotation: Math.random() * 0,
+            scale: 1,
+            width: 15,
+            height: 15,
+            opacity: 1,
+            fill: colorSet[colorNum],
+            stroke: strokeSet[colorNum],
+            strokeWidth: 0,
           });
         }
         for (let n = 0; n < 73; n++) {
@@ -735,12 +756,14 @@ export default {
             id: 'n2-' + n,
             x: (stage.width() / 2) + 10,
             y: (stage.height() / 8) + (n * 16.5),
-            image: (() => {
-              const img  = new Image();
-              img.src = '/resources/images/svg/2.png';
-              img.onload = (e) => {};
-              return img;
-            })()
+            rotation: Math.random() * 0,
+            scale: 1,
+            width: 15,
+            height: 15,
+            opacity: 1,
+            fill: colorSet[colorNum],
+            stroke: strokeSet[colorNum],
+            strokeWidth: 0,
           });
         }
         for (let n = 0; n < 73; n++) {
@@ -765,12 +788,14 @@ export default {
             id: 'n4' + n,
             x: (stage.width() / 2) + 40,
             y: (stage.height() / 8) + (n * 16.5) + 149,
-            image: (() => {
-              const img  = new Image();
-              img.src = '/resources/images/svg/3.png';
-              img.onload = (e) => {};
-              return img;
-            })()
+            rotation: Math.random() * 0,
+            scale: 1,
+            width: 15,
+            height: 15,
+            opacity: 1,
+            fill: colorSet[colorNum],
+            stroke: strokeSet[colorNum],
+            strokeWidth: 0,
           });
         }
         for (let n = 0; n < 63; n++) {
@@ -779,12 +804,14 @@ export default {
             id: 'n5-' + n,
             x: (stage.width() / 2) + 56,
             y: (stage.height() / 8) + (n * 16.5) + 149,
-            image: (() => {
-              const img  = new Image();
-              img.src = '/resources/images/svg/4.png';
-              img.onload = (e) => {};
-              return img;
-            })()
+            rotation: Math.random() * 0,
+            scale: 1,
+            width: 15,
+            height: 15,
+            opacity: 1,
+            fill: colorSet[colorNum],
+            stroke: strokeSet[colorNum],
+            strokeWidth: 0,
           });
         }
         for (let n = 0; n < 63; n++) {
@@ -793,12 +820,14 @@ export default {
             id: 'n6-' + n,
             x: (stage.width() / 2) + 72,
             y: (stage.height() / 8) + (n * 16.5) + 149,
-            image: (() => {
-              const img  = new Image();
-              img.src = '/resources/images/svg/5.png';
-              img.onload = (e) => {};
-              return img;
-            })()
+            rotation: Math.random() * 0,
+            scale: 1,
+            width: 15,
+            height: 15,
+            opacity: 1,
+            fill: colorSet[colorNum],
+            stroke: strokeSet[colorNum],
+            strokeWidth: 0,
           });
         }
         for (let n = 0; n < 63; n++) {
@@ -806,12 +835,14 @@ export default {
             id: 'n7-' + n,
             x: (stage.width() / 2) + 88,
             y: (stage.height() / 8) + (n * 16.5) + 149,
-            image: (() => {
-              const img  = new Image();
-              img.src = '/resources/images/svg/6.png';
-              img.onload = (e) => {};
-              return img;
-            })()
+            rotation: Math.random() * 0,
+            scale: 1,
+            width: 15,
+            height: 15,
+            opacity: 1,
+            fill: colorSet[Math.floor(Math.random() * colorSet.length)],
+            stroke: strokeSet[Math.floor(Math.random() * colorSet.length)],
+            strokeWidth: 0,
           });
         }
         for (let n = 0; n < 29; n++) {
@@ -820,12 +851,87 @@ export default {
             id: 'n8-' + n,
             x: (stage.width() / 2) + 104,
             y: (stage.height() / 8) + (n * 16.5) + 149,
-            image: (() => {
-              const img  = new Image();
-              img.src = '/resources/images/svg/7.png';
-              img.onload = (e) => {};
-              return img;
-            })()
+            rotation: Math.random() * 0,
+            scale: 1,
+            width: 15,
+            height: 15,
+            opacity: 1,
+            fill: colorSet[colorNum],
+            stroke: strokeSet[colorNum],
+            strokeWidth: 0,
+          });
+        }
+        for (let n = 0; n < 28; n++) {
+          let colorNum = Math.floor(Math.random() * colorSet.length);
+          this.list.push({
+            id: 'n9-' + n,
+            x: (stage.width() / 2) + 108,
+            y: (stage.height() / 8) + (n * 16.5) + 726,
+            rotation: Math.random() * 0,
+            scale: 1,
+            width: 5,
+            height: 5,
+            opacity: 1,
+            fill: '#FF3E83',
+            stroke: '#BF1471',
+            strokeWidth: 1,
+            shadowColor: '#FF2A58',
+            shadowBlur: 10,
+            shadowOffsetX: 0,
+            shadowOffsetY: 0,
+            shadowOpacity: 0,
+          });
+        }
+        for (let n = 0; n < 7; n++) {
+          let colorNum = Math.floor(Math.random() * colorSet.length);
+          this.list.push({
+            id: 'n10-' + n,
+            x: (stage.width() / 2) + 120,
+            y: (stage.height() / 8) + (n * 16.5) + 149,
+            rotation: Math.random() * 0,
+            scale: 1,
+            width: 15,
+            height: 15,
+            opacity: 1,
+            fill: colorSet[colorNum],
+            stroke: strokeSet[colorNum],
+            strokeWidth: 0,
+          });
+        }
+        for (let n = 0; n < 7; n++) {
+          this.list.push({
+            id: 'n11-' + n,
+            x: (stage.width() / 2) + 140,
+            y: (stage.height() / 8) + (n * 16.5) + 149,
+            rotation: Math.random() * 0,
+            scale: 1,
+            width: 5,
+            height: 5,
+            opacity: 1,
+            fill: '#FF3E83',
+            stroke: '#BF1471',
+            strokeWidth: 1,
+            shadowColor: '#FF2A58',
+            shadowBlur: 10,
+            shadowOffsetX: 0,
+            shadowOffsetY: 0,
+            shadowOpacity: 0,
+          });
+        }
+        for (let n = 0; n < 7; n++) {
+          let colorNum = Math.floor(Math.random() * colorSet.length);
+          this.list.push({
+            id: 'n12-' + n,
+            x: (stage.width() / 2) + 152,
+            y: (stage.height() / 8) + (n * 16.5) + 149,
+            rotation: Math.random() * 0,
+            scale: 1,
+            width: 15,
+            height: 15,
+            opacity: 1,
+            fill: colorSet[colorNum],
+            stroke: strokeSet[colorNum],
+            strokeWidth: 0,
           });
         }
         console.log('resize');

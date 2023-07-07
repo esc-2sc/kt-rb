@@ -4,7 +4,9 @@
                  :config="configKonva"
                  @wheel="onWheel"
                  @dragstart="handleDragstart"
-                 @dragend="handleDragend">
+                 @dragend="handleDragend"
+				 @mouseover="onMouseover"
+				 @mouseout="onMouseout">
             <v-layer ref="layer">
                 <v-image :config="{
             x: imagePos.x,
@@ -35,6 +37,38 @@
           shadowBlur: 10,
         }"></v-circle>
             </v-layer>
+			<v-layer>
+				<template v-for="(item, i) in data">
+					<v-rect :config="{
+            x: item.x,
+            y: item.y,
+            width:5,
+            height:5,
+            fill: item.color,
+            id: item.id,
+          }"></v-rect>
+				</template>
+				<v-label ref="tooltip" :config="{
+          opacity: 1,
+          visible: false,
+          listening: false,
+          }">
+					<v-tag :config="{
+            fill: '#1781F4',
+            pointerDirection: 'down',
+            pointerWidth: 10,
+            pointerHeight: 10,
+            lineJoin: 'round',
+            shadowColor: 'transparent',
+            shadowBlur: 0,
+            shadowOffsetX: 0,
+            shadowOffsetY: 0,
+            shadowOpacity: 1,
+            cornerRadius: 4,
+          }"></v-tag>
+					<v-text :config="textConfig"></v-text>
+				</v-label>
+			</v-layer>
         </v-stage>
         <div class="base64Image" v-if="imgBase64" @click="resetBase64Image"><img :src="imgBase64" alt=""></div>
         <div class="content-map">
@@ -668,7 +702,14 @@ export default {
                 min: 0.5,
                 max: 2.0
             },
-            imgBase64: null
+            imgBase64: null,
+			textConfig: {
+				text: '',
+				fontFamily: 'Pretendard',
+				fontSize: 13,
+				padding: 8,
+				fill: 'white',
+			}
         };
     },
     computed: {
@@ -966,6 +1007,28 @@ export default {
             document.body.removeChild(link);
             // delete link;
         },
+		onMouseover(e) {
+			const tooltip = this.$refs.tooltip.getNode();
+			var node = e.target;
+			// console.log(e.target.getStage().getPointerPosition())
+			if (node.colorKey) {
+				// update tooltip
+				var mousePos = node.getStage().getPointerPosition();
+				tooltip.position({
+					x: mousePos.x,
+					y: mousePos.y - 5,
+				});
+				tooltip
+					.getText()
+					.text('node: ' + node._id + ', color: ' + node.colorKey);
+				tooltip.show();
+			}
+		},
+		onMouseout(e) {
+			const tooltip = this.$refs.tooltip.getNode();
+			tooltip.hide();
+			// console.log(e);
+		},
     },
 };
 </script>
